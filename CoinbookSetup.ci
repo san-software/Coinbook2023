@@ -1,0 +1,971 @@
+﻿<project version = 9 civer = 8.7.0 winver = "2.9/6.1.7601" >
+   <autorun >0</>
+   <autoclose >0</>
+   <compname >Coinbook Verlag</>
+   <produrl >www.coinbook.de</>
+   <ver >E:\Coinbook Rollout\Coinbook.exe</>
+   <supurl >www.coinbook.de</>
+   <updurl ></>
+   <dlgfont >verdana</>
+   <headlogo >default</>
+   <dlgfontsize >s8</>
+   <output >E:\Coinbook 2018\Setups</>
+   <exename >CoinbookSetup.exe</>
+   <beffile ></>
+   <aftfile ></>
+   <uninclude >1</>
+   <lang >german</>
+   <addlang >english</>
+   <selfextr >1</>
+   <instpath >#progfiles#\Coinbook3.1</>
+   <voltype >nolimit</>
+   <volsize ></>
+   <volpattern >disk%i.pak</>
+   <password ></>
+   <progname >Coinbook</>
+   <appname ></>
+   <bl ></>
+   <blurl ></>
+   <unpath >inst</>
+   <unexe >uninstall.exe</>
+   <unlog >uninstall.ini</>
+   <installroot sorttype = 0 >
+      <children >
+         <install id = install expanded = 2 >
+            <children >
+               <_ id = background disabled = 1 >
+                  <desc ></>
+                  <head >#lcaption#</>
+                  <foot ></>
+                  <font >Times</>
+                  <height >36</>
+                  <bold >0</>
+                  <italic >0</>
+                  <backcol >0x0000FF</>
+                  <textcol >0xFFFFFF</>
+                  <shadecol >0x888888</>
+                  <uniform >0</>
+                  <backbmp ></>
+                  <stretchback >0</>
+               </>
+               <_ tag = 0 id = getuser disabled = 0 >
+                  <desc ></>
+                  <var >username</>
+                  <vars >appdata,apppath,userpath,desktop,progpath,startup</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = varset >
+                  <desc >checkret</>
+                  <varlist >
+                     <rows >
+                        <_ >
+                           <varname >checkret</>
+                           <value >0</>
+                           <if ></>
+                           <subst >3</>
+                           <super >0</>
+                           <comm ></>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ id = checkreq expanded = 2 disabled = 1 >
+                  <children >
+                     <_ id = empty ></>
+                  </>
+                  <desc ></>
+                  <checktype >admin</>
+                  <resvar >ischeck</>
+                  <not >0</>
+                  <msg ></>
+                  <if ></>
+               </>
+               <_ id = dlglang disabled = 1 >
+                  <desc ></>
+                  <buttons >nc</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext ></>
+                  <if ></>
+               </>
+               <_ id = dlgwel >
+                  <desc ></>
+                  <buttons >auto</>
+                  <design >left</>
+                  <headlogo >E:\Coinbook Rollout\Icon.ico</>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext ></>
+                  <if ></>
+               </>
+               <_ id = dlglic disabled = 1 >
+                  <desc ></>
+                  <file ></>
+                  <print >1</>
+                  <iagree >radio</>
+                  <buttons >pnc</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows >
+                        <_ >
+                           <varname >Liccolor</>
+                           <value >1</>
+                           <if ></>
+                        </>
+                     </>
+                  </>
+                  <head ></>
+                  <headtext ></>
+                  <if ></>
+               </>
+               <_ id = dlgpath >
+                  <desc ></>
+                  <buttons >auto</>
+                  <design >left</>
+                  <headlogo >E:\Coinbook Rollout\Icon.ico</>
+                  <chlist >
+                     <rows ></>
+                  </>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext >#Installationspfad#</>
+                  <pathadd >#progfiles#\Coinbook3.1</>
+                  <enforce >0</>
+                  <if ></>
+                  <savepath >1</>
+               </>
+               <_ id = dlgprog expanded = 2 >
+                  <children >
+                     <_ tag = 0 id = unpack >
+                        <desc >- Programm(e)</>
+                        <comptype >default</>
+                        <ratio >r5</>
+                        <solid >1</>
+                        <path >inst</>
+                        <custpath ></>
+                        <ifexist >overnewer</>
+                        <if ></>
+                        <srclist >
+                           <rows rel = unpack >
+                              <_ >
+                                 <filename >E:\Coinbook Rollout\*.*</>
+                                 <recurse >1</>
+                                 <justfile >0</>
+                                 <emptydir >1</>
+                                 <exclude ></>
+                                 <comm ></>
+                              </>
+                              <_ >
+                                 <filename >E:\Coinbook 2018\Coinbook-ZusatzDLLs</>
+                                 <recurse >1</>
+                                 <justfile >1</>
+                                 <emptydir >1</>
+                                 <exclude ></>
+                                 <comm ></>
+                              </>
+                           </>
+                        </>
+                        <varlist >
+                           <rows ></>
+                        </>
+                     </>
+                     <_ tag = 0 id = unpack >
+                        <desc >- Datenbank und Dateien</>
+                        <comptype >default</>
+                        <ratio >r5</>
+                        <solid >1</>
+                        <path >custom</>
+                        <custpath >#comappdata#\Coinbook</>
+                        <ifexist >skip</>
+                        <if ></>
+                        <srclist >
+                           <rows >
+                              <_ >
+                                 <filename >E:\Coinbook Daten\*.*</>
+                                 <recurse >1</>
+                                 <justfile >0</>
+                                 <emptydir >1</>
+                                 <exclude ></>
+                                 <comm ></>
+                              </>
+                           </>
+                        </>
+                        <varlist >
+                           <rows ></>
+                        </>
+                     </>
+                     <_ tag = 0 id = shcut >
+                        <desc >Coinbook Menü</>
+                        <shpath >prog</>
+                        <shfile >Coinbook</>
+                        <path >inst</>
+                        <file >Coinbook.exe</>
+                        <cmdline ></>
+                        <comment ></>
+                        <icon ></>
+                        <work >inst</>
+                        <defwork ></>
+                        <runas >max</>
+                        <runasadmin >1</>
+                        <if ></>
+                     </>
+                     <_ tag = 0 id = shcut >
+                        <desc >Coinbook Desktop</>
+                        <shpath >desk</>
+                        <shfile >Coinbook</>
+                        <path >inst</>
+                        <file >Coinbook.exe</>
+                        <cmdline ></>
+                        <comment ></>
+                        <icon ></>
+                        <work >inst</>
+                        <defwork ></>
+                        <runas >max</>
+                        <runasadmin >1</>
+                        <if ></>
+                     </>
+                     <_ tag = 0 id = shcut >
+                        <desc >Handbuch Menü</>
+                        <shpath >prog</>
+                        <shfile >Coinbook Handbuch</>
+                        <path >inst</>
+                        <file >Coinbook.pdf</>
+                        <cmdline ></>
+                        <comment ></>
+                        <icon ></>
+                        <work >inst</>
+                        <defwork ></>
+                        <runas >norm</>
+                        <runasadmin >0</>
+                        <if ></>
+                     </>
+                     <_ tag = 0 id = shcut >
+                        <desc >Teamviewer Menü</>
+                        <shpath >prog</>
+                        <shfile >Teamviewer QS</>
+                        <path >inst</>
+                        <file >TeamviwerQS.exe</>
+                        <cmdline ></>
+                        <comment ></>
+                        <icon ></>
+                        <work >inst</>
+                        <defwork ></>
+                        <runas >norm</>
+                        <runasadmin >1</>
+                        <if ></>
+                     </>
+                     <_ tag = 0 id = shcut >
+                        <desc >Teamviewer Desktop</>
+                        <shpath >prog</>
+                        <shfile >Teamviewer QS</>
+                        <path >inst</>
+                        <file >TeamviewerQS.exe</>
+                        <cmdline ></>
+                        <comment ></>
+                        <icon ></>
+                        <work >inst</>
+                        <defwork ></>
+                        <runas >norm</>
+                        <runasadmin >1</>
+                        <if ></>
+                     </>
+                     <_ tag = 0 id = shcut >
+                        <desc >AnyDesk Menü</>
+                        <shpath >prog</>
+                        <shfile >AnyDesk</>
+                        <path >inst</>
+                        <file >AnyDesk.exe</>
+                        <cmdline ></>
+                        <comment ></>
+                        <icon ></>
+                        <work >inst</>
+                        <defwork ></>
+                        <runas >norm</>
+                        <runasadmin >1</>
+                        <if ></>
+                     </>
+                     <_ tag = 0 id = shcut >
+                        <desc >AnyDesk Desktop</>
+                        <shpath >prog</>
+                        <shfile >AnyDesk</>
+                        <path >inst</>
+                        <file >AnyDesk.exe</>
+                        <cmdline ></>
+                        <comment ></>
+                        <icon ></>
+                        <work >inst</>
+                        <defwork ></>
+                        <runas >norm</>
+                        <runasadmin >1</>
+                        <if ></>
+                     </>
+                     <_ tag = 0 id = shcut >
+                        <desc >Handbuch Menü</>
+                        <shpath >prog</>
+                        <shfile >Coinbook Handbuch</>
+                        <path >inst</>
+                        <file >Coinbook.pdf</>
+                        <cmdline ></>
+                        <comment ></>
+                        <icon ></>
+                        <work >inst</>
+                        <defwork ></>
+                        <runas >norm</>
+                        <runasadmin >1</>
+                        <if ></>
+                     </>
+                     <_ id = shcut >
+                        <desc >Deinstallation</>
+                        <shpath >prog</>
+                        <shfile >#lunname#</>
+                        <path >inst</>
+                        <file >uninstall.exe</>
+                        <icon ></>
+                        <cmdline ></>
+                        <comment ></>
+                        <work >inst</>
+                        <defwork ></>
+                        <runas >norm</>
+                        <runasadmin >0</>
+                        <if ></>
+                     </>
+                     <_ id = uninstexe >
+                        <desc ></>
+                     </>
+                     <_ tag = 0 id = checkreq expanded = 2 >
+                        <children >
+                           <_ tag = 0 id = empty ></>
+                        </>
+                        <desc >.Net Framework 4.7</>
+                        <checktype >net47</>
+                        <not >1</>
+                        <resvar >checkret</>
+                        <msg ></>
+                        <if ></>
+                     </>
+                     <_ tag = 0 id = varset >
+                        <desc >Progressvariable auf 1</>
+                        <varlist >
+                           <rows >
+                              <_ >
+                                 <varname >dwn_progsize</>
+                                 <value >1</>
+                                 <if ></>
+                                 <subst >3</>
+                                 <super >0</>
+                                 <comm ></>
+                              </>
+                           </>
+                        </>
+                     </>
+                     <_ tag = 0 id = download >
+                        <desc >.Net Framework</>
+                        <url >http://www.Coinbook.de/Downloads/Tools/</>
+                        <ssl >0</>
+                        <filelist >
+                           <rows >
+                              <_ >
+                                 <urlfile >Net.Framework.4.7.1.exe</>
+                                 <path >inst</>
+                                 <custpath ></>
+                                 <file >NetFramework.exe</>
+                                 <ifexist >over</>
+                                 <if >checkret</>
+                                 <var >netDownloaded</>
+                                 <comm ></>
+                              </>
+                           </>
+                        </>
+                     </>
+                  </>
+                  <desc >Go into the item for viewing unpacking actions.</>
+                  <auto >1</>
+                  <buttons >nc</>
+                  <design >left</>
+                  <headlogo >E:\Coinbook Rollout\Icon.ico</>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext ></>
+                  <if ></>
+               </>
+               <_ tag = 0 id = varset >
+                  <desc >Framework Installations Variable</>
+                  <varlist >
+                     <rows >
+                        <_ >
+                           <varname >netDownloaded</>
+                           <value >0</>
+                           <if ></>
+                           <subst >3</>
+                           <super >0</>
+                           <comm ></>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = run >
+                  <desc >Framework 4.7.1</>
+                  <path >inst</>
+                  <name >NetFramework.exe</>
+                  <cmdline >/norestart /passive</>
+                  <work >default</>
+                  <defwork ></>
+                  <wait >1</>
+                  <runas >norm</>
+                  <if >#netDownloaded#</>
+               </>
+               <_ tag = 0 id = delete >
+                  <desc >Framework Setup wenn vorhanden</>
+                  <path >exe</>
+                  <name >NetFramework.exe</>
+                  <recurse >1</>
+                  <justfile >1</>
+                  <delro >0</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = varset >
+                  <desc ></>
+                  <varlist >
+                     <rows >
+                        <_ >
+                           <varname >startProgram</>
+                           <value >1</>
+                           <if ></>
+                           <subst >0</>
+                           <super >0</>
+                           <comm ></>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ id = dlgfin >
+                  <desc ></>
+                  <buttons >c</>
+                  <design >left</>
+                  <headlogo >E:\Coinbook 2018\Coinbook-Zubehör\Icon.ico</>
+                  <chlist >
+                     <rows >
+                        <_ >
+                           <varname >startProgram</>
+                           <value >Coinbook nach Fertigstellung der Installation starten</>
+                           <if ></>
+                           <comm ></>
+                        </>
+                     </>
+                  </>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext ></>
+                  <if ></>
+               </>
+               <_ tag = 0 id = run >
+                  <desc >Coinbook starten</>
+                  <path >inst</>
+                  <name >Coinbook.exe</>
+                  <cmdline ></>
+                  <work >inst</>
+                  <defwork ></>
+                  <wait >0</>
+                  <runas >max</>
+                  <if >startProgram</>
+               </>
+            </>
+            <icofile >default</>
+            <resfile ></>
+            <leftimg >install - 1</>
+            <caption ></>
+            <verinfo >1</>
+            <noadmin >0</>
+            <selfdelete >0</>
+            <allowinst >0</>
+            <priv >0</>
+         </>
+      </>
+   </>
+   <uninstallroot sorttype = 0 >
+      <children >
+         <uninstall id = uninstall expanded = 2 >
+            <children >
+               <_ id = dlguconf >
+                  <desc ></>
+                  <buttons >c</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+               </>
+               <_ id = dlguprog expanded = 2 >
+                  <children >
+                     <_ id = unprocess >
+                        <desc ></>
+                     </>
+                  </>
+                  <desc ></>
+                  <buttons >nc</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+               </>
+               <_ id = dlgundel >
+                  <desc ></>
+                  <buttons >nc</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+               </>
+               <_ id = dlgufin >
+                  <desc ></>
+                  <buttons >nc</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+               </>
+            </>
+            <unicon >uninstall</>
+            <unresfile ></>
+            <leftimg >uninstall - 1</>
+            <caption ></>
+            <noadmin >0</>
+            <priv >0</>
+         </>
+      </>
+   </>
+   <updateroot sorttype = 0 >
+      <children >
+         <update id = update expanded = 2 >
+            <children >
+               <_ tag = 0 id = varset >
+                  <desc ></>
+                  <varlist >
+                     <rows >
+                        <_ >
+                           <varname >silent</>
+                           <value >0</>
+                           <if ></>
+                           <subst ></>
+                           <super ></>
+                        </>
+                        <_ >
+                           <varname >param</>
+                           <value >#updatexml#</>
+                           <if ></>
+                           <subst ></>
+                           <super ></>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = if expanded = 2 >
+                  <children >
+                     <_ tag = 0 id = varset >
+                        <desc ></>
+                        <varlist >
+                           <rows >
+                              <_ >
+                                 <varname >silent</>
+                                 <value >1</>
+                                 <if ></>
+                              </>
+                           </>
+                        </>
+                     </>
+                  </>
+                  <desc ></>
+                  <else ></>
+                  <condlist >
+                     <rows >
+                        <_ >
+                           <varname ></>
+                           <iftype >ifcommand</>
+                           <not >0</>
+                           <value >-s</>
+                           <orand >and</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = download >
+                  <desc ></>
+                  <url ></>
+                  <filelist >
+                     <rows >
+                        <_ >
+                           <urlfile >#updatexml#</>
+                           <path >temp</>
+                           <custpath ></>
+                           <file >update.ini</>
+                           <if ></>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = iniget >
+                  <desc ></>
+                  <path >temp</>
+                  <ifile >update.ini</>
+                  <section >main</>
+                  <inilist >
+                     <rows >
+                        <_ >
+                           <key >version</>
+                           <varname >newver</>
+                           <defval >0</>
+                           <if ></>
+                        </>
+                        <_ >
+                           <key >url</>
+                           <varname >url</>
+                           <defval ></>
+                           <if ></>
+                        </>
+                     </>
+                  </>
+                  <utf >0</>
+               </>
+               <_ tag = 0 id = if expanded = 2 >
+                  <children >
+                     <_ tag = 0 id = if expanded = 2 >
+                        <children >
+                           <_ tag = 0 id = exit >
+                              <desc ></>
+                              <extype >exit</>
+                              <code >1</>
+                              <msg ></>
+                           </>
+                        </>
+                        <desc ></>
+                        <else ></>
+                        <condlist >
+                           <rows >
+                              <_ >
+                                 <varname >silent</>
+                                 <iftype >notempty</>
+                                 <not >0</>
+                                 <value ></>
+                                 <orand >and</>
+                              </>
+                           </>
+                        </>
+                     </>
+                     <_ tag = 0 id = if expanded = 2 >
+                        <children >
+                           <_ tag = 0 id = exit >
+                              <desc ></>
+                              <extype >exit</>
+                              <code >1</>
+                              <msg >#luperrdown#</>
+                           </>
+                        </>
+                        <desc ></>
+                        <else ></>
+                        <condlist >
+                           <rows >
+                              <_ >
+                                 <varname >silent</>
+                                 <iftype >empty</>
+                                 <not >0</>
+                                 <value ></>
+                                 <orand >and</>
+                              </>
+                           </>
+                        </>
+                     </>
+                  </>
+                  <desc ></>
+                  <else ></>
+                  <condlist >
+                     <rows >
+                        <_ >
+                           <varname >newver</>
+                           <iftype >empty</>
+                           <not >0</>
+                           <value ></>
+                           <orand >and</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = if expanded = 2 >
+                  <children >
+                     <_ tag = 0 id = message expanded = 2 >
+                        <children >
+                           <_ tag = 0 id = shell >
+                              <desc ></>
+                              <path >custom</>
+                              <name >#url#</>
+                              <if ></>
+                              <runasadmin >0</>
+                           </>
+                        </>
+                        <desc ></>
+                        <type >quest</>
+                        <caption >#lupcaption#</>
+                        <text >#lupnewer#</>
+                        <btns >yesno</>
+                        <resvar >msgret</>
+                        <msgif >yes</>
+                        <if ></>
+                     </>
+                  </>
+                  <desc ></>
+                  <else >lowerver</>
+                  <condlist >
+                     <rows >
+                        <_ >
+                           <varname >newver</>
+                           <iftype >greaterver</>
+                           <not >0</>
+                           <value >#ver#</>
+                           <orand >and</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = function expanded = 2 >
+                  <children >
+                     <_ tag = 0 id = message expanded = 2 >
+                        <children >
+                           <_ tag = 0 id = empty ></>
+                        </>
+                        <desc ></>
+                        <type >info</>
+                        <caption >#lupcaption#</>
+                        <text >#lupok#</>
+                        <btns >def</>
+                        <resvar >msgret</>
+                        <msgif >def</>
+                        <if >!silent</>
+                     </>
+                  </>
+                  <desc ></>
+                  <name >lowerver</>
+               </>
+               <_ tag = 0 id = unpack >
+                  <desc ></>
+                  <comptype >default</>
+                  <ratio >r5</>
+                  <solid >1</>
+                  <path >inst</>
+                  <custpath ></>
+                  <ifexist >overnewer</>
+                  <if ></>
+                  <srclist >
+                     <rows >
+                        <_ >
+                           <filename >E:\Dotnet3.5\Coinbook-Access\Coinbook\bin\Release</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >1</>
+                           <exclude ></>
+                        </>
+                     </>
+                  </>
+                  <varlist >
+                     <rows ></>
+                  </>
+               </>
+               <_ tag = 0 id = uninstexe >
+                  <desc ></>
+               </>
+               <_ tag = 0 id = unar >
+                  <desc ></>
+                  <name ></>
+                  <estsize ></>
+                  <path >inst</>
+                  <ifile ></>
+                  <forcu >0</>
+               </>
+               <_ tag = 0 id = dlgwel >
+                  <desc ></>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext ></>
+                  <headlogo ></>
+                  <design >left</>
+                  <buttons >auto</>
+                  <if ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+               </>
+               <_ tag = 0 id = run >
+                  <desc ></>
+                  <path >inst</>
+                  <name >InstallDaten.exe</>
+                  <cmdline >Coinbook Daten.zip</>
+                  <work >default</>
+                  <defwork ></>
+                  <wait >1</>
+                  <runas >norm</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = exit >
+                  <desc ></>
+                  <extype >exit</>
+                  <code >1</>
+                  <msg ></>
+               </>
+               <_ tag = 0 id = function expanded = 2 >
+                  <children >
+                     <_ tag = 0 id = empty ></>
+                  </>
+                  <desc ></>
+                  <name >myfunc</>
+               </>
+               <_ tag = 0 id = notice expanded = 2 color = 16777215 bkcolor = 5075321 >
+                  <children >
+                     <_ tag = 0 id = empty ></>
+                  </>
+                  <desc ></>
+                  <notice ></>
+               </>
+               <_ tag = 0 id = checkreq expanded = 2 >
+                  <children >
+                     <_ tag = 0 id = empty ></>
+                  </>
+                  <desc ></>
+                  <checktype >net35</>
+                  <not >0</>
+                  <resvar >checkret</>
+                  <msg >Zur Ausführuing von Coinbook benötigen Sie das .Net-Framework 3.5. Sie können es von unserer Website herunterladen und installieren.</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = getuser >
+                  <desc ></>
+                  <var >username</>
+                  <vars >appdata,apppath,userpath,desktop,progpath,startup</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = shcut >
+                  <desc ></>
+                  <shpath >prog</>
+                  <shfile ></>
+                  <path >inst</>
+                  <file ></>
+                  <cmdline ></>
+                  <comment ></>
+                  <icon ></>
+                  <work >inst</>
+                  <defwork ></>
+                  <runas >norm</>
+                  <runasadmin >0</>
+               </>
+               <_ tag = 0 id = shlist >
+                  <desc ></>
+                  <shlist >
+                     <rows ></>
+                  </>
+               </>
+               <_ tag = 0 id = shcut >
+                  <desc ></>
+                  <shpath >prog</>
+                  <shfile ></>
+                  <path >inst</>
+                  <file ></>
+                  <cmdline ></>
+                  <comment ></>
+                  <icon ></>
+                  <work >inst</>
+                  <defwork ></>
+                  <runas >norm</>
+                  <runasadmin >0</>
+               </>
+               <_ tag = 0 id = unpack >
+                  <desc ></>
+                  <comptype >default</>
+                  <ratio >r5</>
+                  <solid >1</>
+                  <path >inst</>
+                  <custpath ></>
+                  <ifexist >overnewer</>
+                  <if ></>
+                  <srclist >
+                     <rows >
+                        <_ >
+                           <filename >E:\Dotnet3.5\Coinbook-Access\Coinbook\bin\Release\*.*</>
+                           <recurse >1</>
+                           <justfile >1</>
+                           <emptydir >1</>
+                           <exclude ></>
+                        </>
+                        <_ >
+                           <filename >E:\Dotnet3.5\Coinbook-Access\Coinbook\bin\Release\Coinbook.exe</>
+                           <recurse >1</>
+                           <justfile >1</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                     </>
+                  </>
+                  <varlist >
+                     <rows ></>
+                  </>
+               </>
+               <_ tag = 0 id = fileinfo >
+                  <desc ></>
+                  <path >inst</>
+                  <name >E:\Dotnet3.5\Coinbook-Access\Coinbook\bin\Release\Coinbook.exe</>
+                  <var >fi</>
+               </>
+            </>
+            <upicon >update</>
+            <resfile ></>
+            <leftimg >update - 1</>
+            <caption ></>
+            <noadmin >1</>
+            <priv >0</>
+         </>
+      </>
+   </>
+   <phone >0173/5169745</>
+   <shfolder ></>
+   <headcol ></>
+   <headtext ></>
+   <headimg ></>
+   <stretchback >1</>
+   <silentpar ></>
+   <custfont ></>
+   <upinclude >0</>
+   <uppath >inst</>
+   <upexe >Update.exe</>
+   <upurl >http://coinbook.de/download/Coinbook/</>
+   <upxml >update.ini</>
+   <upredir >http://coinbook.de/download/Coinbook/update.exe</>
+   <ignnotfound >0</>
+   <tozip >0</>
+   <zipfile ></>
+   <csfile ></>
+   <csinst >"<exefilename>"</>
+   <csuninst >"<exefilename>"</>
+   <csupdate >"<exefilename>"</>
+   <crautorun >0</>
+   <autoicon ></>
+   <multilist >
+      <rows ></>
+   </>
+</>

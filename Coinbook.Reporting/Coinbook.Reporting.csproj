@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA95CAAC-5CE0-44CF-9F78-287B391A7B82}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Coinbook.Reporting</RootNamespace>
+    <AssemblyName>Coinbook.Reporting</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoClosingMessageBox, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\AutoClosingMessageBox.1.0.0.2\lib\net40\AutoClosingMessageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Ookii.Dialogs.WinForms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=66aa232afad40158, processorArchitecture=MSIL">
+      <HintPath>packages\Ookii.Dialogs.WinForms.1.2.0\lib\net45\Ookii.Dialogs.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="SAN.Converter">
+      <HintPath>..\..\..\DEV-Tools\DLLs\SAN.Converter\SAN.Converter.dll</HintPath>
+    </Reference>
+    <Reference Include="SAN.UI.Controls">
+      <HintPath>..\..\..\DEV-Tools\DLLs\SAN.UI\SAN.UI.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Core.WinForms, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Grid.Grouping.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Grid.Grouping.Windows, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Grid.Windows, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.GridConverter.Windows, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.GridHelperClasses.Windows, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Grouping.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Pdf.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.SfDataGridConverter.WinForms, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Shared.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Shared.Windows, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.XlsIO.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="enmReporting.cs" />
+    <Compile Include="frmFehllisten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFehllisten.Designer.cs">
+      <DependentUpon>frmFehllisten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporting2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporting2.Designer.cs">
+      <DependentUpon>frmReporting2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportingWert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportingWert.Designer.cs">
+      <DependentUpon>frmReportingWert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportHelper.cs" />
+    <Compile Include="SyncfusionHelper.cs" />
+    <EmbeddedResource Include="frmFehllisten.en-GB.resx">
+      <DependentUpon>frmFehllisten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFehllisten.resx">
+      <DependentUpon>frmFehllisten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporting2.en-GB.resx">
+      <DependentUpon>frmReporting2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporting2.resx">
+      <DependentUpon>frmReporting2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportingWert.en-GB.resx">
+      <DependentUpon>frmReportingWert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportingWert.resx">
+      <DependentUpon>frmReportingWert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Coinbook.Enumerations\Coinbook.Enumerations.csproj">
+      <Project>{12d3bb9c-9560-4f60-9321-bae7b39ab7c2}</Project>
+      <Name>Coinbook.Enumerations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Coinbook.Helper\Coinbook.HelperProject.csproj">
+      <Project>{93467110-d9e7-43c1-a68c-14f13f37f6ef}</Project>
+      <Name>Coinbook.HelperProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Coinbook.Lokalisierung\Coinbook.Lokalisierung.csproj">
+      <Project>{70a440cd-9c08-4685-b5a9-3d828d9814e5}</Project>
+      <Name>Coinbook.Lokalisierung</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Coinbook.Model\Coinbook.Model\Coinbook.Model.csproj">
+      <Project>{4734730d-9af3-4bd9-9707-1972d01f186d}</Project>
+      <Name>Coinbook.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LiteDB.Database\LiteDB.Database.csproj">
+      <Project>{bf0a2fcb-270d-4a8e-b1e3-52469d059550}</Project>
+      <Name>LiteDB.Database</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

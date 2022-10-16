@@ -1,0 +1,527 @@
+<root>
+  <land land="Großbritannien" kennung="en" sprache="Englisch" flagge="iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQlSURBVEhL7VZdaBxVFB4oiKZ/BFNhE0IVLUYaG02WbFKlIU1txVppoT4E/HvaBwXtkz9pQdn6UmuCIcUng5ZCITZoU4uVSiO2JG2aaC3R7MZNs9vqJrubZP9mf2dn5vOeO3tnN7urJi/2xQPfcufec77z7bl3zlzpoNTqcEhrtR5JAsHR28+xtb4fknSsBGJd+BfHFfpWVHSb8wKmP8tJuaXC5IVEvnkZtbWfLiMkFBMVxwm/NWs+wtkhtzkvsCyG5ZbEQ7ilHpEXdiE7PgZhoXAWz+yehs02ZSIWU/mav64OcxYLB43JaE34jV2Xoes6n9eCAchv2nkOAZHXFLDUvNWArR6J3uPQMxkeHI2qsNs9KxbQ1uaC05nkz2SZ4YsI7dqe529tQLT7WF6AKE30k24ssMUF62Mc4c79yLqnOYmq6hgYWPpXAcmkBp/PEK7HZcQ+eM/kI4TesCMxfQuplIZEQsHp01N5AXxyxoult15H4MlHOYIt25A49Tlj07mIS5eiiMc1nqBQQMBq5XO5ikO5MYHF5ztMnoX9z0Ie/oHnIIyOyti3bzB3XtjPnj1fYmRENh3kH68gcOA5zDds4ViyvwLVP49sVjeTLBPQ3GxMssVY78eYb6zjcf6nGhHp/wypWJrzejxp9PUFeCXFYeUCCDTZ0+OH2204p+IKwie/wNz2Rvz5+MOYY2TJC98YiZiVE6Cyw0a+vm1bsHjkXSR8QfNPDQ6GsHOnyzxLpgCxBau1shVYhYm8d1+AeB0E2X8F8zX8X4AY0J6uBnPV1XnCmpqyPv8EU8BdP4RiQC2WQO1UY82OGo7OBposQ41GoKVSuVDDygnQswrzjXLoimJwMCgKa1A5fgFTQGEjomYhGkfw7DncfGQzfnmwGqGvv+IJyHKN8G8rkJpxY+ppG35+oBLeri4k5QznGx6OYe/e30sbEf1YLCe4AzkmWdv0vPM2Jqo2YrKpAYlfJzkx/RPv7VT5b0HRFqisajOvvYSJ+zfgt90diM3c5txebwaHDt0p3wnJgRwn29swVrkOrhcPIBsOG4Sajm+/C2PHDicvH9kyAU1NfC7CPt3pjCGQ7gK+7uO4XrUBPz1Ui+D5CzwH4cyZUKmAwNB5jG+uwdWNa3HH8T501UiUVjQc/dBnlq6cABqT0Vpn5y1+kREW/v6iyTt7+AjbEoWLGBhwYtOmvvxrOLL+PlyzVGHx3FAulAVHspxQJF+JAPJpb3dh9GoMGu0bs5RnFjdarBhZdy9udrQjNvtH/jUUg4kn2E3IOcUDqHxj4zInKkxOWIkAgb4TfvYJN7ZEjcfhevVlXKm4B9dYRUwBxZdSCug6fDm/R0UQW1YYQxDzxf5W60lWyXTZOIe0XuXX8qMFImwtp0pIClGOiCDmy8VUVvaWxFHyg1Kr4y/s4h8NKQds+wAAAABJRU5ErkJggg==" />
+  <lokalisierung>
+    <Keys>
+      <allÄras value="(all eras)" />
+      <allAreas value="(all aeras)" />
+      <alle value="(all)" />
+      <allNations value="(all nations)" />
+      <btnEdit value="View / change coin details" />
+      <Fehllisten value="Wantlists" />
+    </Keys>
+    <frmReporting>
+      <Anzahl value="Coins" />
+      <frmReporting value="Report selection" />
+      <Gesamt value="Total" />
+      <Jahrgang value="Year" />
+      <labelEx1 value="Nation" />
+      <Nominal value="Nomi{##}nal" />
+    </frmReporting>
+    <frmMain>
+      <Auflage value="Edition" />
+      <AuflagePP value="Edition{##}" />
+      <AuflageSTH value="Edition{##}" />
+      <btnÄraVor value="Next era" />
+      <btnÄraZurueck value="Previous era" />
+      <btnBackup value="Backup" />
+      <btnClose value="Exit program" />
+      <btnDown value="Next collection coin" />
+      <btnEdit value="" />
+      <btnGebietVor value="Next area" />
+      <btnGebietZurueck value="Previous area" />
+      <btnJahrVor value="Next year" />
+      <btnJahrZurück value="Previous year" />
+      <btnKurse value="Adjust rates" />
+      <btnMuenzwertZurueck value="Previous value" />
+      <btnMünzwertVor value="Next value" />
+      <btnNationVor value="Next nation" />
+      <btnNationZurueck value="Previous nation" />
+      <btnNavigate value="Navigate" />
+      <btnPrägeanstalt value="Mints" />
+      <btnRestore value="Restore" />
+      <btnSettings value="Settings" />
+      <btnUp value="Previous collection coin" />
+      <btnUpdate value="Update" />
+      <btnWährungVor value="Next Currency" />
+      <btnWährungZurueck value="Previuos Currency" />
+      <btnWert value="Calculate values" />
+      <cmnuÄraVor value="Next era" />
+      <cmnuÄraZurück value="Previous era" />
+      <cmnuDown value="Next collection coin" />
+      <cmnuEigeneKatalognummern value="Edit own catalog numbers" />
+      <cmnuGebietVor value="Next area" />
+      <cmnuGebietZurück value="Previous Area" />
+      <cmnuMünzdetails value="Coin details" />
+      <cmnuMünzeAdd value="Add coin" />
+      <cmnuNationVor value="Next nation" />
+      <cmnuNationZurück value="Previous nation " />
+      <cmnuPicture value="Import Custom Image" />
+      <cmnuPrägeanstalten value="Mints" />
+      <cmnuPreise value="Edit your own prices" />
+      <cmnuUp value="Previous collection coin" />
+      <cmnuWerteDoubletten value="Values calculated Doubletten" />
+      <cmnuWerteSammlung value="Values calculated collection" />
+      <frmMain value="Coinbook" />
+      <Hinweis value="Note" />
+      <Jahrgang value="Year" />
+      <KatNr value="Cataloge" />
+      <lblÄra2 value="Era" />
+      <lblGebiet2 value="Area" />
+      <lblJahr2 value="Year" />
+      <lblNation value="Nation" />
+      <lblNation2 value="Nation" />
+      <lblNominale2 value="Value" />
+      <lblStatusAngezeigt value="Appropriate" />
+      <lblStatusleiste value="Coinbook" />
+      <lblWährung2 value="Currency" />
+      <mnuAbout value="About the program" />
+      <mnuAktivieren value="Activate Coinbook" />
+      <mnuÄraVor value="Era before" />
+      <mnuÄraZurück value="Era back" />
+      <mnuDatei value="File" />
+      <mnuDatensicherung value="Backup" />
+      <mnuDBStatus value="Status of the database" />
+      <mnuDown value="Next collection coin" />
+      <mnuEdit value="Edit" />
+      <mnuEigeneKatalognummern value="Edit own catalog numbers" />
+      <mnuEnde value="Close application" />
+      <mnuGebietVor value="Area before" />
+      <mnuGebietZurück value="Area back" />
+      <mnuHelp value="Online help" />
+      <mnuImport2x value="Importing Coinbook 2.x." />
+      <mnuImportCB2006 value="Import of CB2006" />
+      <mnuKostenDoubletten value="Cost calculate Doubletten" />
+      <mnuKostenSammlung value="Cost calculate collection" />
+      <mnuKurseAnpassen value="Adjust rates" />
+      <mnuModule value="Modules" />
+      <mnuModulUpdates value="Import module updates" />
+      <mnuMünzdetails value="Coin details" />
+      <mnuMünzeAdd value="Add coin" />
+      <mnuNationVor value="Nation before" />
+      <mnuNationZurück value="Nation back" />
+      <mnuNavigation value="Navigation" />
+      <mnuNews value="Load Current News" />
+      <mnuOptionen value="Options" />
+      <mnuOrder value="Order new modules" />
+      <mnuPicture value="Import Custom Image" />
+      <mnuPrägeanstalten value="Mints" />
+      <mnuPreise value="Edit your own prices" />
+      <mnuPrintDoubletten value="Reporting duplicates" />
+      <mnuPrintFehllisten value="Reporting wantlists" />
+      <mnuPrintSammlung value="Reporting collection" />
+      <mnuReorg value="Repair database" />
+      <mnuReportingDoubletten value="Reporting Doubletten" />
+      <mnuReportingFehllisten value="Reporting wantlists" />
+      <mnuReportingSammlung value="Reporting collection" />
+      <mnuRestore value="Restore" />
+      <mnuSettings value="Settings" />
+      <mnuUp value="Previous collection coin" />
+      <mnuUpdate value="Load Program Update" />
+      <mnuWeb value="Web / Help" />
+      <mnuWerteDoublette value="Values calculated Doublette" />
+      <mnuWerteSammlung value="Values calculated collection" />
+      <Motiv value="Motif" />
+      <msgEmail value="Email was send.{##}{##}You ​​will shortly receive an email with the activated license." />
+      <msgError value="Error sending email" />
+      <Münzzeichen value="Mint-{##}mark" />
+      <nichtgeprägt value="not coined" />
+      <Nominal value="Nominal value" />
+      <SummePP value="Sum" />
+      <SummeS value="Sum" />
+      <TTAuflage value="not coined" />
+      <Währung value="Currency" />
+    </frmMain>
+    <frmFehllisten>
+      <Bemerkung value="Comment" />
+    </frmFehllisten>
+    <frmReportingWert>
+      <Beschreibung value="Description" />
+      <Kosten value="Costing" />
+      <Summe value="Sum" />
+      <Wert value="Appraisal" />
+    </frmReportingWert>
+    <frmSettings>
+      <frmSettings value="Settings" />
+      <tabAllgemein value="General" />
+      <tabInternational value="Conditions" />
+      <tabPersonalisierung value="Personalization" />
+    </frmSettings>
+    <frmMuenzDetails>
+      <btnAuktionen value="Manage{##}Auctions" />
+      <btnDown value="Next coin" />
+      <btnEditDoublette value="" />
+      <btnFirst value="First coin" />
+      <btnLast value="Last coin" />
+      <btnPicture value="Custom Image Import" />
+      <btnPreise value="Edit your own prices" />
+      <btnSammlung value="" />
+      <btnSammlungAdd value="" />
+      <btnSammlungAddToolTip value="Add new coin" />
+      <btnSammlungDel value="" />
+      <btnSammlungDelToolTip value="Delete coin" />
+      <btnUp value="Previous coin" />
+      <colDoubletteAblage value="Depot" />
+      <colDoubletteErhaltungsgrad value="Condi-{##}tion" />
+      <colDoubletteErhaltungsgrad value="Condi-{##}tion" />
+      <colDoubletteID value="index" />
+      <colDoubletteIDErhaltung value="Condition" />
+      <colDoubletteKatNrEigen value="My Catalog" />
+      <colDoubletteKaufdatum value="Date of purchase" />
+      <colDoubletteKaufort value="Point of purchase" />
+      <colDoubletteKommentar value="Comment" />
+      <colDoubletten value="Duplicates" />
+      <colDoublettenGesamt value="Duplicates total{##}" />
+      <colDoublettenGesamt value="Duplicates total{##}" />
+      <colDoubletteVerkäufer value="Seller" />
+      <colErhaltungsgrad value="Condition" />
+      <colKatalogPreis value="Catalog price{##}" />
+      <colKaufpreis value="Purchase price{##}" />
+      <colPreis value="Catalog price{##}" />
+      <colSammlung value="Collection" />
+      <colSammlungAblage value="Depot" />
+      <colSammlungErhaltungsgrad value="Condi-{##}tion" />
+      <colSammlungErhaltungsgrad value="Condi-{##}tion" />
+      <colSammlungGesamt value="Collection total{##}" />
+      <colSammlungGesamt value="Collection total{##}" />
+      <colSammlungID value="index" />
+      <colSammlungIDErhaltung value="Con-{##}dition" />
+      <colSammlungKatNr value="My Catalog" />
+      <colSammlungKaufdatum value="Date of purchase" />
+      <colSammlungKaufort value="Point of purchase" />
+      <colSammlungKommentar value="Comment" />
+      <colSammlungVerkäufer value="Seller" />
+      <frmMuenzDetails value="Details" />
+      <grpMuenze value="Coin" />
+      <infoAuktion value="Whenever you become aware of an auction result , you can manage this , as well as any further in your Coinbook program and enter data such as auction house , date of auction result of the auction etc. ." />
+      <infoImage value="You can include your own images for your coins.{##}These images will be displayed instead of the supplied with Coinbook images for that coin.{##}{##}Do you want to use the original images , you must here delete the corresponding pictures again." />
+      <infoPreis value="Here you can adjust those displayed by Coinbook values ​​of the coins with your own price expectations ." />
+      <lblÄhnlicheMotive value="Similar theme " />
+      <lblÄraText value="Era:" />
+      <lblAuflage value="Edition" />
+      <lblAuflagePP value="Edition PP" />
+      <lblAuflageSTH value="Edition STH" />
+      <lblAusgabeanlass value="Edition reason" />
+      <lblAusserKurs value="Out of market" />
+      <lblAversbeschreibung value="Avery description" />
+      <lblAversentwurf value="Avery design" />
+      <lblBesonderheiten value="Features" />
+      <lblBild value="Image" />
+      <lblDicke value="Thickness" />
+      <lblDoubletten value="Duplicates" />
+      <lblDurchmesser value="Diameter" />
+      <lblEigenerPreis value="Own price" />
+      <lblGebiet value="Area:" />
+      <lblGebietText value="Area:" />
+      <lblGeprägt value="Coined" />
+      <lblGewicht value="Weight" />
+      <lblInKurs value="Issued on" />
+      <lblKatalogpreis value="List price" />
+      <lblKatNr value="Catalog" />
+      <lblLegende value="Legend" />
+      <lblLegierung value="Alloy" />
+      <lblMaterial value="Material" />
+      <lblMotiv value="Motif" />
+      <lblMzz value="Flag" />
+      <lblNation value="Nation:" />
+      <lblNationText value="Nation:" />
+      <lblRand value="Edge" />
+      <lblReversbeschreibung value="Back side Description" />
+      <lblReversentwurf value="Back side design" />
+      <lblSammlung value="Collection" />
+      <lblWährung value="Currency" />
+      <tabBeschreibungen value="Descriptions / Design" />
+      <tabBild value="Image" />
+      <tabDetails value="Details" />
+      <tabKommentare value="Edition reason / Comment" />
+      <tabSammlung value="Collection and Duplicates" />
+      <txtPPNichtGeprägt value="not coined" />
+      <txtSTHNichtGeprägt value="not coined" />
+    </frmMuenzDetails>
+    <frmAddPicture>
+      <btnCancel value="Cancel" />
+      <btnDeleteImage value="Clear image" />
+      <btnGetImage value="Accept image" />
+      <btnLoadImage value="Insert image" />
+      <chkAnzeige value="Not show original image" />
+      <frmAddPicture value="Importing your images" />
+      <lblBilderWahl value="Installed image" />
+    </frmAddPicture>
+    <frmModulImport>
+      <btnCheck value="Import new modules or module-updates." />
+      <btnStart value="Import new modules or module-updates." />
+      <frmModulImport value="Import module" />
+      <msgAktuell value="You are with your modules already on the current status of your purchased licenses ." />
+      <msgChoose value="Please select the drive and / or folder with the modules" />
+      <msgEdit value="Edit" />
+      <msgEntpacke value="Unpack" />
+      <msgFind value="Find new updates" />
+      <msgNewImport value="In the selected folder are no newer modules.{##}{##}A new import is not recommended and should only be made at a previous faulty Import.{##}{##}Do you like to take over the existing modules anyway?" />
+      <msgNoModul value="In the chosen directory , there are no modules" />
+      <msgOK value="The import was carried out" />
+      <optDVD value="Load modules from CD / DVD" />
+      <optInternet value="Load modules from the Internet" />
+    </frmModulImport>
+    <frmAuktion>
+      <btnDelete value="Delete" />
+      <btnNew value="Creating a new record" />
+      <colAuktionator value="Auctioneer" />
+      <colAuktionshaus value="Auction house" />
+      <colDat value="Date" />
+      <colGuid value="Guid" />
+      <colIndex value="index" />
+      <frmAuktion value="Auctions" />
+    </frmAuktion>
+    <frmBrowser>
+      <frmBrowser value="frmPBrowser" />
+    </frmBrowser>
+    <frmDBRestore>
+      <btnOK value="Start restore" />
+      <frmDBRestore value="Restore" />
+      <lblPfad value="Path of backup" />
+      <mskOK value="Restore complete" />
+    </frmDBRestore>
+    <frmDBSichern>
+      <btnOK value="Start Backup" />
+      <btnOpen value="...." />
+      <frmDBSichern value="Backup" />
+      <lblPfad value="Select the folder for backup" />
+      <msgOK value="Backup complete" />
+    </frmDBSichern>
+    <frmDBState>
+      <colLastUpdate value="Update" />
+      <colNation value="Nation" />
+      <colVerwendet value="Used" />
+      <frmDBState value="State of the database" />
+      <msgNoLicense value="There is no License" />
+      <msgOrder value="You have no license for the module {0} . { ## }Do you want to order the module ?" />
+      <msgSave value="The changes have not been saved . Do you want to save ?" />
+    </frmDBState>
+    <frmDelMünze>
+      <btnDel value="" />
+      <colAblage value="Depot" />
+      <colDoublette value="Dubli-{##}cate" />
+      <colErhaltungsgrad value="Condition" />
+      <colErhaltungsgrad value="Condition" />
+      <colID value="index" />
+      <colIDErhaltung value="conservation" />
+      <colKatNr value="Own Catalog" />
+      <colKaufdatum value="Date of purchase" />
+      <colKaufort value="Point of purchase" />
+      <colKommentar value="Comment" />
+      <colVerkäufer value="Seller" />
+      <frmDelMünze value="Remove coin" />
+      <msgDelete value="Do you really want to remove the coin from the collection ?" />
+    </frmDelMünze>
+    <frmEigenePreise>
+      <colSammlungID value="Collection" />
+      <frmEigenePreise value="Edit your own prices" />
+      <lblGebietText value="area" />
+    </frmEigenePreise>
+    <frmHinweis>
+      <frmHinweis value="Note" />
+    </frmHinweis>
+    <frmImport>
+      <btnSearch value="Search Coinbook 2006 installationpath" />
+      <frmImport value="Import from Coinbook 2006/2007" />
+      <lblAnzeige1 value="This function can import your collection data{##} from Coinbook 2006/2007 " />
+      <msgOK value="Import done" />
+      <msgSaveCoin value="Save coin {0} of {1}" />
+      <msgSaveDoublette value="Savet doublete {0} of {1}" />
+      <msgWorkCoin value="Edit coin {0} of {1}" />
+      <msgWorkDoublette value="Edit doublete {0} of {1}" />
+    </frmImport>
+    <frmImport2>
+      <btnSearch value="Search Coinbook 2.x installainpath" />
+      <frmImport2 value="Import from  Coinbook 2.x." />
+      <lblAnzeige value="done" />
+      <lblStd1 value="This function can import your collection data{##} from Coinbook 2.x." />
+      <msgAuktion value="Edit auctions" />
+      <msgImage value="Edit own Images" />
+      <msgPreise value="Edit own prices" />
+    </frmImport2>
+    <frmKatalogNummer>
+      <btnDelete value="Delete" />
+      <frmKatalogNummer value="Edit Custom Catalog number" />
+      <lblCoinbookNummer value="labelEx2" />
+      <lblKatalognummer value="Own catalog number for" />
+      <msgSave value="There were not saved any changes . Do you want to save ?" />
+    </frmKatalogNummer>
+    <frmKurse>
+      <frmKurse value="Set course" />
+    </frmKurse>
+    <frmMünze>
+      <btnSave value="Save" />
+      <chkFehlerhaft value="Coin flawed:" />
+      <frmMünze value="Administrate coins" />
+      <frmMünze value="Administrate coins" />
+      <frmMünze2 value="Adminstrate coin" />
+      <lblAblage value="Depot" />
+      <lblEigenerPreis value="Private price" />
+      <lblErhaltungsgrad value="Condition" />
+      <lblKatalogpreis value="Catalog price" />
+      <lblKatNrEigen value="Catalog number" />
+      <lblKaufdatum value="When purchased" />
+      <lblKaufort value="Point of purchase" />
+      <lblMuenzTyp value="Duplicate" />
+      <lblMünze value="Coin" />
+      <lblPreis value="Purchase price" />
+      <lblStück value="Piece" />
+      <lblVerkäufer value="Seller" />
+      <msg value="You have made ​​some unsaved changes. Do you want to save now ?" />
+    </frmMünze>
+    <frmOrder>
+      <btnOrder value="Order" />
+      <colBestellenUpdate value="To order" />
+      <colBestellnummerUpdate value="Order" />
+      <colCheck value="Order" />
+      <colModul value="Module" />
+      <colModulUpdate value="Module" />
+      <colNummer value="Order" />
+      <colPreisUpdate value="Price" />
+      <colWaehrungUpdate value="Currency" />
+      <frmOrder value="frmOrder" />
+      <lblNeueModule value="New modules for" />
+      <lblUpdateBestellen value="Update modules" />
+    </frmOrder>
+    <frmPrägeanstalten>
+      <btnEdit value="" />
+      <colAdresse value="Address" />
+      <colBemerkung value="Comment" />
+      <colCaption value="Nation" />
+      <colMZZ value="Flag" />
+      <colOrt value="City" />
+      <colZeit value="Time" />
+      <frmPrägeanstalten value="mints" />
+    </frmPrägeanstalten>
+    <frmRepair>
+      <btnRepair value="Reorganize database" />
+      <frmRepair value="Reorganize database" />
+      <msgOK value="Reorg completed" />
+    </frmRepair>
+    <frmAbout>
+      <colAssemblyName value="Name" />
+      <colVersion value="Version" />
+      <frmAbout value="About the program" />
+      <lblDataSource value="Source" />
+      <lblDatenbank value="Database:" />
+      <lblEntwickler value="Development" />
+      <lblEntwicklerEmail value="eMail" />
+      <lblEntwicklerTelefon value="Phone" />
+      <lblHost value="Host" />
+      <lblProgrammverzeichnis value="Programpath" />
+      <lblProvider value="Provider" />
+      <lblSchema value="Scheme" />
+      <lblTelefon value="Phone" />
+      <lblVertrieb value="Distribution" />
+      <msgQuit value="Program ends" />
+      <msgStart value="Starting Cioinbook" />
+      <tabDatenbank value="Database" />
+      <tabModule value="Referenced modules" />
+    </frmAbout>
+    <frmAktiviert>
+      <txtAnzeige value="Dear User , { ## } { ## } your license for Coinbook has been activated and is permanently valid now { ## } { ## } Please start Coinbook now new!" />
+    </frmAktiviert>
+    <frmLizenz>
+      <btnOK value="Install License" />
+      <btnWeiter value="Continue" />
+      <frmLizenz value="Licensing Coinbook" />
+      <lblAnzeige value="No license found" />
+      <lblAnzeige value="No license found" />
+      <lblLizenztext value="Please enter the license number that you received per mail or letter" />
+      <msgInstalled value="No license found" />
+      <msgNoLizense value="No license found" />
+    </frmLizenz>
+    <ctlAllgemein>
+      <chkExemplar value="Exemplar assembler" />
+      <chkKaufpreis value="While adding new Coins take catalog value to purchasing price" />
+      <grpDetails value="Settings coin details" />
+      <grpListen value="Settings data sheets" />
+      <grpPreise value="Prices to show" />
+      <grpStart value="Settings while starting" />
+      <optAusgabeTab value="Edition reason / Comment" />
+      <optBeschreibungTab value="Description / Design" />
+      <optBildTab value="Coin image" />
+      <optDoubletten value="Doublets only (count)" />
+      <optEigenePreise value="Own Prices" />
+      <optErsteNat value="With the first nation" />
+      <optKatalogpreise value="List prices" />
+      <optKaufpreise value="Purchasing prices" />
+      <optLastPos value="With the last position" />
+      <optLetzBen value="Last used" />
+      <optMünzdetailTab value="Coin details" />
+      <optSammlung value="Collection (coin icon)" />
+      <optSammlungTab value="Collection and Doublets" />
+      <optStandard value="Collection and Doublets (1/1)" />
+    </ctlAllgemein>
+    <ctlWährung>
+      <colFaktor value="Multiplier" />
+      <colWährung value="Currency" />
+      <lblWährung value="Adjusted currency" />
+    </ctlWährung>
+    <frmFindKatalog>
+      <frmFindKatalog value="Search My Catalog" />
+      <Schliessen value="btnClose" />
+    </frmFindKatalog>
+    <ctlInternational>
+      <grpDefaultPath value="Default: Path for Backup" />
+      <grpErhaltungsgrade value="International conditions" />
+    </ctlInternational>
+    <ctlEigneEinstellungen>
+      <lblLizenz value="Lizence key" />
+      <lblName value="Last name" />
+      <lblOrt value="Zipcode / City" />
+      <lblStraße value="Street" />
+      <lblVorname value="First name" />
+    </ctlEigneEinstellungen>
+    <Lizenz>
+      <msgAktivieren value="Dear User,{##}{##}Your license for Coinbook must be activated{##}{##}If you want to send the request to activate then click 'yes' otherwise 'no'.{##}{##}Since the activation did not take place until {0}, you can Coinbook no longer continue to work until the activation was carried out.{##}{##}, you can request the activation in menu 'options' - 'activate Coinbook' too. The activation is done automatically within the next 2-3 business days.{##}{##}Then after the activation Coinbook can be used again in full for an unlimited time" />
+      <msgAktivieren2 value="Dear User,{##}{##}Your license for Coinbook must be activated{##}{##}If you want to send the request to activate then click 'yes' otherwise 'no'.{##}{##}You can request the activation in menu 'options' - 'activate Coinbook' too.You should perform the activation request within the next {1} days . During this time you can of course make full use Coinbook{##}{##}Since the activation did not take place until {0}, you can Coinbook no longer continue to work until the activation was carried out.{##}{##}The activation is done automatically within the next 2-3 business days.{##}{##}Then after the activation Coinbook can be used again in full for an unlimited time" />
+      <msgInstalled value="Dear User,{ ## }{ ## }your license for Coinbook is installed{ ## }{ ## }Coinbook will restart now !" />
+      <msgNoFile value="Dear User,{ ## }{ ## }your license for Coinbook is unfortunately not valid!{ ## }{ ## }If you have a valid license, please contact our support. You will find the contact information on our website.{ ## }{ ## }However, if you do not have a license, we recommend you to buy this. You can find the appropriate options also on our website!" />
+    </Lizenz>
+    <SplashScreen>
+      <msgDatenbank value="Checking database" />
+      <msgLizenz value="Licensed to" />
+      <msgLizenzCheck value="Checking license" />
+      <msgLizenzExists value="Checking for existing license" />
+      <msgUpdate value="Checking for Update" />
+    </SplashScreen>
+    <frmInfo>
+      <txtInfo value="" />
+    </frmInfo>
+    <global>
+      <Jahrgang value="Year" />
+      <Muenzz value="Mint" />
+      <Nominal value="Nomi{##}nal" />
+      <Währung value="Currency" />
+      <btnPrint value="Print" />
+      <lblÄra value="Era" />
+      <lblGebiet value="Area" />
+      <lblJahr value="Year" />
+      <lblNominale value="Nominal" />
+      <lblSprache value="Language" />
+      <lblWährung value="Currency" />
+      <btnCSV value="Export to CSV-file" />
+      <btnExcel value="Export to Excel" />
+      <btnPDF value="Export to PDF" />
+      <btnWord value="Export to Word" />
+      <Doubletten value="Duplicates" />
+      <Gesamt value="Total" />
+      <Sammlung value="Collection" />
+      <Seite value="Page" />
+      <von value="of" />
+      <colErhaltungsgrad value="Condition" />
+      <colPreis value="price" />
+      <colID value="ID" />
+      <lblMünze value="Coin" />
+      <lblBesonderheit value="particularity" />
+      <lblKommentar value="Comment" />
+      <btnImport value="Import" />
+      <msgLoad value="Load collection" />
+      <btnClose value="Close" />
+      <btnSave value="Save" />
+      <btnOK value="OK" />
+      <lblEmail value="eMail" />
+    </global>
+  </lokalisierung>
+</root>

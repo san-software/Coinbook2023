@@ -1,0 +1,614 @@
+<root>
+  <land land="Großbritannien" kennung="en" sprache="Englisch" flagge="iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQlSURBVEhL7VZdaBxVFB4oiKZ/BFNhE0IVLUYaG02WbFKlIU1txVppoT4E/HvaBwXtkz9pQdn6UmuCIcUng5ZCITZoU4uVSiO2JG2aaC3R7MZNs9vqJrubZP9mf2dn5vOeO3tnN7urJi/2xQPfcufec77z7bl3zlzpoNTqcEhrtR5JAsHR28+xtb4fknSsBGJd+BfHFfpWVHSb8wKmP8tJuaXC5IVEvnkZtbWfLiMkFBMVxwm/NWs+wtkhtzkvsCyG5ZbEQ7ilHpEXdiE7PgZhoXAWz+yehs02ZSIWU/mav64OcxYLB43JaE34jV2Xoes6n9eCAchv2nkOAZHXFLDUvNWArR6J3uPQMxkeHI2qsNs9KxbQ1uaC05nkz2SZ4YsI7dqe529tQLT7WF6AKE30k24ssMUF62Mc4c79yLqnOYmq6hgYWPpXAcmkBp/PEK7HZcQ+eM/kI4TesCMxfQuplIZEQsHp01N5AXxyxoult15H4MlHOYIt25A49Tlj07mIS5eiiMc1nqBQQMBq5XO5ikO5MYHF5ztMnoX9z0Ie/oHnIIyOyti3bzB3XtjPnj1fYmRENh3kH68gcOA5zDds4ViyvwLVP49sVjeTLBPQ3GxMssVY78eYb6zjcf6nGhHp/wypWJrzejxp9PUFeCXFYeUCCDTZ0+OH2204p+IKwie/wNz2Rvz5+MOYY2TJC98YiZiVE6Cyw0a+vm1bsHjkXSR8QfNPDQ6GsHOnyzxLpgCxBau1shVYhYm8d1+AeB0E2X8F8zX8X4AY0J6uBnPV1XnCmpqyPv8EU8BdP4RiQC2WQO1UY82OGo7OBposQ41GoKVSuVDDygnQswrzjXLoimJwMCgKa1A5fgFTQGEjomYhGkfw7DncfGQzfnmwGqGvv+IJyHKN8G8rkJpxY+ppG35+oBLeri4k5QznGx6OYe/e30sbEf1YLCe4AzkmWdv0vPM2Jqo2YrKpAYlfJzkx/RPv7VT5b0HRFqisajOvvYSJ+zfgt90diM3c5txebwaHDt0p3wnJgRwn29swVrkOrhcPIBsOG4Sajm+/C2PHDicvH9kyAU1NfC7CPt3pjCGQ7gK+7uO4XrUBPz1Ui+D5CzwH4cyZUKmAwNB5jG+uwdWNa3HH8T501UiUVjQc/dBnlq6cABqT0Vpn5y1+kREW/v6iyTt7+AjbEoWLGBhwYtOmvvxrOLL+PlyzVGHx3FAulAVHspxQJF+JAPJpb3dh9GoMGu0bs5RnFjdarBhZdy9udrQjNvtH/jUUg4kn2E3IOcUDqHxj4zInKkxOWIkAgb4TfvYJN7ZEjcfhevVlXKm4B9dYRUwBxZdSCug6fDm/R0UQW1YYQxDzxf5W60lWyXTZOIe0XuXX8qMFImwtp0pIClGOiCDmy8VUVvaWxFHyg1Kr4y/s4h8NKQds+wAAAABJRU5ErkJggg==" />
+  <lokalisierung>
+    <Keys>
+      <allÄras value="(all eras)" destination="Modul" />
+      <allAreas value="(all aeras)" destination="Modul" />
+      <alle value="(all)" destination="Modul" />
+      <allNations value="(all nations)" destination="Modul" />
+      <btnEdit value="View / change coin details" destination="Modul" />
+      <Fehllisten value="Wantlists" destination="Modul" />
+    </Keys>
+    <frmReporting>
+      <Anzahl value="Coins" destination="Modul" />
+      <btnClose value="Close" destination="Ignorieren" />
+      <btnCSV value="Export to CSV" destination="Ignorieren" />
+      <btnExcel value="Export to Excel" destination="Ignorieren" />
+      <btnNationVor value="Next nation" destination="Ignorieren" />
+      <btnPDF value="Export to PDF" destination="Ignorieren" />
+      <btnPrint value="Print" destination="Ignorieren" />
+      <btnShow value="Show" destination="Ignorieren" />
+      <btnWord value="Export to Word" destination="Ignorieren" />
+      <frmReporting value="Report selection" destination="Modul" />
+      <Gesamt value="Total" destination="Modul" />
+      <Jahrgang value="Year" destination="Modul" />
+      <Jahrgang value="Year" destination="Global" />
+      <labelEx1 value="Nation" destination="Modul" />
+      <lblÄra value="Era" destination="Ignorieren" />
+      <lblGebiet value="Area" destination="Ignorieren" />
+      <lblNation value="Previous page          Next page" destination="Ignorieren" />
+      <Muenzz value="Flag" destination="Ignorieren" />
+      <Muenzz value="Mint" destination="Global" />
+      <Nominal value="Nomi{##}nal" destination="Modul" />
+      <Nominal value="Nomi{##}nal" destination="Global" />
+      <Währung value="Currency" destination="Global" />
+    </frmReporting>
+    <frmMain>
+      <Auflage value="Edition" destination="Modul" />
+      <AuflagePP value="Edition{##}" destination="Modul" />
+      <AuflageSTH value="Edition{##}" destination="Modul" />
+      <btnÄraVor value="Next era" destination="Modul" />
+      <btnÄraZurueck value="Previous era" destination="Modul" />
+      <btnBackup value="Backup" destination="Modul" />
+      <btnClose value="Exit program" destination="Modul" />
+      <btnDown value="Next collection coin" destination="Modul" />
+      <btnEdit value="" destination="Modul" />
+      <btnGebietVor value="Next area" destination="Modul" />
+      <btnGebietZurueck value="Previous area" destination="Modul" />
+      <btnJahrVor value="Next year" destination="Modul" />
+      <btnJahrZurück value="Previous year" destination="Modul" />
+      <btnKurse value="Adjust rates" destination="Modul" />
+      <btnMuenzwertZurueck value="Previous value" destination="Modul" />
+      <btnMünzwertVor value="Next value" destination="Modul" />
+      <btnNationVor value="Next nation" destination="Modul" />
+      <btnNationZurueck value="Previous nation" destination="Modul" />
+      <btnNavigate value="Navigate" destination="Modul" />
+      <btnPrägeanstalt value="Mints" destination="Modul" />
+      <btnPrint value="Print" destination="Global" />
+      <btnRestore value="Restore" destination="Modul" />
+      <btnSettings value="Settings" destination="Modul" />
+      <btnUp value="Previous collection coin" destination="Modul" />
+      <btnUpdate value="Update" destination="Modul" />
+      <btnWährungVor value="Next Currency" destination="Modul" />
+      <btnWährungZurueck value="Previuos Currency" destination="Modul" />
+      <btnWert value="Calculate values" destination="Modul" />
+      <cmnuÄraVor value="Next era" destination="Modul" />
+      <cmnuÄraZurück value="Previous era" destination="Modul" />
+      <cmnuDown value="Next collection coin" destination="Modul" />
+      <cmnuEigeneKatalognummern value="Edit own catalog numbers" destination="Modul" />
+      <cmnuGebietVor value="Next area" destination="Modul" />
+      <cmnuGebietZurück value="Previous Area" destination="Modul" />
+      <cmnuMünzdetails value="Coin details" destination="Modul" />
+      <cmnuMünzeAdd value="Add coin" destination="Modul" />
+      <cmnuNationVor value="Next nation" destination="Modul" />
+      <cmnuNationZurück value="Previous nation " destination="Modul" />
+      <cmnuPicture value="Import Custom Image" destination="Modul" />
+      <cmnuPrägeanstalten value="Mints" destination="Modul" />
+      <cmnuPreise value="Edit your own prices" destination="Modul" />
+      <cmnuUp value="Previous collection coin" destination="Modul" />
+      <cmnuWerteDoubletten value="Values calculated Doubletten" destination="Modul" />
+      <cmnuWerteSammlung value="Values calculated collection" destination="Modul" />
+      <frmMain value="Coinbook" destination="Modul" />
+      <Hinweis value="Note" destination="Modul" />
+      <Jahrgang value="Year" destination="Modul" />
+      <KatNr value="Cataloge" destination="Modul" />
+      <lblÄra value="Era" destination="Global" />
+      <lblÄra2 value="Era" destination="Modul" />
+      <lblGebiet value="Area" destination="Global" />
+      <lblGebiet2 value="Area" destination="Modul" />
+      <lblJahr value="Year" destination="Global" />
+      <lblJahr2 value="Year" destination="Modul" />
+      <lblNation value="Nation" destination="Modul" />
+      <lblNation2 value="Nation" destination="Modul" />
+      <lblNominale value="Nominal" destination="Global" />
+      <lblNominale2 value="Value" destination="Modul" />
+      <lblSprache value="Language" destination="Global" />
+      <lblStatusAngezeigt value="Appropriate" destination="Modul" />
+      <lblStatusleiste value="Coinbook" destination="Modul" />
+      <lblWährung value="Currency" destination="Global" />
+      <lblWährung2 value="Currency" destination="Modul" />
+      <mnuAbout value="About the program" destination="Modul" />
+      <mnuAktivieren value="Activate Coinbook" destination="Modul" />
+      <mnuÄraVor value="Era before" destination="Modul" />
+      <mnuÄraZurück value="Era back" destination="Modul" />
+      <mnuDatei value="File" destination="Modul" />
+      <mnuDatensicherung value="Backup" destination="Modul" />
+      <mnuDBStatus value="Status of the database" destination="Modul" />
+      <mnuDown value="Next collection coin" destination="Modul" />
+      <mnuEdit value="Edit" destination="Modul" />
+      <mnuEigeneKatalognummern value="Edit own catalog numbers" destination="Modul" />
+      <mnuEnde value="Close application" destination="Modul" />
+      <mnuGebietVor value="Area before" destination="Modul" />
+      <mnuGebietZurück value="Area back" destination="Modul" />
+      <mnuHelp value="Online help" destination="Modul" />
+      <mnuImport2x value="Importing Coinbook 2.x." destination="Modul" />
+      <mnuImportCB2006 value="Import of CB2006" destination="Modul" />
+      <mnuKostenDoubletten value="Cost calculate Doubletten" destination="Modul" />
+      <mnuKostenSammlung value="Cost calculate collection" destination="Modul" />
+      <mnuKurseAnpassen value="Adjust rates" destination="Modul" />
+      <mnuModule value="Modules" destination="Modul" />
+      <mnuModulUpdates value="Import module updates" destination="Modul" />
+      <mnuMünzdetails value="Coin details" destination="Modul" />
+      <mnuMünzeAdd value="Add coin" destination="Modul" />
+      <mnuNationVor value="Nation before" destination="Modul" />
+      <mnuNationZurück value="Nation back" destination="Modul" />
+      <mnuNavigation value="Navigation" destination="Modul" />
+      <mnuNews value="Load Current News" destination="Modul" />
+      <mnuOptionen value="Options" destination="Modul" />
+      <mnuOrder value="Order new modules" destination="Modul" />
+      <mnuPicture value="Import Custom Image" destination="Modul" />
+      <mnuPrägeanstalten value="Mints" destination="Modul" />
+      <mnuPreise value="Edit your own prices" destination="Modul" />
+      <mnuPrintDoubletten value="Reporting duplicates" destination="Modul" />
+      <mnuPrintFehllisten value="Reporting wantlists" destination="Modul" />
+      <mnuPrintSammlung value="Reporting collection" destination="Modul" />
+      <mnuReorg value="Repair database" destination="Modul" />
+      <mnuReportingDoubletten value="Reporting Doubletten" destination="Modul" />
+      <mnuReportingFehllisten value="Reporting wantlists" destination="Modul" />
+      <mnuReportingSammlung value="Reporting collection" destination="Modul" />
+      <mnuRestore value="Restore" destination="Modul" />
+      <mnuSettings value="Settings" destination="Modul" />
+      <mnuUp value="Previous collection coin" destination="Modul" />
+      <mnuUpdate value="Load Program Update" destination="Modul" />
+      <mnuWeb value="Web / Help" destination="Modul" />
+      <mnuWerteDoublette value="Values calculated Doublette" destination="Modul" />
+      <mnuWerteSammlung value="Values calculated collection" destination="Modul" />
+      <Motiv value="Motif" destination="Modul" />
+      <msgEmail value="Email was send.{##}{##}You ​​will shortly receive an email with the activated license." destination="Modul" />
+      <msgError value="Error sending email" destination="Modul" />
+      <Münzzeichen value="Mint-{##}mark" destination="Modul" />
+      <nichtgeprägt value="not coined" destination="Modul" />
+      <Nominal value="Nominal value" destination="Modul" />
+      <SummePP value="Sum" destination="Modul" />
+      <SummeS value="Sum" destination="Modul" />
+      <TTAuflage value="not coined" destination="Modul" />
+      <Währung value="Currency" destination="Modul" />
+    </frmMain>
+    <frmFehllisten>
+      <Bemerkung value="Comment" destination="Modul" />
+    </frmFehllisten>
+    <frmReportingWert>
+      <Beschreibung value="Description" destination="Modul" />
+      <btnCSV value="Export to CSV-file" destination="Global" />
+      <btnExcel value="Export to Excel" destination="Global" />
+      <btnPDF value="Export to PDF" destination="Global" />
+      <btnWord value="Export to Word" destination="Global" />
+      <Doubletten value="Duplicates" destination="Global" />
+      <Gesamt value="Total" destination="Global" />
+      <Kosten value="Costing" destination="Modul" />
+      <Sammlung value="Collection" destination="Global" />
+      <Seite value="Page" destination="Global" />
+      <Summe value="Sum" destination="Modul" />
+      <von value="of" destination="Global" />
+      <Wert value="Appraisal" destination="Modul" />
+    </frmReportingWert>
+    <frmSettings>
+      <bindingNavigator1 value="bindingNavigator1" destination="Ignorieren" />
+      <btnClose value="Close" destination="Ignorieren" />
+      <btnSave value="Save" destination="Ignorieren" />
+      <frmSettings value="Settings" destination="Modul" />
+      <tabAllgemein value="General" destination="Modul" />
+      <tabInternational value="Conditions" destination="Modul" />
+      <tabPersonalisierung value="Personalization" destination="Modul" />
+    </frmSettings>
+    <frmMuenzDetails>
+      <btnAuktionen value="Manage{##}Auctions" destination="Modul" />
+      <btnDown value="Next coin" destination="Modul" />
+      <btnEditDoublette value="" destination="Modul" />
+      <btnFirst value="First coin" destination="Modul" />
+      <btnLast value="Last coin" destination="Modul" />
+      <btnPicture value="Custom Image Import" destination="Modul" />
+      <btnPreise value="Edit your own prices" destination="Modul" />
+      <btnSammlung value="" destination="Modul" />
+      <btnSammlungAdd value="" destination="Modul" />
+      <btnSammlungAddToolTip value="Add new coin" destination="Modul" />
+      <btnSammlungDel value="" destination="Modul" />
+      <btnSammlungDelToolTip value="Delete coin" destination="Modul" />
+      <btnUp value="Previous coin" destination="Modul" />
+      <colDoubletteAblage value="Depot" destination="Modul" />
+      <colDoubletteErhaltungsgrad value="Condi-{##}tion" destination="Modul" />
+      <colDoubletteErhaltungsgrad value="Condi-{##}tion" destination="Modul" />
+      <colDoubletteID value="index" destination="Modul" />
+      <colDoubletteIDErhaltung value="Condition" destination="Modul" />
+      <colDoubletteKatNrEigen value="My Catalog" destination="Modul" />
+      <colDoubletteKaufdatum value="Date of purchase" destination="Modul" />
+      <colDoubletteKaufort value="Point of purchase" destination="Modul" />
+      <colDoubletteKommentar value="Comment" destination="Modul" />
+      <colDoubletten value="Duplicates" destination="Modul" />
+      <colDoublettenGesamt value="Duplicates total{##}" destination="Modul" />
+      <colDoublettenGesamt value="Duplicates total{##}" destination="Modul" />
+      <colDoubletteVerkäufer value="Seller" destination="Modul" />
+      <colErhaltungsgrad value="Condition" destination="Modul" />
+      <colID value="ID" destination="Ignorieren" />
+      <colKatalogPreis value="Catalog price{##}" destination="Modul" />
+      <colKatalogpreisDoublette value="Catalog price" destination="Ignorieren" />
+      <colKatalogPreisSammlung value="catalog price" destination="Ignorieren" />
+      <colKaufpreis value="Purchase price{##}" destination="Modul" />
+      <colKaufpreis value="Purchase price{##}" destination="Ignorieren" />
+      <colKaufpreisDoublette value="purchase price" destination="Ignorieren" />
+      <colKaufpreisSammlung value="purchase price" destination="Ignorieren" />
+      <colPreis value="Catalog price{##}" destination="Modul" />
+      <colPreis value="Catalog price{##}" destination="Ignorieren" />
+      <colSammlung value="Collection" destination="Modul" />
+      <colSammlungAblage value="Depot" destination="Modul" />
+      <colSammlungErhaltungsgrad value="Condi-{##}tion" destination="Modul" />
+      <colSammlungErhaltungsgrad value="Condi-{##}tion" destination="Modul" />
+      <colSammlungGesamt value="Collection total{##}" destination="Modul" />
+      <colSammlungGesamt value="Collection total{##}" destination="Modul" />
+      <colSammlungID value="index" destination="Modul" />
+      <colSammlungIDErhaltung value="Con-{##}dition" destination="Modul" />
+      <colSammlungKatNr value="My Catalog" destination="Modul" />
+      <colSammlungKaufdatum value="Date of purchase" destination="Modul" />
+      <colSammlungKaufort value="Point of purchase" destination="Modul" />
+      <colSammlungKommentar value="Comment" destination="Modul" />
+      <colSammlungVerkäufer value="Seller" destination="Modul" />
+      <frmMuenzDetails value="Details" destination="Modul" />
+      <grpMuenze value="Coin" destination="Modul" />
+      <infoAuktion value="Whenever you become aware of an auction result , you can manage this , as well as any further in your Coinbook program and enter data such as auction house , date of auction result of the auction etc. ." destination="Modul" />
+      <infoImage value="You can include your own images for your coins.{##}These images will be displayed instead of the supplied with Coinbook images for that coin.{##}{##}Do you want to use the original images , you must here delete the corresponding pictures again." destination="Modul" />
+      <infoPreis value="Here you can adjust those displayed by Coinbook values ​​of the coins with your own price expectations ." destination="Modul" />
+      <lblÄhnlicheMotive value="Similar theme " destination="Modul" />
+      <lblÄra value="Era:" destination="Undefiniert" />
+      <lblÄraText value="Era:" destination="Modul" />
+      <lblAuflage value="Edition" destination="Modul" />
+      <lblAuflagePP value="Edition PP" destination="Modul" />
+      <lblAuflageSTH value="Edition STH" destination="Modul" />
+      <lblAusgabeanlass value="Edition reason" destination="Modul" />
+      <lblAusserKurs value="Out of market" destination="Modul" />
+      <lblAversbeschreibung value="Avery description" destination="Modul" />
+      <lblAversentwurf value="Avery design" destination="Modul" />
+      <lblBesonderheiten value="Features" destination="Modul" />
+      <lblBild value="Image" destination="Modul" />
+      <lblDicke value="Thickness" destination="Modul" />
+      <lblDoubletten value="Duplicates" destination="Modul" />
+      <lblDurchmesser value="Diameter" destination="Modul" />
+      <lblEigenerPreis value="Own price" destination="Modul" />
+      <lblGebiet value="Area:" destination="Modul" />
+      <lblGebietText value="Area:" destination="Modul" />
+      <lblGeprägt value="Coined" destination="Modul" />
+      <lblGewicht value="Weight" destination="Modul" />
+      <lblInKurs value="Issued on" destination="Modul" />
+      <lblJahr value="Year" destination="Ignorieren" />
+      <lblKatalogpreis value="List price" destination="Modul" />
+      <lblKatNr value="Catalog" destination="Modul" />
+      <lblKommentar value="Comment" destination="Ignorieren" />
+      <lblLegende value="Legend" destination="Modul" />
+      <lblLegierung value="Alloy" destination="Modul" />
+      <lblMaterial value="Material" destination="Modul" />
+      <lblMotiv value="Motif" destination="Modul" />
+      <lblMzz value="Flag" destination="Modul" />
+      <lblNation value="Nation:" destination="Modul" />
+      <lblNationText value="Nation:" destination="Modul" />
+      <lblNominale value="Nominal" destination="Ignorieren" />
+      <lblRand value="Edge" destination="Modul" />
+      <lblReversbeschreibung value="Back side Description" destination="Modul" />
+      <lblReversentwurf value="Back side design" destination="Modul" />
+      <lblSammlung value="Collection" destination="Modul" />
+      <lblWährung value="Currency" destination="Modul" />
+      <tabBeschreibungen value="Descriptions / Design" destination="Modul" />
+      <tabBild value="Image" destination="Modul" />
+      <tabDetails value="Details" destination="Modul" />
+      <tabKommentare value="Edition reason / Comment" destination="Modul" />
+      <tabSammlung value="Collection and Duplicates" destination="Modul" />
+      <txtPPNichtGeprägt value="not coined" destination="Modul" />
+      <txtSTHNichtGeprägt value="not coined" destination="Modul" />
+    </frmMuenzDetails>
+    <frmAddPicture>
+      <btnCancel value="Cancel" destination="Modul" />
+      <btnDeleteImage value="Clear image" destination="Modul" />
+      <btnGetImage value="Accept image" destination="Modul" />
+      <btnLoadImage value="Insert image" destination="Modul" />
+      <chkAnzeige value="Not show original image" destination="Modul" />
+      <frmAddPicture value="Importing your images" destination="Modul" />
+      <lblBilderWahl value="Installed image" destination="Modul" />
+    </frmAddPicture>
+    <frmModulImport>
+      <btnCheck value="Import new modules or module-updates." destination="Modul" />
+      <btnClose value="Close" destination="Ignorieren" />
+      <btnStart value="Import new modules or module-updates." destination="Modul" />
+      <frmModulImport value="Import module" destination="Modul" />
+      <lblNeueModule value="Modules are imported" destination="Ignorieren" />
+      <lblNeueModule value="Modules are imported" destination="Ignorieren" />
+      <msgAktuell value="You are with your modules already on the current status of your purchased licenses ." destination="Modul" />
+      <msgChoose value="Please select the drive and / or folder with the modules" destination="Modul" />
+      <msgEdit value="Edit" destination="Modul" />
+      <msgEntpacke value="Unpack" destination="Modul" />
+      <msgFind value="Find new updates" destination="Modul" />
+      <msgImages value="Import images" destination="Ignorieren" />
+      <msgNewImport value="In the selected folder are no newer modules.{##}{##}A new import is not recommended and should only be made at a previous faulty Import.{##}{##}Do you like to take over the existing modules anyway?" destination="Modul" />
+      <msgNoModul value="In the chosen directory , there are no modules" destination="Modul" />
+      <msgOK value="The import was carried out" destination="Modul" />
+      <optDVD value="Load modules from CD / DVD" destination="Modul" />
+      <optInternet value="Load modules from the Internet" destination="Modul" />
+    </frmModulImport>
+    <frmAuktion>
+      <btnClose value="Close" destination="Ignorieren" />
+      <btnDelete value="Delete" destination="Modul" />
+      <btnNew value="Creating a new record" destination="Modul" />
+      <btnSave value="Save" destination="Ignorieren" />
+      <colAuktionator value="Auctioneer" destination="Modul" />
+      <colAuktionshaus value="Auction house" destination="Modul" />
+      <colDat value="Date" destination="Modul" />
+      <colErhaltungsgrad value="Condition" destination="Global" />
+      <colErhaltungsgrad value="Condition" destination="Ignorieren" />
+      <colGuid value="Guid" destination="Modul" />
+      <colIndex value="index" destination="Modul" />
+      <colPreis value="price" destination="Global" />
+      <frmAuktion value="Auctions" destination="Modul" />
+      <lblGebietText value="lblGebietText" destination="Ignorieren" />
+      <lblMünzeText value="lblM�nzeText" destination="Ignorieren" />
+    </frmAuktion>
+    <frmBrowser>
+      <btnClose value="Conclude" destination="Ignorieren" />
+      <frmBrowser value="frmPBrowser" destination="Modul" />
+    </frmBrowser>
+    <frmDBRestore>
+      <btnClose value="Close" destination="Ignorieren" />
+      <btnOK value="Start restore" destination="Modul" />
+      <frmDBRestore value="Restore" destination="Modul" />
+      <lblPfad value="Path of backup" destination="Modul" />
+      <mskOK value="Restore complete" destination="Modul" />
+    </frmDBRestore>
+    <frmDBSichern>
+      <btnClose value="Conclude" destination="Ignorieren" />
+      <btnOK value="Start Backup" destination="Modul" />
+      <btnOpen value="...." destination="Modul" />
+      <frmDBSichern value="Backup" destination="Modul" />
+      <lblPfad value="Select the folder for backup" destination="Modul" />
+      <msgOK value="Backup complete" destination="Modul" />
+    </frmDBSichern>
+    <frmDBState>
+      <btnClose value="Close" destination="Ignorieren" />
+      <btnSave value="Save" destination="Ignorieren" />
+      <colID value="ID" destination="Global" />
+      <colLastUpdate value="Update" destination="Modul" />
+      <colNation value="Nation" destination="Modul" />
+      <colVerwendet value="Used" destination="Modul" />
+      <frmDBState value="State of the database" destination="Modul" />
+      <msgNoLicense value="There is no License" destination="Modul" />
+      <msgOrder value="You have no license for the module {0} . { ## }Do you want to order the module ?" destination="Modul" />
+      <msgSave value="The changes have not been saved . Do you want to save ?" destination="Modul" />
+    </frmDBState>
+    <frmDelMünze>
+      <btnClose value="Close" destination="Ignorieren" />
+      <btnDel value="" destination="Modul" />
+      <colAblage value="Depot" destination="Modul" />
+      <colDoublette value="Dubli-{##}cate" destination="Modul" />
+      <colErhaltungsgrad value="Condition" destination="Modul" />
+      <colErhaltungsgrad value="Condition" destination="Modul" />
+      <colID value="index" destination="Modul" />
+      <colIDErhaltung value="conservation" destination="Modul" />
+      <colKatNr value="Own Catalog" destination="Modul" />
+      <colKaufdatum value="Date of purchase" destination="Modul" />
+      <colKaufort value="Point of purchase" destination="Modul" />
+      <colKommentar value="Comment" destination="Modul" />
+      <colPreis value="Price" destination="Ignorieren" />
+      <colVerkäufer value="Seller" destination="Modul" />
+      <frmDelMünze value="Remove coin" destination="Modul" />
+      <lblGebiet value="Area" destination="Ignorieren" />
+      <lblMünze value="Coin" destination="Global" />
+      <msgDelete value="Do you really want to remove the coin from the collection ?" destination="Modul" />
+    </frmDelMünze>
+    <frmEigenePreise>
+      <btnClose value="Close" destination="Ignorieren" />
+      <btnSave value="Save" destination="Ignorieren" />
+      <colErhaltungsgrad value="Condition" destination="Ignorieren" />
+      <colID value="ID" destination="Ignorieren" />
+      <colPreis value="Price" destination="Ignorieren" />
+      <colSammlungID value="Collection" destination="Modul" />
+      <frmEigenePreise value="Edit your own prices" destination="Modul" />
+      <lblGebiet value="Area" destination="Ignorieren" />
+      <lblGebietText value="area" destination="Modul" />
+      <lblMünze value="Coin" destination="Ignorieren" />
+      <lblMünzeText value="coin" destination="Ignorieren" />
+    </frmEigenePreise>
+    <frmHinweis>
+      <btnClose value="Conclude" destination="Ignorieren" />
+      <frmHinweis value="Note" destination="Modul" />
+      <lblBesonderheit value="particularity" destination="Global" />
+      <lblKommentar value="Comment" destination="Global" />
+    </frmHinweis>
+    <frmImport>
+      <btnClose value="Close" destination="Ignorieren" />
+      <btnImport value="Import" destination="Global" />
+      <btnSearch value="Search Coinbook 2006 installationpath" destination="Modul" />
+      <frmImport value="Import from Coinbook 2006/2007" destination="Modul" />
+      <lblAnzeige value="label1" destination="Ignorieren" />
+      <lblAnzeige value="label1" destination="Ignorieren" />
+      <lblAnzeige1 value="This function can import your collection data{##} from Coinbook 2006/2007 " destination="Modul" />
+      <msgLoad value="Load collection" destination="Global" />
+      <msgOK value="Import done" destination="Modul" />
+      <msgSaveCoin value="Save coin {0} of {1}" destination="Modul" />
+      <msgSaveDoublette value="Savet doublete {0} of {1}" destination="Modul" />
+      <msgWorkCoin value="Edit coin {0} of {1}" destination="Modul" />
+      <msgWorkDoublette value="Edit doublete {0} of {1}" destination="Modul" />
+    </frmImport>
+    <frmImport2>
+      <btnClose value="Close" destination="Ignorieren" />
+      <btnImport value="Import" destination="Ignorieren" />
+      <btnSearch value="Search Coinbook 2.x installainpath" destination="Modul" />
+      <frmImport2 value="Import from  Coinbook 2.x." destination="Modul" />
+      <lblAnzeige value="done" destination="Modul" />
+      <lblStd1 value="This function can import your collection data{##} from Coinbook 2.x." destination="Modul" />
+      <msgAuktion value="Edit auctions" destination="Modul" />
+      <msgImage value="Edit own Images" destination="Modul" />
+      <msgLoad value="Load collection" destination="Ignorieren" />
+      <msgPreise value="Edit own prices" destination="Modul" />
+    </frmImport2>
+    <frmKatalogNummer>
+      <btnClose value="Close" destination="Ignorieren" />
+      <btnDelete value="Delete" destination="Modul" />
+      <btnSave value="Save" destination="Ignorieren" />
+      <frmKatalogNummer value="Edit Custom Catalog number" destination="Modul" />
+      <lblCoinbookNummer value="labelEx2" destination="Modul" />
+      <lblKatalognummer value="Own catalog number for" destination="Modul" />
+      <msgSave value="There were not saved any changes . Do you want to save ?" destination="Modul" />
+    </frmKatalogNummer>
+    <frmKurse>
+      <btnClose value="Close" destination="Ignorieren" />
+      <btnSave value="Save" destination="Ignorieren" />
+      <frmKurse value="Set course" destination="Modul" />
+    </frmKurse>
+    <frmMünze>
+      <btnClose value="Close" destination="Ignorieren" />
+      <btnClose value="Close" destination="Global" />
+      <btnSave value="Save" destination="Global" />
+      <btnSave value="Save" destination="Modul" />
+      <chkFehlerhaft value="Coin flawed:" destination="Modul" />
+      <frmMünze value="Administrate coins" destination="Modul" />
+      <frmMünze value="Administrate coins" destination="Modul" />
+      <frmMünze2 value="Adminstrate coin" destination="Modul" />
+      <lblAblage value="Depot" destination="Modul" />
+      <lblEigenerPreis value="Private price" destination="Modul" />
+      <lblErhaltungsgrad value="Condition" destination="Modul" />
+      <lblGebiet value="Area" destination="Ignorieren" />
+      <lblGebietText value="area" destination="Ignorieren" />
+      <lblKatalogpreis value="Catalog price" destination="Modul" />
+      <lblKatNrEigen value="Catalog number" destination="Modul" />
+      <lblKaufdatum value="When purchased" destination="Modul" />
+      <lblKaufort value="Point of purchase" destination="Modul" />
+      <lblKommentar value="Comment" destination="Ignorieren" />
+      <lblMuenzTyp value="Duplicate" destination="Modul" />
+      <lblMünze value="Coin" destination="Modul" />
+      <lblPreis value="Purchase price" destination="Modul" />
+      <lblStück value="Piece" destination="Modul" />
+      <lblVerkäufer value="Seller" destination="Modul" />
+      <lblWährung value="&amp;#8364;" destination="Ignorieren" />
+      <msg value="You have made ​​some unsaved changes. Do you want to save now ?" destination="Modul" />
+    </frmMünze>
+    <frmOrder>
+      <btnClose value="Close" destination="Ignorieren" />
+      <btnOrder value="Order" destination="Modul" />
+      <colBestellenUpdate value="To order" destination="Modul" />
+      <colBestellnummerUpdate value="Order" destination="Modul" />
+      <colCheck value="Order" destination="Modul" />
+      <colModul value="Module" destination="Modul" />
+      <colModulUpdate value="Module" destination="Modul" />
+      <colNummer value="Order" destination="Modul" />
+      <colPreis value="Price" destination="Ignorieren" />
+      <colPreisUpdate value="Price" destination="Modul" />
+      <colWaehrung value="Currency" destination="Ignorieren" />
+      <colWaehrungUpdate value="Currency" destination="Modul" />
+      <frmOrder value="frmOrder" destination="Modul" />
+      <lblNeueModule value="New modules for" destination="Modul" />
+      <lblUpdateBestellen value="Update modules" destination="Modul" />
+    </frmOrder>
+    <frmPrägeanstalten>
+      <btnClose value="Close" destination="Ignorieren" />
+      <btnEdit value="" destination="Modul" />
+      <colAdresse value="Address" destination="Modul" />
+      <colBemerkung value="Comment" destination="Modul" />
+      <colCaption value="Nation" destination="Modul" />
+      <colMZZ value="Flag" destination="Modul" />
+      <colOrt value="City" destination="Modul" />
+      <colZeit value="Time" destination="Modul" />
+      <frmPrägeanstalten value="mints" destination="Modul" />
+    </frmPrägeanstalten>
+    <frmRepair>
+      <btnClose value="Close" destination="Ignorieren" />
+      <btnRepair value="Reorganize database" destination="Modul" />
+      <frmRepair value="Reorganize database" destination="Modul" />
+      <msgOK value="Reorg completed" destination="Modul" />
+    </frmRepair>
+    <frmAbout>
+      <btnOK value="OK" destination="Global" />
+      <colAssemblyName value="Name" destination="Modul" />
+      <colVersion value="Version" destination="Modul" />
+      <frmAbout value="About the program" destination="Modul" />
+      <label1 value="label1" destination="Ignorieren" />
+      <label2 value="label2" destination="Ignorieren" />
+      <lblAutor value="Bernd Wiegand" destination="Ignorieren" />
+      <lblCopyright value="Copyright (c) 2010-2017" destination="Ignorieren" />
+      <lblDataSource value="Source" destination="Modul" />
+      <lblDataSourceText value="program Directory" destination="Ignorieren" />
+      <lblDatenbank value="Database:" destination="Modul" />
+      <lblEmail value="eMail" destination="Global" />
+      <lblEmailText value="vertrieb@Coinbook.de." destination="Ignorieren" />
+      <lblEntwickler value="Development" destination="Modul" />
+      <lblEntwicklerEmail value="eMail" destination="Modul" />
+      <lblEntwicklerEmailText value="Support @ Coinbook.de." destination="Ignorieren" />
+      <lblEntwicklerTelefon value="Phone" destination="Modul" />
+      <lblEntwicklerTelefonText value="0173/5169745" destination="Ignorieren" />
+      <lblEntwicklerText value="Bernhard Hhn" destination="Ignorieren" />
+      <lblHost value="Host" destination="Modul" />
+      <lblHostText value="program Directory" destination="Ignorieren" />
+      <lblProgramm value="EMU database" destination="Ignorieren" />
+      <lblProgrammverzeichnis value="Programpath" destination="Modul" />
+      <lblProgrammverzeichnisText value="Program Directory" destination="Ignorieren" />
+      <lblProvider value="Provider" destination="Modul" />
+      <lblSchema value="Scheme" destination="Modul" />
+      <lblSchemaText value="program Directory" destination="Ignorieren" />
+      <lblTelefon value="Phone" destination="Modul" />
+      <lblVersion value="Version:" destination="Ignorieren" />
+      <lblVertrieb value="Distribution" destination="Modul" />
+      <msgQuit value="Program ends" destination="Modul" />
+      <msgStart value="Starting Cioinbook" destination="Modul" />
+      <tabDatenbank value="Database" destination="Modul" />
+      <tabModule value="Referenced modules" destination="Modul" />
+    </frmAbout>
+    <frmAktiviert>
+      <btnOK value="OK" destination="Ignorieren" />
+      <txtAnzeige value="Dear User , { ## } { ## } your license for Coinbook has been activated and is permanently valid now { ## } { ## } Please start Coinbook now new!" destination="Modul" />
+    </frmAktiviert>
+    <frmLizenz>
+      <btnOK value="Install License" destination="Modul" />
+      <btnWeiter value="Continue" destination="Modul" />
+      <frmLizenz value="Licensing Coinbook" destination="Modul" />
+      <lblAnzeige value="No license found" destination="Modul" />
+      <lblAnzeige value="No license found" destination="Modul" />
+      <lblLizenztext value="Please enter the license number that you received per mail or letter" destination="Modul" />
+      <msgInstalled value="No license found" destination="Modul" />
+      <msgNoLizense value="No license found" destination="Modul" />
+    </frmLizenz>
+    <ctlAllgemein>
+      <chkExemplar value="Exemplar assembler" destination="Modul" />
+      <chkKaufpreis value="While adding new Coins take catalog value to purchasing price" destination="Modul" />
+      <grpDetails value="Settings coin details" destination="Modul" />
+      <grpListen value="Settings data sheets" destination="Modul" />
+      <grpPreise value="Prices to show" destination="Modul" />
+      <grpStart value="Settings while starting" destination="Modul" />
+      <optAusgabeTab value="Edition reason / Comment" destination="Modul" />
+      <optBeschreibungTab value="Description / Design" destination="Modul" />
+      <optBildTab value="Coin image" destination="Modul" />
+      <optDoubletten value="Doublets only (count)" destination="Modul" />
+      <optEigenePreise value="Own Prices" destination="Modul" />
+      <optErsteNat value="With the first nation" destination="Modul" />
+      <optKatalogpreise value="List prices" destination="Modul" />
+      <optKaufpreise value="Purchasing prices" destination="Modul" />
+      <optLastPos value="With the last position" destination="Modul" />
+      <optLetzBen value="Last used" destination="Modul" />
+      <optMünzdetailTab value="Coin details" destination="Modul" />
+      <optSammlung value="Collection (coin icon)" destination="Modul" />
+      <optSammlungTab value="Collection and Doublets" destination="Modul" />
+      <optStandard value="Collection and Doublets (1/1)" destination="Modul" />
+    </ctlAllgemein>
+    <ctlWährung>
+      <colFaktor value="Multiplier" destination="Modul" />
+      <colWährung value="Currency" destination="Modul" />
+      <lblWährung value="Adjusted currency" destination="Modul" />
+    </ctlWährung>
+    <frmFindKatalog>
+      <frmFindKatalog value="Search My Catalog" destination="Modul" />
+      <Schliessen value="btnClose" destination="Modul" />
+    </frmFindKatalog>
+    <ctlInternational>
+      <grpDefaultPath value="Default: Path for Backup" destination="Modul" />
+      <grpErhaltungsgrade value="International conditions" destination="Modul" />
+    </ctlInternational>
+    <ctlEigneEinstellungen>
+      <lblEMail value="Email" destination="Ignorieren" />
+      <lblLizenz value="Lizence key" destination="Modul" />
+      <lblName value="Last name" destination="Modul" />
+      <lblOrt value="Zipcode / City" destination="Modul" />
+      <lblSprache value="Language" destination="Ignorieren" />
+      <lblStraße value="Street" destination="Modul" />
+      <lblVorname value="First name" destination="Modul" />
+    </ctlEigneEinstellungen>
+    <Lizenz>
+      <msgAktivieren value="Dear User,{##}{##}Your license for Coinbook must be activated{##}{##}If you want to send the request to activate then click 'yes' otherwise 'no'.{##}{##}Since the activation did not take place until {0}, you can Coinbook no longer continue to work until the activation was carried out.{##}{##}, you can request the activation in menu 'options' - 'activate Coinbook' too. The activation is done automatically within the next 2-3 business days.{##}{##}Then after the activation Coinbook can be used again in full for an unlimited time" destination="Modul" />
+      <msgAktivieren2 value="Dear User,{##}{##}Your license for Coinbook must be activated{##}{##}If you want to send the request to activate then click 'yes' otherwise 'no'.{##}{##}You can request the activation in menu 'options' - 'activate Coinbook' too.You should perform the activation request within the next {1} days . During this time you can of course make full use Coinbook{##}{##}Since the activation did not take place until {0}, you can Coinbook no longer continue to work until the activation was carried out.{##}{##}The activation is done automatically within the next 2-3 business days.{##}{##}Then after the activation Coinbook can be used again in full for an unlimited time" destination="Modul" />
+      <msgInstalled value="Dear User,{ ## }{ ## }your license for Coinbook is installed{ ## }{ ## }Coinbook will restart now !" destination="Modul" />
+      <msgNoFile value="Dear User,{ ## }{ ## }your license for Coinbook is unfortunately not valid!{ ## }{ ## }If you have a valid license, please contact our support. You will find the contact information on our website.{ ## }{ ## }However, if you do not have a license, we recommend you to buy this. You can find the appropriate options also on our website!" destination="Modul" />
+    </Lizenz>
+    <SplashScreen>
+      <msgDatenbank value="Checking database" destination="Modul" />
+      <msgLizenz value="Licensed to" destination="Modul" />
+      <msgLizenzCheck value="Checking license" destination="Modul" />
+      <msgLizenzExists value="Checking for existing license" destination="Modul" />
+      <msgUpdate value="Checking for Update" destination="Modul" />
+    </SplashScreen>
+    <frmInfo>
+      <txtInfo value="" destination="Modul" />
+    </frmInfo>
+  </lokalisierung>
+</root>

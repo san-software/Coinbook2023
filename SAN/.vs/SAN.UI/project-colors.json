@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "be200b1f-788b-472f-a1a7-4ba7d3983363": {
+      "ProjectGuid": "be200b1f-788b-472f-a1a7-4ba7d3983363",
+      "DisplayName": "SAN.UI",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

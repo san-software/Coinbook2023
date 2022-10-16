@@ -1,0 +1,144 @@
+<root>
+  <land land="Deutschland" kennung="de" sprache="Deutsch" flagge="iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAABGdBTUEAALGPC/xhBQAAAHVJREFUSEvtjjEKgDAMRaMeog4695o69FKCe3EQoXgCDxITJJOzqcMPvOGT4T2SC0IR2Bl1qruK3FD3M2KMrpgXAQioH7A0xGvX8jUOrqhXQQACEFA/YJuIFT56V8yLAAT8IqDYcGemnXKiION8Pb9G5DlRuAFsmwZDBqtACAAAAABJRU5ErkJggg==" />
+  <lokalisierung>
+    <frmAuswahl>
+      <frmAuswahl value="Modulauswahl" />
+      <Check value="" />
+      <Bezeichnung value="Bezeichnung" />
+      <ID value="ID" />
+      <Key value="Key" />
+    </frmAuswahl>
+    <frmModulImport>
+      <label1 value="Neue Module werden automatisch so gekennzeichnet, daß sie nicht nochmal heruntergeladen werden. Es werden also nur die Module heruntergeladen, die noch nicht gekennzeichnet sind. Das verhindert ein unnötiges Laden vieler Module, die sich schon in der Datenbank befinden." />
+      <parameter value="Entpacke FileName " />
+      <parameter1 value="Modul" />
+      <optDVD value="Module von CD/DVD laden" />
+      <optInternet value="Module aus dem Internet laden" />
+      <btnCheck value="Importiere neue Module bzw. Modul-Updates" />
+      <lblGesamt value="Gesamtfortschritt" />
+      <btnClearDownloads value="Alle Downloads resetten" />
+      <btnResetSingleDownload value="Einzelne Downloads resetten" />
+      <frmModulImport value="Modulimport" />
+    </frmModulImport>
+    <frmOrder>
+      <lblUpdate value="Hier können Sie alle für Sie lizenzierten Module und Programme als Update bestell" />
+      <btnAlle value="Alle Modulupdates bestellen" />
+      <optPaypal value="Zahlung per Paypal" />
+      <optÜberweisung value="Zahlung per Überweisung" />
+      <labelEx1 value="Hier können Sie alle Module und Programme bestellen,  die Sie noch nicht besitzen" />
+      <lblUpdateSumme value="Summe der Update-Bestellungen" />
+      <lblRabatt value="Leider noch kein Rabatt auf neue Module" />
+      <lblMwst value="Im Preis {0} Mehrwertsteuer {1}% enthalten" />
+      <lblGesamtSumme value="Gesamtbetrag" />
+      <optVersand value="Lieferung per CD/DVD" />
+      <optDownload value="Lieferung per Download (standard)" />
+      <lblNeuSumme value="Summe Neubestellungen" />
+      <btnOrder value="Bestellen" />
+      <lblVersion value="Version" />
+      <lblRabattU value="Leider noch kein Rabatt auf Modul-Updates" />
+      <frmOrder value="Module bestellen" />
+      <colCheck value="Bestellen" />
+      <colNummer value="Best-Nr" />
+      <colModul value="Modul" />
+      <colVersion value="Version" />
+      <colPreis value="Preis" />
+      <colWaehrung value=" " />
+      <colName value="Name" />
+      <colCheckNeu value="Bestellen" />
+      <colNummerNeu value="Best-Nr" />
+      <colModulNeu value="Modul" />
+      <colVersionNeu value="Version" />
+      <colPreisNeu value="Preis" />
+      <colWaehrungNeu value="" />
+      <ColNameNeu value="Name" />
+      <colPreisUpdate value="Preis" />
+    </frmOrder>
+    <frmOrder2>
+      <btnBack value="Zurück" />
+      <btnOrder value="Drucken und verbindlich bestellen" />
+      <btnCancel value="Abbruch" />
+      <lblText value="lblText" />
+      <frmOrder2 value="Bestellung überprüfen" />
+      <msgOrderSent value="Die Bestellung wurde übermittelt" />
+      <msgOrderNotSent value="Die Bestellung konnte nicht übermittelt werden" />
+      <Mehrwertsteuer value="Im Preis sind {0}% Mehrwertsteuer {1} € enthalten" />
+      <Bestellnummer value="Bestellnummer" />
+    </frmOrder2>
+    <frmOrderCloudBackup>
+      <lblAbo3 value="Bitte füllen Sie folgende Daten für das Lastschrift Mandat aus." />
+      <label1 value="Abonnement CloudBackup" />
+      <lblAbo1 value="Das Abonnement beginnt zum Ersten des nächsten Monats, läuft genau ein Jahr und verlängert sich automatisch um ein Jahr, falls es nicht 30 Tage vor Ablauf gekündigt wird. Die Laufzeit bei jetziger Bestellung geht von {0} bis {1}." />
+      <lblAbo2 value="Die Jahresgebühr beträgt {0} € inclusive. {1} % Mehrwertsteuer und wird vor Beginn des Abonnements, bzw bei der Verlängerung von Ihrem Konto eingezogen." />
+      <lblBank value="Kreditinstitut" />
+      <lblBIC value="BIC" />
+      <lblIBAN value="IBAN" />
+      <btnOrder value="Drucken und Bestellen" />
+      <frmOrderCloudBackup value="Abonnement CloudBackup" />
+      <btnCancel value="Abbruch" />
+      <Lastschrift value="Der Betrag wird per Lastschrift eingezogen" />
+      <Download value="Die Lieferung des zugehörigen Programmteils erfolgt per Download." />
+      <Adresse value="Adresse:" />
+      <artikelBezeichnung value="Jahres-Abonnement CloudBackup vom {0} bis {1}" />
+      <itemHeader value="Bestellung" />
+    </frmOrderCloudBackup>
+    <Keys>
+      <lblRabattU value="{0}% Rabatt bei Modul-Updatebestellungen" />
+      <lblRabatt value="{1}% Rabatt bei Modul-Bestellungen ab {0} €" />
+      <noModules value="Auf diesem Datenträger bzw Ordner befinden sich keine Module" />
+      <executeEra value="Bearbeite Ära" />
+      <executeModule value="Bearbeite Module" />
+      <unzipPictures value="Entpacke " />
+      <lblMwst value="Im Preis sind {0}% Mehrwertsteuer {1} € enthalten" />
+      <msgReady value="Import wurde ausführt" />
+      <saveTextDE value="Speichere deutscheTexte" />
+      <loadTextEN value="Lade englische Texte" />
+      <loadÄra value="lade Ära" />
+      <loadRegion value="Lade Gebiete" />
+      <loadCatalogue value="Entpacke Filename" />
+      <loadCatalogue value="Lade Katalog" />
+      <loadModule value="Lade Module" />
+      <loadMint value="Lade Prägeanstalten" />
+      <prepareUnzip value="Bereite Entpacken von Bildern vor" />
+      <copyTextEN value="Kopiere englische Texte" />
+      <loadErhaltung value="Lade Erhaltungsgrade" />
+      <loadCulture value="Lade Kultur" />
+      <saveCatalogue value="Speichere Katalog" />
+      <saveTextEN value="Speichere englische Texte" />
+      <editTextEN value="Bearbeite englische Texte" />
+      <saveRegions value="Speichere Gebiete" />
+      <msgEntpacke value="Entpacke {0}" />
+      <saveText value="Speichere Texte" />
+    </Keys>
+    <frmDownLoader>
+      <Cancel value="Downloads abbrechen ..." />
+      <CancelDelete value="Downloads abbrechen - Dateien löschen ..." />
+      <Canceled value="Download(s) abgebrochen" />
+      <gbTotalProgress value="Gesamt" />
+      <gbFileProgress value="Datei" />
+      <Complete value="Download komplett, {0} Dateien heruntergeladen." />
+      <btnStop value="Abbruch" />
+      <Preparing value="Bereite {0} vor" />
+      <Downloading value="{0} wird heruntergeladen {1} / {2} Dateien" />
+      <Calculating value="Berechne Dateigrössen - Datei {0} / {1}" />
+      <FileSize value="Dateigröße {0}" />
+      <Total value="{0} MiB / {1} MiB heruntergeladen ({2} %)" />
+      <FileProgress value="{0} MiB / {1} MiB Dateien heruntergeladen ({2} %)" />
+      <Calculated value="{0} berechnet" />
+    </frmDownLoader>
+    <global>
+      <btnClose value="Schliessen" />
+      <downloaded value="Alle Module sind schon heruntergeladen" />
+      <executeCatalogue value="Bearbeite Katalog" />
+      <executeMint value="Bearbeite Prägeanstalten" />
+      <executeText value="Bearbeite Texte {0}" />
+      <lngDeutsch value="Deutsch" />
+      <msgFileSaved value="Die Datei {0} wurde gespeichert" />
+      <msgNoOrder value="Eine Bestellung über das Programm ist zur Zeit nicht möglich." />
+      <lngEnglisch value="Englisch" />
+      <noInternet value="Keine Verbindung zum Internet" />
+      <copying value="Kopiere" />
+      <msgLoad value="Lade {0} ..." />
+      <Summe value="Summe" />
+    </global>
+  </lokalisierung>
+</root>

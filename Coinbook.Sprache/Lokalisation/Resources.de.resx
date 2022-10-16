@@ -1,0 +1,527 @@
+<root>
+  <land land="Deutschland" kennung="de" sprache="Deutsch" flagge="iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB1SURBVEhL7Y4xCoAwDEWjHqIOOveaOvRSgntxEKF4Ag8SEySTs6nDD7zhk+E9kgtCEdgZdaq7itxQ9zNijK6YFwEIqB+wNMRr1/I1Dq6oV0EAAhBQP2CbiBU+elfMiwAE/CKg2HBnpp1yoiDjfD2/RuQ5UbgBbJsGQwarQAgAAAAASUVORK5CYII=" />
+  <lokalisierung>
+    <Keys>
+      <allÄras value="(alle Äras)" />
+      <allAreas value="(alle Gebiete)" />
+      <alle value="(alle)" />
+      <allNations value="(alle Nationen)" />
+      <btnEdit value="Münzdetails anzeigen/ändern" />
+      <Fehllisten value="Fehllisten" />
+    </Keys>
+    <frmReporting>
+      <Anzahl value="Münzen" />
+      <frmReporting value="Reportauswahl" />
+      <Gesamt value="Gesamt" />
+      <Jahrgang value="Jahr" />
+      <labelEx1 value="Nation" />
+      <Nominal value="Nomi{##}nal" />
+    </frmReporting>
+    <frmMain>
+      <Auflage value="Auflage" />
+      <AuflagePP value="Auflage{##}" />
+      <AuflageSTH value="Auflage{##}" />
+      <btnÄraVor value="Ära vorwärts" />
+      <btnÄraZurueck value="Ära zurück" />
+      <btnBackup value="Datensicherung" />
+      <btnClose value="Programm beenden" />
+      <btnDown value="Nächste Sammlungsmünze" />
+      <btnEdit value="" />
+      <btnGebietVor value="Gebiet vorwärts" />
+      <btnGebietZurueck value="Gebiet zurück" />
+      <btnJahrVor value="Jahr vorwärts" />
+      <btnJahrZurück value="Jahr zurück" />
+      <btnKurse value="Kurse anpassen" />
+      <btnMuenzwertZurueck value="Münzwert zurück" />
+      <btnMünzwertVor value="Münzwert vorwärts" />
+      <btnNationVor value="Nation vorwärts" />
+      <btnNationZurueck value="Nation zurück" />
+      <btnNavigate value="Navigieren " />
+      <btnPrägeanstalt value="Prägeanstalten" />
+      <btnRestore value="Daten Restaurieren" />
+      <btnSettings value="Einstellungen" />
+      <btnUp value="Vorherhehende Sammlungsmünze" />
+      <btnUpdate value="Update" />
+      <btnWährungVor value="Währung vorwärts" />
+      <btnWährungZurueck value="Währung zurück" />
+      <btnWert value="Werte berechnen" />
+      <cmnuÄraVor value="Ära vor" />
+      <cmnuÄraZurück value="Ära zurück" />
+      <cmnuDown value="Nächste Sammlungsmünze" />
+      <cmnuEigeneKatalognummern value="Eigene Katalognummern bearbeiten" />
+      <cmnuGebietVor value="Gebiet vor" />
+      <cmnuGebietZurück value="Gebiet zurück" />
+      <cmnuMünzdetails value="Münzdetails" />
+      <cmnuMünzeAdd value="Münze hinzufügen" />
+      <cmnuNationVor value="Nation vor" />
+      <cmnuNationZurück value="Nation zurück" />
+      <cmnuPicture value="Eigenes Bild importieren" />
+      <cmnuPrägeanstalten value="Münzprägeanstalten" />
+      <cmnuPreise value="Eigene Preise bearbeiten" />
+      <cmnuUp value="Vorhergehende Sammlungsmünze" />
+      <cmnuWerteDoubletten value="Werte berechnen  Doubletten" />
+      <cmnuWerteSammlung value="Werte berechnen Sammlung" />
+      <frmMain value="Coinbook" />
+      <Hinweis value="Hin- weis" />
+      <Jahrgang value="Jahr-{##}gang" />
+      <KatNr value="KatNr" />
+      <lblÄra2 value="Ära" />
+      <lblGebiet2 value="Gebiet" />
+      <lblJahr2 value="Jahr" />
+      <lblNation value="Nation" />
+      <lblNation2 value="Nation" />
+      <lblNominale2 value="Münzwert" />
+      <lblStatusAngezeigt value="Angezeigt" />
+      <lblStatusleiste value="Coinbook" />
+      <lblWährung2 value="Währung" />
+      <mnuAbout value="Über das Programm" />
+      <mnuAktivieren value="Coinbook aktivieren" />
+      <mnuÄraVor value="Ära vor" />
+      <mnuÄraZurück value="Ära zurück" />
+      <mnuDatei value="Datei" />
+      <mnuDatensicherung value="Datenbank sichern" />
+      <mnuDBStatus value="Status der Datenbank" />
+      <mnuDown value="Nächste Sammlungsmünze" />
+      <mnuEdit value="Bearbeiten" />
+      <mnuEigeneKatalognummern value="Eigene Katalognummern bearbeiten" />
+      <mnuEnde value="Anwendung beenden" />
+      <mnuGebietVor value="Gebiet vor" />
+      <mnuGebietZurück value="Gebiet zurück" />
+      <mnuHelp value="Onlinehilfe" />
+      <mnuImport2x value="Import von Coinbook 2.x" />
+      <mnuImportCB2006 value="Import von CB2006" />
+      <mnuKostenDoubletten value="Kosten berechnen Doubletten" />
+      <mnuKostenSammlung value="Kosten berechnen Sammlung" />
+      <mnuKurseAnpassen value="Kurse anpassen" />
+      <mnuModule value="Module" />
+      <mnuModulUpdates value="Modul Updates einlesen" />
+      <mnuMünzdetails value="Münzdetails " />
+      <mnuMünzeAdd value="Münze hinzufügen" />
+      <mnuNationVor value="Nation vor" />
+      <mnuNationZurück value="Nation zurück" />
+      <mnuNavigation value="Navigation" />
+      <mnuNews value="Aktuelle News laden" />
+      <mnuOptionen value="Optionen" />
+      <mnuOrder value="neue Module bestellen" />
+      <mnuPicture value="Eigenes Bild importieren" />
+      <mnuPrägeanstalten value="Münzprägeanstalten" />
+      <mnuPreise value="Eigene Preise bearbeiten" />
+      <mnuPrintDoubletten value="Reporting Doubletten" />
+      <mnuPrintFehllisten value="Reporting Fehllisten" />
+      <mnuPrintSammlung value="Reporting Sammlung" />
+      <mnuReorg value="Datenbank reparieren" />
+      <mnuReportingDoubletten value="Reporting Doubletten" />
+      <mnuReportingFehllisten value="Reporting Fehllisten" />
+      <mnuReportingSammlung value="Reporting Sammlung" />
+      <mnuRestore value="Datenbank wiederherstellen" />
+      <mnuSettings value="Einstellungen" />
+      <mnuUp value="Vorhergehende Sammlungsmünze" />
+      <mnuUpdate value="Programmupdate laden" />
+      <mnuWeb value="Web / Hilfe" />
+      <mnuWerteDoublette value="Werte berechnen Doublette" />
+      <mnuWerteSammlung value="Werte berechnen Sammlung" />
+      <Motiv value="Motiv" />
+      <msgEmail value="E-Mail wurde versendet.{##}{##}Sie erhalten in Kürze eine Email mit der aktivierten Lizenz" />
+      <msgError value="Fehler beim Senden der E-Mail" />
+      <Münzzeichen value="Münz-{##}zeichen" />
+      <nichtgeprägt value="nicht geprägt" />
+      <Nominal value="Nominal" />
+      <SummePP value="Summe" />
+      <SummeS value="Summe" />
+      <TTAuflage value="nicht geprägt" />
+      <Währung value="Währung" />
+    </frmMain>
+    <frmFehllisten>
+      <Bemerkung value="Bemerkung" />
+    </frmFehllisten>
+    <frmReportingWert>
+      <Beschreibung value="Beschreibung" />
+      <Kosten value="Kostenermittlung" />
+      <Summe value="Summe" />
+      <Wert value="Wertermittlung" />
+    </frmReportingWert>
+    <frmSettings>
+      <frmSettings value="Einstellungen" />
+      <tabAllgemein value="Allgemein" />
+      <tabInternational value="Erhaltungsgrade" />
+      <tabPersonalisierung value="Personalisierung" />
+    </frmSettings>
+    <frmMuenzDetails>
+      <btnAuktionen value="Auktionen  verwalten" />
+      <btnDown value="Münze vorwärts" />
+      <btnEditDoublette value="" />
+      <btnFirst value="Erste Position" />
+      <btnLast value="Letzte position" />
+      <btnPicture value="Eigenes Bild Importieren" />
+      <btnPreise value="Eigene Preise bearbeiten" />
+      <btnSammlung value="" />
+      <btnSammlungAdd value="" />
+      <btnSammlungAddToolTip value="Neue Münze hinzufügen" />
+      <btnSammlungDel value="" />
+      <btnSammlungDelToolTip value="Münze entfernen" />
+      <btnUp value="Münze zurück" />
+      <colDoubletteAblage value="Ablage" />
+      <colDoubletteErhaltungsgrad value="Erhaltungsgrad" />
+      <colDoubletteErhaltungsgrad value="Erhaltungsgrad" />
+      <colDoubletteID value="Index" />
+      <colDoubletteIDErhaltung value="Erhaltung" />
+      <colDoubletteKatNrEigen value="Eigene Katalognummer" />
+      <colDoubletteKaufdatum value="Kaufdatum" />
+      <colDoubletteKaufort value="Kaufort" />
+      <colDoubletteKommentar value="Kommentar" />
+      <colDoubletten value="Dubletten" />
+      <colDoublettenGesamt value="Doubletten gesamt" />
+      <colDoublettenGesamt value="Doubletten gesamt" />
+      <colDoubletteVerkäufer value="Verkäufer" />
+      <colErhaltungsgrad value="Erhaltungsgrad" />
+      <colKatalogPreis value="Katalog Preis" />
+      <colKaufpreis value="Kaufpreis" />
+      <colPreis value="Katalog Preis{##}" />
+      <colSammlung value="Sammlung" />
+      <colSammlungAblage value="Ablage" />
+      <colSammlungErhaltungsgrad value="Erhaltungsgrad" />
+      <colSammlungErhaltungsgrad value="Erhaltungsgrad" />
+      <colSammlungGesamt value="Sammlung gesamt" />
+      <colSammlungGesamt value="Sammlung gesamt" />
+      <colSammlungID value="Index" />
+      <colSammlungIDErhaltung value="Erhaltung" />
+      <colSammlungKatNr value="Eigene Katalognummer" />
+      <colSammlungKaufdatum value="Kaufdatum" />
+      <colSammlungKaufort value="Kaufort" />
+      <colSammlungKommentar value="Kommentar" />
+      <colSammlungVerkäufer value="Verkäufer" />
+      <frmMuenzDetails value="Münzdetails" />
+      <grpMuenze value="Münze" />
+      <infoAuktion value="Wann immer Sie Kenntnis über ein Auktionsergebnis erhalten, können Sie dieses, sowie auch jedes Weitere in Ihrem Coinbook Programm verwalten und Daten wie Auktionshaus, Datum der Auktion, Ergebnis der Auktion etc. eingeben." />
+      <infoImage value="Hier können Sie eigene Bilder für Ihre Münzen einbinden.{##}Diese Bilder werden dann statt den mit Coinbook mitgelieferten Bilder für die entsprechende Münze angezeigt.{##}{##}Wollen Sie die Original-Bilder wieder verwenden, müssen Sie hier nur die entsprechenden Bilder wieder löschen." />
+      <infoPreis value="Hier können Sie die von Coinbook angegeben Werte der Münzen mit Ihren eigenen Preisvorstellungen anpassen." />
+      <lblÄhnlicheMotive value="Ähnliche Motivausgabe" />
+      <lblÄraText value="Ära:" />
+      <lblAuflage value="Auflage" />
+      <lblAuflagePP value="Auflage PP" />
+      <lblAuflageSTH value="Auflage STH" />
+      <lblAusgabeanlass value="Ausgabeanlass" />
+      <lblAusserKurs value="Ausser Kurs seit" />
+      <lblAversbeschreibung value="Aversbeschreibung" />
+      <lblAversentwurf value="Aversentwurf" />
+      <lblBesonderheiten value="Besonderheit" />
+      <lblBild value="Bild" />
+      <lblDicke value="Dicke" />
+      <lblDoubletten value="Doubletten" />
+      <lblDurchmesser value="Durchmesser" />
+      <lblEigenerPreis value="Eigener Preis" />
+      <lblGebiet value="Gebiet:" />
+      <lblGebietText value="Gebiet:" />
+      <lblGeprägt value="Geprägt von bis" />
+      <lblGewicht value="Gewicht" />
+      <lblInKurs value="Ausgegeben am" />
+      <lblKatalogpreis value="Katalogpreis" />
+      <lblKatNr value="Kat. Nr." />
+      <lblLegende value="Legende" />
+      <lblLegierung value="Legierung" />
+      <lblMaterial value="Material" />
+      <lblMotiv value="Motiv" />
+      <lblMzz value="MZZ" />
+      <lblNation value="Nation:" />
+      <lblNationText value="Nation:" />
+      <lblRand value="Rand" />
+      <lblReversbeschreibung value="Reversbeschreibung" />
+      <lblReversentwurf value="Reversentwurf" />
+      <lblSammlung value="Sammlung" />
+      <lblWährung value="Währung" />
+      <tabBeschreibungen value="Beschreibungen / Entwurf" />
+      <tabBild value="Münzbild" />
+      <tabDetails value="Details" />
+      <tabKommentare value="Ausgabeanlass / Kommentar" />
+      <tabSammlung value="Sammlung und Dubletten" />
+      <txtPPNichtGeprägt value="wurde nicht geprägt" />
+      <txtSTHNichtGeprägt value="wurde nicht geprägt" />
+    </frmMuenzDetails>
+    <frmAddPicture>
+      <btnCancel value="Abbrechen" />
+      <btnDeleteImage value="Bild löschen" />
+      <btnGetImage value="Bild übernehmen" />
+      <btnLoadImage value="Bild einfügen" />
+      <chkAnzeige value="Originalbild nicht anzeigen" />
+      <frmAddPicture value="Eigene Bilder importieren" />
+      <lblBilderWahl value="Installierte Bilder" />
+    </frmAddPicture>
+    <frmModulImport>
+      <btnCheck value="Importiere neue Module bzw. Modul-Updates" />
+      <btnStart value="Importiere neue Module bzw. Modul-Updates" />
+      <frmModulImport value="Modulimport" />
+      <msgAktuell value="Sie sind mit Ihren Modulen bereits auf dem aktuellen Stand Ihrer gekauften Lizenzen." />
+      <msgChoose value="Bitte wählen Sie Laufwerk und/oder Ordner mit den Modulen" />
+      <msgEdit value="Bearbeite" />
+      <msgEntpacke value="Entpacke" />
+      <msgFind value="Suche neue Updates" />
+      <msgNewImport value="In dem gewählten Ordner befinden sich keine neueren Module.{##}{##}Ein erneuter Import ist nicht empfehlenswert, und sollte nur bei einem vorhergegangenen fehlerhaftem Import erfolgen.{##}{##}Möchten Sie die vorhandenen Module trotzdem übernehmen?" />
+      <msgNoModul value="Im gewählten Verzeichnis gibt es keine Module" />
+      <msgOK value="Der Import wurde durchgeführt" />
+      <optDVD value="Module von CD/DVD laden" />
+      <optInternet value="Module aus dem Internet laden" />
+    </frmModulImport>
+    <frmAuktion>
+      <btnDelete value="Löschen" />
+      <btnNew value="Neuen Datensatz anlegen" />
+      <colAuktionator value="Auktionator" />
+      <colAuktionshaus value="Auktionshaus" />
+      <colDat value="Datum" />
+      <colGuid value="Guid" />
+      <colIndex value="Index" />
+      <frmAuktion value="Auktionen" />
+    </frmAuktion>
+    <frmBrowser>
+      <frmBrowser value="frmPBrowser" />
+    </frmBrowser>
+    <frmDBRestore>
+      <btnOK value="Restaurierung starten" />
+      <frmDBRestore value="Datenrestaurierung" />
+      <lblPfad value="Ort der Datensicherung" />
+      <mskOK value="Datenrestaurierung komplett" />
+    </frmDBRestore>
+    <frmDBSichern>
+      <btnOK value="Datensicherung starten" />
+      <btnOpen value="..." />
+      <frmDBSichern value="Datensicherung" />
+      <lblPfad value="Auswahl des Ordners für die Datensicherung" />
+      <msgOK value="Datensicherung komplett" />
+    </frmDBSichern>
+    <frmDBState>
+      <colLastUpdate value="Update" />
+      <colNation value="Nation" />
+      <colVerwendet value="Verwendet" />
+      <frmDBState value="Status der Datenbank" />
+      <msgNoLicense value="Es liegt keine Lizenz vor" />
+      <msgOrder value="Sie haben keine Lizenz für das Modul {0}.{##}Wollen Sie das Modul bestellen?" />
+      <msgSave value="Die Änderungen wurden noch nicht gespeichert. Wollen Sie Speichern?" />
+    </frmDBState>
+    <frmDelMünze>
+      <btnDel value="" />
+      <colAblage value="Ablage" />
+      <colDoublette value="Doublette" />
+      <colErhaltungsgrad value="Erhaltungsgrad" />
+      <colErhaltungsgrad value="Erhaltungsgrad" />
+      <colID value="Index" />
+      <colIDErhaltung value="Erhaltung" />
+      <colKatNr value="Eigene{##}Katalognummer" />
+      <colKaufdatum value="Kaufdatum" />
+      <colKaufort value="Kaufort" />
+      <colKommentar value="Kommentar" />
+      <colVerkäufer value="Verkäufer" />
+      <frmDelMünze value="Münze entfernen" />
+      <msgDelete value="Soll diese Münze wirklich aus der Sammlung entfernt werden?" />
+    </frmDelMünze>
+    <frmEigenePreise>
+      <colSammlungID value="Sammlung" />
+      <frmEigenePreise value="Eigene Preise bearbeiten" />
+      <lblGebietText value="Gebiet" />
+    </frmEigenePreise>
+    <frmHinweis>
+      <frmHinweis value="Hinweis" />
+    </frmHinweis>
+    <frmImport>
+      <btnSearch value="Coinbook 2006 Intallationsordner suchen" />
+      <frmImport value="Import von Coinbook 2206/2007" />
+      <lblAnzeige1 value="Über diese Funktion können Sie ihre Sammlungsdaten{##}aus Coinbook 2006/2007 impor" />
+      <msgOK value="Migration ausgeführt" />
+      <msgSaveCoin value="Speichere Münze {0} von {1}" />
+      <msgSaveDoublette value="Speichere Doublette {0} von {1}" />
+      <msgWorkCoin value="Bearbeite Münze {0} von {1}" />
+      <msgWorkDoublette value="Bearbeite Doublette {0} von {1}" />
+    </frmImport>
+    <frmImport2>
+      <btnSearch value="Coinbook 2.x Intallationsordner suchen" />
+      <frmImport2 value="Import von Coinbook  2.x" />
+      <lblAnzeige value="Fertig" />
+      <lblStd1 value="Über diese Funktion können Sie ihre Sammlungsdaten{##}aus Coinbook 2.x  importi" />
+      <msgAuktion value="Bearbeite Auktionen" />
+      <msgImage value="Bearbeite eigene Bilder" />
+      <msgPreise value="Bearbeite eigene Preise" />
+    </frmImport2>
+    <frmKatalogNummer>
+      <btnDelete value="Katalognummer löschen" />
+      <frmKatalogNummer value="Eigene Katalognummer bearbeiten" />
+      <lblCoinbookNummer value="labelEx2" />
+      <lblKatalognummer value="Eigene Katalognummer für" />
+      <msgSave value="Es wurden nicht alle Änderungen gespeichert. Wollen Sie Speichern?" />
+    </frmKatalogNummer>
+    <frmKurse>
+      <frmKurse value="Kurse festlegen" />
+    </frmKurse>
+    <frmMünze>
+      <btnSave value="Speichern" />
+      <chkFehlerhaft value="Münze fehlerhaft:" />
+      <frmMünze value="Münzen verwalten" />
+      <frmMünze value="Münze hinzufügen" />
+      <frmMünze2 value="Münze verwalten" />
+      <lblAblage value="Ablage" />
+      <lblEigenerPreis value="Eigener Kat. Preis" />
+      <lblErhaltungsgrad value="Erhaltungsgrad" />
+      <lblKatalogpreis value="Katalogpreis" />
+      <lblKatNrEigen value="Katalognummer" />
+      <lblKaufdatum value="Wann gekauft" />
+      <lblKaufort value="Kaufort" />
+      <lblMuenzTyp value="Doublette" />
+      <lblMünze value="Münze" />
+      <lblPreis value="Kaufpreis" />
+      <lblStück value="Stück" />
+      <lblVerkäufer value="Verkäufer" />
+      <msg value="Sie haben Änderungen vorgenommen und diese noch nicht gespeichert. Wollen Sie jetzt speichern?" />
+    </frmMünze>
+    <frmOrder>
+      <btnOrder value="Bestellen" />
+      <colBestellenUpdate value="Bestellen" />
+      <colBestellnummerUpdate value="Bestellnummer" />
+      <colCheck value="Bestellen" />
+      <colModul value="Modul" />
+      <colModulUpdate value="Modul" />
+      <colNummer value="Bestellnummer" />
+      <colPreisUpdate value="Preis" />
+      <colWaehrungUpdate value="Währung" />
+      <frmOrder value="frmOrder" />
+      <lblNeueModule value="Neue Module für #### bestellen" />
+      <lblUpdateBestellen value="Update Module für #### bestellen" />
+    </frmOrder>
+    <frmPrägeanstalten>
+      <btnEdit value="" />
+      <colAdresse value="Adresse" />
+      <colBemerkung value="Bemerkung" />
+      <colCaption value="Nation" />
+      <colMZZ value="MZZ" />
+      <colOrt value="Ort" />
+      <colZeit value="Zeit" />
+      <frmPrägeanstalten value="Coinbook - Münzprägeanstalten" />
+    </frmPrägeanstalten>
+    <frmRepair>
+      <btnRepair value="Datenbank reorganisieren" />
+      <frmRepair value="Datenbank reorganisieren" />
+      <msgOK value="Reorganisation ist erfolgt" />
+    </frmRepair>
+    <frmAbout>
+      <colAssemblyName value="Name" />
+      <colVersion value="Version" />
+      <frmAbout value="Über das Programm" />
+      <lblDataSource value="Quelle" />
+      <lblDatenbank value="Datenbank:" />
+      <lblEntwickler value="Entwicklung" />
+      <lblEntwicklerEmail value="E-Mail" />
+      <lblEntwicklerTelefon value="Telefon" />
+      <lblHost value="Host" />
+      <lblProgrammverzeichnis value="Programmverzeichnis" />
+      <lblProvider value="Provider" />
+      <lblSchema value="Schema" />
+      <lblTelefon value="Telefon" />
+      <lblVertrieb value="Vertrieb" />
+      <msgQuit value="Programm wird beendet" />
+      <msgStart value="Starte Coinbook" />
+      <tabDatenbank value="Datenbank" />
+      <tabModule value="Referenzierte Module" />
+    </frmAbout>
+    <frmAktiviert>
+      <txtAnzeige value="Sehr geehrter Anwender,{##}{##}Ihre Lizenz für Coinbook wurde aktiviert und ist jetzt andauernd gültig!{##}{##}Bitte starten Sie Coinbook jetzt neu!" />
+    </frmAktiviert>
+    <frmLizenz>
+      <btnOK value="Lizenz installieren" />
+      <btnWeiter value="Weiter" />
+      <frmLizenz value="Coinbook lizenzieren" />
+      <lblAnzeige value="Keine Lizenz gefunden" />
+      <lblAnzeige value="Keine Lizenz gefunden" />
+      <lblLizenztext value="Bitte geben Sie hier die Lizenznummer ein, die Sie per Mail  bzw. Post erhalten h" />
+      <msgInstalled value="Lizenz wurde installiert." />
+      <msgNoLizense value="Keine Lizenz gefunden" />
+    </frmLizenz>
+    <ctlAllgemein>
+      <chkExemplar value="Exemplarsammler" />
+      <chkKaufpreis value="Beim Erfassen von Münzen oder Dubletten, Katalogwert{##}als Kaufpreis unterstellen." />
+      <grpDetails value="Münzdetails Starteinstellungen" />
+      <grpListen value="Listeneinstellungen" />
+      <grpPreise value="Welche Preise werden angezeigt" />
+      <grpStart value="Starteinstellungen" />
+      <optAusgabeTab value="Ausgabeanlass / Kommentar" />
+      <optBeschreibungTab value="Beschreibung / Entwurf" />
+      <optBildTab value="Bild" />
+      <optDoubletten value="Nur Dubletten (Anzahl)" />
+      <optEigenePreise value="Eigene Preise" />
+      <optErsteNat value="Mit der ersten Nation" />
+      <optKatalogpreise value="Katalogpreise" />
+      <optKaufpreise value="Kaufpreise" />
+      <optLastPos value="Mit der letzten Position" />
+      <optLetzBen value="Zuletzt benutze" />
+      <optMünzdetailTab value="Münzdetails" />
+      <optSammlung value="Sammlung (Bild)" />
+      <optSammlungTab value="Sammlung und Dubletten" />
+      <optStandard value="Sammlung und Dubletten (1/1)" />
+    </ctlAllgemein>
+    <ctlWährung>
+      <colFaktor value="Faktor" />
+      <colWährung value="Währung" />
+      <lblWährung value="Eingestellte Währung" />
+    </ctlWährung>
+    <frmFindKatalog>
+      <frmFindKatalog value="Eigene Katalognummer suchen" />
+      <Schliessen value="btnClose" />
+    </frmFindKatalog>
+    <ctlInternational>
+      <grpDefaultPath value="Voreinstellung: Pfad für die Datensicherung" />
+      <grpErhaltungsgrade value="Internationale Erhaltungsgrade" />
+    </ctlInternational>
+    <ctlEigneEinstellungen>
+      <lblLizenz value="Lizenzschlüssel" />
+      <lblName value="Nachname" />
+      <lblOrt value="PLZ / Ort" />
+      <lblStraße value="Straße" />
+      <lblVorname value="Vorname" />
+    </ctlEigneEinstellungen>
+    <Lizenz>
+      <msgAktivieren value="Sehr geehrter Anwender{##}{##}Ihre Lizenz ist für Coinbook muß aktiviert werden{##}{##}Wenn Sie jetzt die Anforderung zum Aktivieren senden möchen, Klicken Sie 'ja' sonst auf 'nein'{##}{##}Da die Aktivierung nicht bis zum {0} erfolgte, können Sie mit Coinbook nicht mehr weiterarbeiten, bis die Aktivierung durchgeführt wurde.{##}{##}Sie können die Anforderung natürlich auch im Menü 'Optionen' den Menüpunkt 'Coinbook aktivieren' ausführen. Die Aktivierung erfolgt dann automatisch binnen der nächsten 2-3 Werktage{##}{##}Anschliessend an die Aktivierung können Sie Coinbook selbstverständlich wieder in vollem Umfang für eine unbegrenzte Zeit nutzen" />
+      <msgAktivieren2 value="Sehr geehrter Anwender{##}{##}Ihre Lizenz ist für Coinbook muß aktiviert werden{##}{##}Wenn Sie jetzt die Anforderung zum Aktivieren senden möchen, Klicken Sie 'ja' sonst auf 'nein'{##}{##} Sie können die Anforderung natürlich auch im Menü 'Optionen' den Menüpunkt 'Coinbook aktivieren' ausführen. Sie sollten die Aktivierungsanforderung innerhalb der nächsten {1} Tage durchführen. Während dieser Zeit können Sie selbstverständlich Coinbook in vollem Umfang nutzen{##}{##} Sollten die Aktivierung nicht bis zum {0} erfolgen, können Sie ab da mit Coinbook nicht mehr weiterarbeiten, bis die Aktivierung durchgeführt wurde.{##}{##}Die Aktivierung erfolgt dann automatisch binnen der nächsten 2-3 Werktage.{##}{##}Anschliessend an die Aktivierung können Sie Coinbook selbstverständlich wieder in vollem Umfang für eine unbegrenzte Zeit nutzen" />
+      <msgInstalled value="Sehr geehrter Anwender,{##}{##}Ihre Lizenz für Coinbook wurde installiert!{##}{##}Coinbook wird jetzt neu gestartet!" />
+      <msgNoFile value="Sehr geehrter Anwender,{##}{##}Ihre Lizenz für Coinbook ist leider ungültig!{##}{##}Falls Sie eine gültige Lizenz besitzen, setzen Sie sich bitte mit unserem Support in Verbindung. Die entsprechenden Kontaktdaten finden Sie auf unserer Website.{##}{##}Wenn Sie jedoch keine Lizenz besitzen, empfehlen wir Ihnen, diese zu erwerben. Die entsprechenden Möglichkeiten finden Sie ebenfalls auf unserer Website!" />
+    </Lizenz>
+    <SplashScreen>
+      <msgDatenbank value="Prüfe Datenbank" />
+      <msgLizenz value="Lizenziert für" />
+      <msgLizenzCheck value="Prüfe Lizenz" />
+      <msgLizenzExists value="Prüfe ob Lizenz existiert" />
+      <msgUpdate value="Prüfe auf Update" />
+    </SplashScreen>
+    <frmInfo>
+      <txtInfo value="" />
+    </frmInfo>
+    <global>
+      <Jahrgang value="Jahr\ngang" />
+      <Muenzz value="Münz-{##}zeichen" />
+      <Nominal value="Nomi\nnal" />
+      <Währung value="Währung" />
+      <btnPrint value="Drucken" />
+      <lblÄra value="Ära" />
+      <lblGebiet value="Gebiet" />
+      <lblJahr value="Jahr" />
+      <lblNominale value="Nominale" />
+      <lblSprache value="Sprache" />
+      <lblWährung value="Währung" />
+      <btnCSV value="Export in CSV-Datei" />
+      <btnExcel value="Export nach Excel" />
+      <btnPDF value="Export nach PDF" />
+      <btnWord value="Export nach Word" />
+      <Doubletten value="Dubletten" />
+      <Gesamt value="Gesamt" />
+      <Sammlung value="Sammlung" />
+      <Seite value="Seite" />
+      <von value="von" />
+      <colErhaltungsgrad value="Erhaltungs{##}grad" />
+      <colPreis value="Preis" />
+      <colID value="ID" />
+      <lblMünze value="Münze" />
+      <lblBesonderheit value="Besonderheit" />
+      <lblKommentar value="Kommentar" />
+      <btnImport value="Importieren" />
+      <msgLoad value="Lade Sammlung" />
+      <btnClose value="Schliessen" />
+      <btnSave value="Speichern" />
+      <btnOK value="OK" />
+      <lblEmail value="E-Mail" />
+    </global>
+  </lokalisierung>
+</root>

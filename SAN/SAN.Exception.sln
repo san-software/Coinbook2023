@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAN.Exception", "SAN.Exception\SAN.Exception.csproj", "{218EBCAD-45DC-40EF-AB51-F6FC727569E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAN.Screen", "SAN.Screen\SAN.Screen.csproj", "{33AF83EF-592C-44ED-B2CE-1059ADAB041E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{218EBCAD-45DC-40EF-AB51-F6FC727569E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{218EBCAD-45DC-40EF-AB51-F6FC727569E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{218EBCAD-45DC-40EF-AB51-F6FC727569E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{218EBCAD-45DC-40EF-AB51-F6FC727569E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33AF83EF-592C-44ED-B2CE-1059ADAB041E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33AF83EF-592C-44ED-B2CE-1059ADAB041E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33AF83EF-592C-44ED-B2CE-1059ADAB041E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33AF83EF-592C-44ED-B2CE-1059ADAB041E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B06B594-15FB-4004-8D97-F04E167EB19D}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "73cc092c-afa6-4b58-a0ec-906b45a60f30": {
+      "ProjectGuid": "73cc092c-afa6-4b58-a0ec-906b45a60f30",
+      "DisplayName": "SAN.MessageBoxNonmodal",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

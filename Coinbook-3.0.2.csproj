@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D641A4AE-98FE-43E0-9B27-74C5C301F1D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Coinbook</RootNamespace>
+    <AssemblyName>Coinbook</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Coinbook.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Coinbook.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+	<LoadAssembliesOnStartup>
+		<IncludeAssemblies>
+			Coinbook.Enumerations
+		</IncludeAssemblies>
+	</LoadAssembliesOnStartup>
+    <WeaverConfiguration>
+      <Weavers>
+        <ModuleInit />
+      </Weavers>
+    </WeaverConfiguration>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExcelApi">
+      <HintPath>..\ExcelApi.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NetOffice">
+      <HintPath>..\NetOffice.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="OfficeApi">
+      <HintPath>..\OfficeApi.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Rhino.Licensing">
+      <HintPath>..\Rhino.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VBIDEApi">
+      <HintPath>..\VBIDEApi.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="WordApi">
+      <HintPath>..\WordApi.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aktivierung.cs" />
+    <Compile Include="enmAktivierung.cs" />
+    <Compile Include="enmPreise.cs" />
+    <Compile Include="frmMünzbild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMünzbild.Designer.cs">
+      <DependentUpon>frmMünzbild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAktiviert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAktiviert.Designer.cs">
+      <DependentUpon>frmAktiviert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLizenz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLizenz.Designer.cs">
+      <DependentUpon>frmLizenz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LizenzDownload.cs" />
+    <Compile Include="Bestand.cs" />
+    <Compile Include="CSprachen.cs" />
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddPicture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddPicture.Designer.cs">
+      <DependentUpon>frmAddPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuktion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAuktion.Designer.cs">
+      <DependentUpon>frmAuktion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrowser.Designer.cs">
+      <DependentUpon>frmBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDBRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDBRestore.Designer.cs">
+      <DependentUpon>frmDBRestore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDBSichern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDBSichern.Designer.cs">
+      <DependentUpon>frmDBSichern.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDBState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDBState.Designer.cs">
+      <DependentUpon>frmDBState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDelMünze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDelMünze.Designer.cs">
+      <DependentUpon>frmDelMünze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEigeneKatNr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEigeneKatNr.Designer.cs">
+      <DependentUpon>frmEigeneKatNr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEigenePreise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEigenePreise.Designer.cs">
+      <DependentUpon>frmEigenePreise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFindKatalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFindKatalog.Designer.cs">
+      <DependentUpon>frmFindKatalog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHinweis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHinweis.Designer.cs">
+      <DependentUpon>frmHinweis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImport.Designer.cs">
+      <DependentUpon>frmImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfo.Designer.cs">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKurse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKurse.Designer.cs">
+      <DependentUpon>frmKurse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMuenzDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMuenzDetails.Designer.cs">
+      <DependentUpon>frmMuenzDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMünze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMünze.Designer.cs">
+      <DependentUpon>frmMünze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrder.Designer.cs">
+      <DependentUpon>frmOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrägeanstalten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrägeanstalten.Designer.cs">
+      <DependentUpon>frmPrägeanstalten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRepair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRepair.Designer.cs">
+      <DependentUpon>frmRepair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporting.Designer.cs">
+      <DependentUpon>frmReporting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettings.Designer.cs">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTP.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="Install.cs" />
+    <Compile Include="frmModulImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModulImport.Designer.cs">
+      <DependentUpon>frmModulImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImport2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImport2.Designer.cs">
+      <DependentUpon>frmImport2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lizenz.cs" />
+    <Compile Include="Localization.cs" />
+    <Compile Include="MünzdetailIndex.cs" />
+    <Compile Include="Münze.cs" />
+    <Compile Include="Nationen.cs" />
+    <Compile Include="PrintDestination.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="ReportTyp.cs" />
+    <Compile Include="Screensaver.cs" />
+    <Compile Include="SelectedStyle.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Settings1.cs" />
+    <Compile Include="SQL.cs" />
+    <Compile Include="usrAllgemein.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrAllgemein.Designer.cs">
+      <DependentUpon>usrAllgemein.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usrEigneEinst.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrEigneEinst.Designer.cs">
+      <DependentUpon>usrEigneEinst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usrInternational.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrInternational.Designer.cs">
+      <DependentUpon>usrInternational.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usrWährung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrWährung.Designer.cs">
+      <DependentUpon>usrWährung.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Bezug.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Coinbook.manifest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="database.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmMünzbild.resx">
+      <DependentUpon>frmMünzbild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.en-GB.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddPicture.en-GB.resx">
+      <DependentUpon>frmAddPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddPicture.resx">
+      <DependentUpon>frmAddPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAktiviert.resx">
+      <DependentUpon>frmAktiviert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuktion.en-GB.resx">
+      <DependentUpon>frmAuktion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuktion.resx">
+      <DependentUpon>frmAuktion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrowser.resx">
+      <DependentUpon>frmBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDBRestore.en-GB.resx">
+      <DependentUpon>frmDBRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDBRestore.resx">
+      <DependentUpon>frmDBRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDBSichern.en-GB.resx">
+      <DependentUpon>frmDBSichern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDBSichern.resx">
+      <DependentUpon>frmDBSichern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDBState.resx">
+      <DependentUpon>frmDBState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDelMünze.en-GB.resx">
+      <DependentUpon>frmDelMünze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDelMünze.resx">
+      <DependentUpon>frmDelMünze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEigeneKatNr.en-GB.resx">
+      <DependentUpon>frmEigeneKatNr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEigeneKatNr.resx">
+      <DependentUpon>frmEigeneKatNr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEigenePreise.en-GB.resx">
+      <DependentUpon>frmEigenePreise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEigenePreise.resx">
+      <DependentUpon>frmEigenePreise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFindKatalog.en-GB.resx">
+      <DependentUpon>frmFindKatalog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFindKatalog.resx">
+      <DependentUpon>frmFindKatalog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHinweis.en-GB.resx">
+      <DependentUpon>frmHinweis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHinweis.resx">
+      <DependentUpon>frmHinweis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImport.resx">
+      <DependentUpon>frmImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfo.resx">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKurse.resx">
+      <DependentUpon>frmKurse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLizenz.resx">
+      <DependentUpon>frmLizenz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMuenzDetails.en-GB.resx">
+      <DependentUpon>frmMuenzDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMuenzDetails.resx">
+      <DependentUpon>frmMuenzDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMünze.en-GB.resx">
+      <DependentUpon>frmMünze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMünze.resx">
+      <DependentUpon>frmMünze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrder.resx">
+      <DependentUpon>frmOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrägeanstalten.resx">
+      <DependentUpon>frmPrägeanstalten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRepair.resx">
+      <DependentUpon>frmRepair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporting.en-GB.resx">
+      <DependentUpon>frmReporting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporting.resx">
+      <DependentUpon>frmReporting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettings.resx">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModulImport.resx">
+      <DependentUpon>frmModulImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImport2.resx">
+      <DependentUpon>frmImport2.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Lokalisation\Resources.de.resx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lokalisation\Resources.de.xml" />
+    <Content Include="Lokalisation\Resources.en.resx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrAllgemein.en-GB.resx">
+      <DependentUpon>usrAllgemein.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrAllgemein.resx">
+      <DependentUpon>usrAllgemein.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrEigneEinst.en-GB.resx">
+      <DependentUpon>usrEigneEinst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrEigneEinst.resx">
+      <DependentUpon>usrEigneEinst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrInternational.en-GB.resx">
+      <DependentUpon>usrInternational.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrInternational.resx">
+      <DependentUpon>usrInternational.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrWährung.resx">
+      <DependentUpon>usrWährung.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AutoUpdater\AutoUpdater.NET\AutoUpdater.NET.csproj">
+      <Project>{FB9E7E6B-B19F-4F37-A708-2996190CEF13}</Project>
+      <Name>AutoUpdater.NET</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\oledb\OleDB\OleDB.csproj">
+      <Project>{C0BFF8B5-EA30-46E2-A97A-D9FE66E44FAB}</Project>
+      <Name>OleDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SAN.Converter\Converter\SAN.Converter.csproj">
+      <Project>{0484D765-8DCE-4E50-83B2-E08A6DC850B9}</Project>
+      <Name>SAN.Converter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SAN.UI.Controls\SAN.UI\SAN.UI.csproj">
+      <Project>{BE200B1F-788B-472F-A1A7-4BA7D3983363}</Project>
+      <Name>SAN.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SAN.UI.DataGridView\DataGridView\SAN.UI.DataGridViewEx.csproj">
+      <Project>{E5247765-0134-4714-A110-64D571FBF636}</Project>
+      <Name>SAN.UI.DataGridViewEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SplashScreen\SplashScreen.csproj">
+      <Project>{743EDB81-D2AC-4A52-A313-50BD4229401B}</Project>
+      <Name>SplashScreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Updater\Updater.csproj">
+      <Project>{9C786A3E-6E74-4130-8686-7179EF2283E5}</Project>
+      <Name>Updater</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FTPModule.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Icon.ico" />
+    <Content Include="in_cb_de001.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Lokalisation\Resources.en.xml" />
+    <Content Include="Resources\3d bar chart.ico" />
+    <Content Include="Resources\Add.ico" />
+    <Content Include="Resources\arrow_down.gif" />
+    <Content Include="Resources\arrow_up.gif" />
+    <Content Include="Resources\Back.ico" />
+    <Content Include="Resources\Blue tag.ico" />
+    <Content Include="Resources\Bottom.ico" />
+    <Content Include="Resources\Calculator.ico" />
+    <Content Include="Resources\Cancel.ico" />
+    <Content Include="Resources\Coin-add.ico" />
+    <Content Include="Resources\Coin-delete.ico" />
+    <Content Include="Resources\Coin.ico" />
+    <Content Include="Resources\coin.png" />
+    <Content Include="Resources\Copy.ico" />
+    <Content Include="Resources\Create.ico" />
+    <Content Include="Resources\Cut.ico" />
+    <Content Include="Resources\Database.ico" />
+    <Content Include="Resources\Down.ico" />
+    <Content Include="Resources\Download.ico" />
+    <Content Include="Resources\Download1.ico" />
+    <Content Include="Resources\edit-4.ico" />
+    <Content Include="Resources\Edit.bmp" />
+    <Content Include="Resources\edit.ico" />
+    <Content Include="Resources\English.ico" />
+    <Content Include="Resources\Erase.ico" />
+    <Content Include="Resources\Exit.ico" />
+    <Content Include="Resources\Find.ico" />
+    <Content Include="Resources\Flag.ico" />
+    <Content Include="Resources\Folder.ico" />
+    <Content Include="Resources\Forward.ico" />
+    <Content Include="Resources\German.ico" />
+    <Content Include="Resources\Go back.ico" />
+    <Content Include="Resources\Go forward.ico" />
+    <Content Include="Resources\Green tag.ico" />
+    <Content Include="Resources\Help book 3d.ico" />
+    <Content Include="Resources\Hinweis.ico" />
+    <Content Include="Resources\Hinweis.leer.ico" />
+    <Content Include="Resources\Hinweis2.ico" />
+    <Content Include="Resources\Home.ico" />
+    <Content Include="Resources\List.ico" />
+    <Content Include="Resources\Load.ico" />
+    <Content Include="Resources\Loupe.ico" />
+    <Content Include="Resources\Mail.ico" />
+    <Content Include="Resources\Minus.bmp" />
+    <Content Include="Resources\new3-15.gif" />
+    <Content Include="Resources\new4-022.gif" />
+    <Content Include="Resources\Next track.ico" />
+    <Content Include="Resources\Play.ico" />
+    <Content Include="Resources\Playback.ico" />
+    <Content Include="Resources\pleasewait.gif" />
+    <Content Include="Resources\Previous record.ico" />
+    <Content Include="Resources\Print.ico" />
+    <Content Include="Resources\Record.ico" />
+    <Content Include="Resources\Save.ico" />
+    <Content Include="Resources\Save1.ico" />
+    <Content Include="Resources\Save2.ico" />
+    <Content Include="Resources\SaveAll.ico" />
+    <Content Include="Resources\Settings.ico" />
+    <Content Include="Resources\Sync.ico" />
+    <Content Include="Resources\Table.ico" />
+    <Content Include="Resources\Undo.ico" />
+    <Content Include="Resources\Unlock.ico" />
+    <Content Include="Resources\Up.ico" />
+    <Content Include="Resources\Upload.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if $(ConfigurationName) == Release1  e::\Dotnet3.5\createRollot.exe</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

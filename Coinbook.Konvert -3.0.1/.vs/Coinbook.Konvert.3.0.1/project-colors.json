@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3667e4bf-61ac-43ed-acff-61d80945ee5d": {
+      "ProjectGuid": "3667e4bf-61ac-43ed-acff-61d80945ee5d",
+      "DisplayName": "Coinbook.Konvert-3.0.1",
+      "ColorIndex": 0
+    },
+    "8ff4952c-d23d-42d6-8450-576e8e4a914a": {
+      "ProjectGuid": "8ff4952c-d23d-42d6-8450-576e8e4a914a",
+      "DisplayName": "Coinbook.Enumerations",
+      "ColorIndex": 1
+    },
+    "4734730d-9af3-4bd9-9707-1972d01f186d": {
+      "ProjectGuid": "4734730d-9af3-4bd9-9707-1972d01f186d",
+      "DisplayName": "Coinbook.Model",
+      "ColorIndex": 2
+    },
+    "bf0a2fcb-270d-4a8e-b1e3-52469d059550": {
+      "ProjectGuid": "bf0a2fcb-270d-4a8e-b1e3-52469d059550",
+      "DisplayName": "LiteDB.Database",
+      "ColorIndex": 3
+    },
+    "33af83ef-592c-44ed-b2ce-1059adab041e": {
+      "ProjectGuid": "33af83ef-592c-44ed-b2ce-1059adab041e",
+      "DisplayName": "SAN.Screen",
+      "ColorIndex": 4
+    },
+    "37bf6ec4-32c4-4895-b198-3e50b8b2a1ff": {
+      "ProjectGuid": "37bf6ec4-32c4-4895-b198-3e50b8b2a1ff",
+      "DisplayName": "SAN.FileDownloader",
+      "ColorIndex": 5
+    },
+    "70a440cd-9c08-4685-b5a9-3d828d9814e5": {
+      "ProjectGuid": "70a440cd-9c08-4685-b5a9-3d828d9814e5",
+      "DisplayName": "Coinbook.Lokalisierung",
+      "ColorIndex": 6
+    }
+  },
+  "NextColorIndex": 7
+}

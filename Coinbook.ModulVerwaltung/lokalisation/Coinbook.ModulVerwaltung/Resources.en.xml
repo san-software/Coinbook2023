@@ -1,0 +1,144 @@
+<root>
+  <land land="Großbritannien" kennung="en" sprache="englisch" flagge="iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAABGdBTUEAALGPC/xhBQAABCVJREFUSEvtVl1oHFUUHiiIpn8EU2ETQhUtRhobTZZsUqUhTW3FWmmhPgT8e9oHBe2TP2lB2fpSa4IhxSeDlkIhNmhTi5VKI7YkbZpoLdHsxk2z2+omu5tk/2Z/Z2fm8547e2c3u6smL/bFA99y595zvvPtuXfOXOmg1OpwSGu1HkkCwdHbz7G1vh+SdKwEYl34F8cV+lZUdJvzAqY/y0m5pcLkhUS+eRm1tZ8uIyQUExXHCb81az7C2SG3OS+wLIbllsRDuKUekRd2ITs+BmGhcBbP7J6GzTZlIhZT+Zq/rg5zFgsHjcloTfiNXZeh6zqf14IByG/aeQ4BkdcUsNS81YCtHone49AzGR4cjaqw2z0rFtDW5oLTmeTPZJnhiwjt2p7nb21AtPtYXoAoTfSTbiywxQXrYxzhzv3Iuqc5iarqGBhY+lcByaQGn88QrsdlxD54z+QjhN6wIzF9C6mUhkRCwenTU3kBfHLGi6W3XkfgyUc5gi3bkDj1OWPTuYhLl6KIxzWeoFBAwGrlc7mKQ7kxgcXnO0yehf3PQh7+gecgjI7K2LdvMHde2M+ePV9iZEQ2HeQfryBw4DnMN2zhWLK/AtU/j2xWN5MsE9DcbEyyxVjvx5hvrONx/qcaEen/DKlYmvN6PGn09QV4JcVh5QIINNnT44fbbTin4grCJ7/A3PZG/Pn4w5hjZMkL3xiJmJUToLLDRr6+bVuweORdJHxB808NDoawc6fLPEumALEFq7WyFViFibx3X4B4HQTZfwXzNfxfgBjQnq4Gc9XVecKamrI+/wRTwF0/hGJALZZA7VRjzY4ajs4GmixDjUagpVK5UMPKCdCzCvONcuiKYnAwKAprUDl+AVNAYSOiZiEaR/DsOdx8ZDN+ebAaoa+/4gnIco3wbyuQmnFj6mkbfn6gEt6uLiTlDOcbHo5h797fSxsR/VgsJ7gDOSZZ2/S88zYmqjZisqkBiV8nOTH9E+/tVPlvQdEWqKxqM6+9hIn7N+C33R2Izdzm3F5vBocO3SnfCcmBHCfb2zBWuQ6uFw8gGw4bhJqOb78LY8cOJy8f2TIBTU18LsI+3emMIZDuAr7u47hetQE/PVSL4PkLPAfhzJlQqYDA0HmMb67B1Y1rccfxPnTVSJRWNBz90GeWrpwAGpPRWmfnLX6RERb+/qLJO3v4CNsShYsYGHBi06a+/Gs4sv4+XLNUYfHcUC6UBUeynFAkX4kA8mlvd2H0agwa7RuzlGcWN1qsGFl3L252tCM2+0f+NRSDiSfYTcg5xQOofGPjMicqTE5YiQCBvhN+9gk3tkSNx+F69WVcqbgH11hFTAHFl1IK6Dp8Ob9HRRBbVhhDEPPF/lbrSVbJdNk4h7Re5dfyowUibC2nSkgKUY6IIObLxVRW9pbEUfKDUqvjL+ziHw0pB2z7AAAAAElFTkSuQmCC" />
+  <lokalisierung>
+    <frmAuswahl>
+      <btnClose value="Close" destination="Global" />
+      <frmAuswahl value="Module selection" destination="Modul" />
+      <Check value="" destination="Modul" />
+      <Bezeichnung value="description" destination="Modul" />
+      <ID value="ID" destination="Modul" />
+      <Key value="Key" destination="Modul" />
+    </frmAuswahl>
+    <frmModulImport>
+      <label1 value="New modules are automatically marked so that they are not downloaded again. So only the modules that are not yet marked are downloaded. This prevents unnecessary loading of many modules that are already in the database." destination="Modul" />
+      <parameter value="Extract FileName" destination="Modul" />
+      <parameter1 value="module" destination="Modul" />
+      <optDVD value="Load modules from CD / DVD" destination="Modul" />
+      <optInternet value="Load modules from the Internet" destination="Modul" />
+      <btnCheck value="Import new modules or module updates" destination="Modul" />
+      <txtAnzeige value="" destination="Neu" />
+      <lblGesamt value="Overall progress" destination="Modul" />
+      <btnClearDownloads value="Reset all downloads" destination="Modul" />
+      <btnResetSingleDownload value="Reset individual downloads" destination="Modul" />
+      <frmModulImport value="Module import" destination="Modul" />
+    </frmModulImport>
+    <frmOrder>
+      <lblUpdate value="Here you can order all licensed modules and programs as updates" destination="Modul" />
+      <btnAlle value="Order all module updates" destination="Modul" />
+      <optPaypal value="Payment by Paypal" destination="Modul" />
+      <optÜberweisung value="Payment by bank transfer" destination="Modul" />
+      <labelEx1 value="Here you can order all modules and programs that you do not yet have" destination="Modul" />
+      <lblUpdateSumme value="Total of update orders" destination="Modul" />
+      <lblRabatt value="Unfortunately no discount on new modules yet" destination="Modul" />
+      <lblMwst value="Included in the price {0} VAT {1}%" destination="Modul" />
+      <lblGesamtSumme value="Total amount" destination="Modul" />
+      <optVersand value="Delivery on CD / DVD" destination="Modul" />
+      <optDownload value="Delivery via download (standard)" destination="Modul" />
+      <lblNeuSumme value="Total new orders" destination="Modul" />
+      <btnOrder value="Order" destination="Modul" />
+      <lblVersion value="version" destination="Modul" />
+      <lblRabattU value="Unfortunately no discount on module updates yet" destination="Modul" />
+      <frmOrder value="Order modules" destination="Modul" />
+      <colCheck value="Order" destination="Modul" />
+      <colNummer value="Order no" destination="Modul" />
+      <colModul value="module" destination="Modul" />
+      <colVersion value="version" destination="Modul" />
+      <colPreis value="price" destination="Modul" />
+      <colWaehrung value="" destination="Modul" />
+      <colName value="Surname" destination="Modul" />
+      <colCheckNeu value="Order" destination="Modul" />
+      <colNummerNeu value="Order no" destination="Modul" />
+      <colModulNeu value="module" destination="Modul" />
+      <colVersionNeu value="version" destination="Modul" />
+      <colPreisNeu value="price" destination="Modul" />
+      <colWaehrungNeu value="" destination="Modul" />
+      <ColNameNeu value="Surname" destination="Modul" />
+      <colPreisUpdate value="Price" destination="Modul" />
+    </frmOrder>
+    <frmOrder2>
+      <btnBack value="Return" destination="Modul" />
+      <btnOrder value="Print and place a binding order" destination="Modul" />
+      <btnCancel value="cancellation" destination="Modul" />
+      <lblText value="lblText" destination="Modul" />
+      <frmOrder2 value="check Order" destination="Modul" />
+      <msgOrderSent value="The order has been submitted" destination="Modul" />
+      <msgOrderNotSent value="The order could not be submitted" destination="Modul" />
+      <Mehrwertsteuer value="The price includes {0}% VAT {1} €" destination="Modul" />
+      <Bestellnummer value="Order number" destination="Modul" />
+    </frmOrder2>
+    <frmOrderCloudBackup>
+      <lblAbo3 value="Please fill in the following data for the direct debit mandate." destination="Modul" />
+      <label1 value="Subscription CloudBackup" destination="Modul" />
+      <lblAbo1 value="The subscription begins on the first of the next month, runs for exactly one year and is automatically extended by one year if it is not canceled 30 days before it expires. The term for the current order is from {0} to {1}." destination="Modul" />
+      <lblAbo2 value="The annual fee is {0} € incl {1} % VAT and will be charged before the start of the subscription or. withdrawn from your account when you renewed." destination="Modul" />
+      <lblBank value="Credit institution" destination="Modul" />
+      <lblBIC value="BIC" destination="Modul" />
+      <lblIBAN value="IBAN" destination="Modul" />
+      <btnOrder value="Print and order" destination="Modul" />
+      <pdfViewer value="pdfViewerControl1" destination="Neu" />
+      <frmOrderCloudBackup value="Subscription CloudBackup" destination="Modul" />
+      <btnCancel value="cancellation" destination="Modul" />
+      <Lastschrift value="The amount will be collected by direct debit" destination="Modul" />
+      <Download value="The corresponding part of the program is delivered via download." destination="Modul" />
+      <Adresse value="Address:" destination="Modul" />
+      <artikelBezeichnung value="Annual subscription to CloudBackup from {0} to {1}" destination="Modul" />
+      <itemHeader value="Order" destination="Modul" />
+    </frmOrderCloudBackup>
+    <Keys>
+      <lblRabattU value="{0}% discount for module update orders" destination="Modul" />
+      <lblRabatt value="{1}% discount for module orders from {0} €" destination="Modul" />
+      <downloaded value="All modules are already downloaded" destination="Global" />
+      <noModules value="There are no modules on this data carrier or folder" destination="Modul" />
+      <executeEra value="Edit era" destination="Modul" />
+      <executeCatalogue value="Edit catalog" destination="Global" />
+      <executeModule value="Edit modules" destination="Modul" />
+      <executeMint value="Process mints" destination="Global" />
+      <executeText value="Edit texts {0}" destination="Global" />
+      <lngDeutsch value="German" destination="Global" />
+      <msgFileSaved value="The file {0} was saved" destination="Global" />
+      <msgNoOrder value="It is currently not possible to order via the program." destination="Global" />
+      <lngEnglisch value="English" destination="Global" />
+      <unzipPictures value="Unzip" destination="Modul" />
+      <lblMwst value="The price includes {0}% VAT {1} €" destination="Modul" />
+      <msgReady value="Import was carried out" destination="Modul" />
+      <saveTextDE value="Save German texts" destination="Modul" />
+      <loadTextEN value="Load english texts" destination="Modul" />
+      <noInternet value="No connection to the internet" destination="Global" />
+      <copying value="Copy" destination="Global" />
+      <msgLoad value="Load {0}." destination="Global" />
+      <loadÄra value="loading era" destination="Modul" />
+      <loadRegion value="Load areas" destination="Modul" />
+      <loadCatalogue value="Extract filename" destination="Modul" />
+      <loadCatalogue value="Extract filename" destination="Modul" />
+      <loadModule value="Loading modules" destination="Modul" />
+      <loadMint value="Load mints" destination="Modul" />
+      <prepareUnzip value="Prepare to unzip images" destination="Modul" />
+      <copyTextEN value="Copy English texts" destination="Modul" />
+      <loadErhaltung value="Load conservation grades" destination="Modul" />
+      <loadCulture value="Loading culture" destination="Modul" />
+      <saveCatalogue value="Save catalog" destination="Modul" />
+      <saveTextEN value="Save English texts" destination="Modul" />
+      <editTextEN value="Edit English texts" destination="Modul" />
+      <Summe value="total" destination="Global" />
+      <saveRegions value="Save areas" destination="Modul" />
+      <msgEntpacke value="Unzip {0}" destination="Modul" />
+      <saveText value="Save text" destination="Modul" />
+    </Keys>
+    <frmDownLoader>
+      <Cancel value="Canceling downloads..." destination="Modul" />
+      <CancelDelete value="Canceling downloads - deleting files..." destination="Modul" />
+      <Canceled value="Download (s) canceled" destination="Modul" />
+      <gbTotalProgress value="Total" destination="Modul" />
+      <gbFileProgress value="File" destination="Modul" />
+      <Complete value="Download complete, {0} files downloaded." destination="Modul" />
+      <btnStop value="Cancel" destination="Modul" />
+      <Preparing value="Preparing {0}" destination="Modul" />
+      <Downloading value="{0} is downloading {1} / {2} files" destination="Modul" />
+      <Calculating value="Calculate file sizes - file {0} / {1}" destination="Modul" />
+      <FileSize value="Filesize {0}" destination="Modul" />
+      <Total value="{0} MiB / {1} MiB downloaded ({2}%)" destination="Modul" />
+      <FileProgress value="{0} MiB / {1} MiB files downloaded ({2}%)" destination="Modul" />
+      <Calculated value="{0} calculated" destination="Modul" />
+    </frmDownLoader>
+  </lokalisierung>
+</root>

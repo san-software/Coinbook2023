@@ -1,0 +1,54 @@
+<root>
+  <land land="Deutschland" kennung="de" sprache="Deutsch" flagge="iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAABGdBTUEAALGPC/xhBQAAAHVJREFUSEvtjjEKgDAMRaMeog4695o69FKCe3EQoXgCDxITJJOzqcMPvOGT4T2SC0IR2Bl1qruK3FD3M2KMrpgXAQioH7A0xGvX8jUOrqhXQQACEFA/YJuIFT56V8yLAAT8IqDYcGemnXKiION8Pb9G5DlRuAFsmwZDBqtACAAAAABJRU5ErkJggg==" />
+  <lokalisierung>
+    <frmMain>
+      <mnuFile value="Datei" destination="Modul" />
+      <mnuClose value="Beenden" destination="Modul" />
+      <mnuBackup1 value="Datensicherung" destination="Modul" />
+      <mnuCloud value="CloudBackup" destination="Modul" />
+      <mnuAbout value="Über CloudBackup" destination="Modul" />
+      <mnuCloudBackup value="Sicherung in die Cloud" destination="Modul" />
+      <mnuCloudRestore value="Wiederherstellung aus der Cloud" destination="Modul" />
+      <mnuBacklup value="Datensicherung" destination="Modul" />
+      <mnuRestore value="Daten-Wiederherstellung" destination="Modul" />
+      <frmMain value="Datensicherung" destination="Modul" />
+    </frmMain>
+    <frmAbout>
+      <label2 value="Version" destination="Modul" />
+      <label3 value="Lizenz" destination="Modul" />
+      <label4 value="Ab datum" destination="Modul" />
+      <lblCopyright value="Copyright" destination="Modul" />
+      <lblVon value="Datum" destination="Modul" />
+      <lblVersion value="xxxxxx" destination="Modul" />
+      <lblLizenz value="yyyyyy" destination="Modul" />
+      <label6 value="Bis Datum" destination="Modul" />
+      <btnClose value="Schliessen" destination="Global" />
+    </frmAbout>
+    <Keys>
+      <msgAbonementAktiv value="Abonement ist aktiv" destination="Modul" />
+      <msgAbonementInaktiv value="Abonement ist inaktiv" destination="Modul" />
+      <msgStartCloud value="Wollen Sie die Datensicherung in die Cloud starten?" destination="Global" />
+      <msgLoadBackup value="Datensicherung wird geladen" destination="Modul" />
+    </Keys>
+    <frmDBSichern>
+      <btnOpen value="..." destination="Modul" />
+      <lblPfad value="Auswahl des Ordners für die Datensicherung" destination="Modul" />
+      <frmDBSichern value="Datensicherung" destination="Modul" />
+      <msgOK value="Datensicherung komplett" destination="Modul" />
+      <btnOK value="Datensicherung starten" destination="Modul" />
+    </frmDBSichern>
+    <frmDBRestore>
+      <msgRestore value="Daten Wiederherstellen" destination="Modul" />
+      <frmDBRestore value="Datenrestaurierung" destination="Modul" />
+      <msgOK value="Datenrestaurierung komplett" destination="Modul" />
+    </frmDBRestore>
+    <frmCloudBackup>
+      <frmCloudBackup value="Automatische Datensicherung in die Cloud" destination="Modul" />
+    </frmCloudBackup>
+    <frmCloudRestore>
+      <frmCloudRestore value="Sicherung aus Cloud wiederherstellen" destination="Modul" />
+      <lblAnzeige value="Bitte wählen Sie hier die Sicherungsdatei aus, die Sie einspielen möchten" destination="Modul" />
+      <btnCancel value="Abbruch" destination="Modul" />
+    </frmCloudRestore>
+  </lokalisierung>
+</root>

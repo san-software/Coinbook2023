@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9380E3F-D401-48F6-B135-C162D5D71B6F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Coinbook.ModulVerwaltung</RootNamespace>
+    <AssemblyName>Coinbook.ModulVerwaltung</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Coinbook.Modulverwaltung.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.4.369, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>packages\ICSharpCode.SharpZipLib.dll.0.85.4.369\lib\net20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="LiteDB, Version=5.0.11.0, Culture=neutral, PublicKeyToken=4ee40123013c9f27, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiteDB.5.0.11\lib\net45\LiteDB.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Syncfusion.Compression.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.DocIO.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.DocToPDFConverter.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.ExcelToPDFConverter.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Grid.Grouping.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Grid.Grouping.Windows, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Grid.Windows, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.GridConverter.Windows, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.GridHelperClasses.Windows, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Grouping.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.OfficeChart.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.OfficeChartToImageConverter.WPF, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Pdf.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.PdfViewer.Windows, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Shared.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Tools.Windows, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.XlsIO.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArchivHelper.cs" />
+    <Compile Include="Artikel.cs" />
+    <Compile Include="Bestellung.cs" />
+    <Compile Include="BestellungHelper.cs" />
+    <Compile Include="frmModulImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModulImport.Designer.cs">
+      <DependentUpon>frmModulImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrder.Designer.cs">
+      <DependentUpon>frmOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrder2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrder2.Designer.cs">
+      <DependentUpon>frmOrder2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderCloudBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderCloudBackup.Designer.cs">
+      <DependentUpon>frmOrderCloudBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTP.cs" />
+    <Compile Include="FTPModel.cs" />
+    <Compile Include="LanguageHelper.cs" />
+    <Compile Include="ListViewModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgressParameter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmModulImport.resx">
+      <DependentUpon>frmModulImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrder.resx">
+      <DependentUpon>frmOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrder2.resx">
+      <DependentUpon>frmOrder2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderCloudBackup.resx">
+      <DependentUpon>frmOrderCloudBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="FTPModule.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="lokalisation\Coinbook.ModulVerwaltung\Resources.de.resx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="lokalisation\Coinbook.ModulVerwaltung\Resources.en.resx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="database.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="LastschriftMandat.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SAN.BackgroundWorker\SAN.Backgroundworker.csproj">
+      <Project>{072d0125-85e6-4155-be60-0f19061dd4f1}</Project>
+      <Name>SAN.Backgroundworker</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.Converter\SAN.Converter.csproj">
+      <Project>{75875061-e966-4515-91df-f7d8edba6c02}</Project>
+      <Name>SAN.Converter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.FTP\SAN.FTP.csproj">
+      <Project>{395fa41c-21fa-41d8-99b8-551e9bbec5f4}</Project>
+      <Name>SAN.FTP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.UIButton\SAN.UIButton.csproj">
+      <Project>{2e7651a7-ab9b-4bbc-bced-48f32bbd4021}</Project>
+      <Name>SAN.UIButton</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.UIComboBox\SAN.UIComboBox.csproj">
+      <Project>{b289e17e-58ea-402c-9839-82f11dd54e49}</Project>
+      <Name>SAN.UIComboBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.UIGroupBox\SAN.UIGroupBox.csproj">
+      <Project>{c1529869-17a8-4c81-9f61-24344b7e47f2}</Project>
+      <Name>SAN.UIGroupBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.UIProgressBar\SAN.UIProgressBar.csproj">
+      <Project>{015cecde-5f3f-42a4-87f6-e1232da0f59e}</Project>
+      <Name>SAN.UIProgressBar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.UITextBox\SAN.UITextbox.csproj">
+      <Project>{be200b1f-788b-472f-a1a7-4ba7d3983363}</Project>
+      <Name>SAN.UITextbox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Coinbook.Helper\Coinbook.HelperProject.csproj">
+      <Project>{93467110-d9e7-43c1-a68c-14f13f37f6ef}</Project>
+      <Name>Coinbook.HelperProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Coinbook.Lokalisierung\Coinbook.Lokalisierung.csproj">
+      <Project>{70a440cd-9c08-4685-b5a9-3d828d9814e5}</Project>
+      <Name>Coinbook.Lokalisierung</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Coinbook.Model\Coinbook.Model\Coinbook.Model.csproj">
+      <Project>{4734730d-9af3-4bd9-9707-1972d01f186d}</Project>
+      <Name>Coinbook.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CoinbookEnumerations\Coinbook.Enumerations.csproj">
+      <Project>{8ff4952c-d23d-42d6-8450-576e8e4a914a}</Project>
+      <Name>Coinbook.Enumerations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LiteDB.Database\LiteDB.Database.csproj">
+      <Project>{bf0a2fcb-270d-4a8e-b1e3-52469d059550}</Project>
+      <Name>LiteDB.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.FileDownloader\FileDownloader\SAN.FileDownloader.csproj">
+      <Project>{37bf6ec4-32c4-4895-b198-3e50b8b2a1ff}</Project>
+      <Name>SAN.FileDownloader</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lokalisation\Coinbook.ModulVerwaltung\Resources.de.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="lokalisation\Coinbook.ModulVerwaltung\Resources.en.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

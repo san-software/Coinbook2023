@@ -1,0 +1,144 @@
+<root>
+  <land land="Deutschland" kennung="de" sprache="Deutsch" flagge="iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAABGdBTUEAALGPC/xhBQAAAHVJREFUSEvtjjEKgDAMRaMeog4695o69FKCe3EQoXgCDxITJJOzqcMPvOGT4T2SC0IR2Bl1qruK3FD3M2KMrpgXAQioH7A0xGvX8jUOrqhXQQACEFA/YJuIFT56V8yLAAT8IqDYcGemnXKiION8Pb9G5DlRuAFsmwZDBqtACAAAAABJRU5ErkJggg==" />
+  <lokalisierung>
+    <frmAuswahl>
+      <btnClose value="Schliessen" destination="Global" />
+      <frmAuswahl value="Modulauswahl" destination="Modul" />
+      <Check value="" destination="Modul" />
+      <Bezeichnung value="Bezeichnung" destination="Modul" />
+      <ID value="ID" destination="Modul" />
+      <Key value="Key" destination="Modul" />
+    </frmAuswahl>
+    <frmModulImport>
+      <label1 value="Neue Module werden automatisch so gekennzeichnet, daß sie nicht nochmal heruntergeladen werden. Es werden also nur die Module heruntergeladen, die noch nicht gekennzeichnet sind. Das verhindert ein unnötiges Laden vieler Module, die sich schon in der Datenbank befinden." destination="Modul" />
+      <parameter value="Entpacke FileName " destination="Modul" />
+      <parameter1 value="Modul" destination="Modul" />
+      <optDVD value="Module von CD/DVD laden" destination="Modul" />
+      <optInternet value="Module aus dem Internet laden" destination="Modul" />
+      <btnCheck value="Importiere neue Module bzw. Modul-Updates" destination="Modul" />
+      <txtAnzeige value=" " destination="Neu" />
+      <lblGesamt value="Gesamtfortschritt" destination="Modul" />
+      <btnClearDownloads value="Alle Downloads resetten" destination="Modul" />
+      <btnResetSingleDownload value="Einzelne Downloads resetten" destination="Modul" />
+      <frmModulImport value="Modulimport" destination="Modul" />
+    </frmModulImport>
+    <frmOrder>
+      <lblUpdate value="Hier können Sie alle für Sie lizenzierten Module und Programme als Update bestell" destination="Modul" />
+      <btnAlle value="Alle Modulupdates bestellen" destination="Modul" />
+      <optPaypal value="Zahlung per Paypal" destination="Modul" />
+      <optÜberweisung value="Zahlung per Überweisung" destination="Modul" />
+      <labelEx1 value="Hier können Sie alle Module und Programme bestellen,  die Sie noch nicht besitzen" destination="Modul" />
+      <lblUpdateSumme value="Summe der Update-Bestellungen" destination="Modul" />
+      <lblRabatt value="Leider noch kein Rabatt auf neue Module" destination="Modul" />
+      <lblMwst value="Im Preis {0} Mehrwertsteuer {1}% enthalten" destination="Modul" />
+      <lblGesamtSumme value="Gesamtbetrag" destination="Modul" />
+      <optVersand value="Lieferung per CD/DVD" destination="Modul" />
+      <optDownload value="Lieferung per Download (standard)" destination="Modul" />
+      <lblNeuSumme value="Summe Neubestellungen" destination="Modul" />
+      <btnOrder value="Bestellen" destination="Modul" />
+      <lblVersion value="Version" destination="Modul" />
+      <lblRabattU value="Leider noch kein Rabatt auf Modul-Updates" destination="Modul" />
+      <frmOrder value="Module bestellen" destination="Modul" />
+      <colCheck value="Bestellen" destination="Modul" />
+      <colNummer value="Best-Nr" destination="Modul" />
+      <colModul value="Modul" destination="Modul" />
+      <colVersion value="Version" destination="Modul" />
+      <colPreis value="Preis" destination="Modul" />
+      <colWaehrung value=" " destination="Modul" />
+      <colName value="Name" destination="Modul" />
+      <colCheckNeu value="Bestellen" destination="Modul" />
+      <colNummerNeu value="Best-Nr" destination="Modul" />
+      <colModulNeu value="Modul" destination="Modul" />
+      <colVersionNeu value="Version" destination="Modul" />
+      <colPreisNeu value="Preis" destination="Modul" />
+      <colWaehrungNeu value="" destination="Modul" />
+      <ColNameNeu value="Name" destination="Modul" />
+      <colPreisUpdate value="Preis" destination="Modul" />
+    </frmOrder>
+    <frmOrder2>
+      <btnBack value="Zurück" destination="Modul" />
+      <btnOrder value="Drucken und verbindlich bestellen" destination="Modul" />
+      <btnCancel value="Abbruch" destination="Modul" />
+      <lblText value="lblText" destination="Modul" />
+      <frmOrder2 value="Bestellung überprüfen" destination="Modul" />
+      <msgOrderSent value="Die Bestellung wurde übermittelt" destination="Modul" />
+      <msgOrderNotSent value="Die Bestellung konnte nicht übermittelt werden" destination="Modul" />
+      <Mehrwertsteuer value="Im Preis sind {0}% Mehrwertsteuer {1} € enthalten" destination="Modul" />
+      <Bestellnummer value="Bestellnummer" destination="Modul" />
+    </frmOrder2>
+    <frmOrderCloudBackup>
+      <lblAbo3 value="Bitte füllen Sie folgende Daten für das Lastschrift Mandat aus." destination="Modul" />
+      <label1 value="Abonnement CloudBackup" destination="Modul" />
+      <lblAbo1 value="Das Abonnement beginnt zum Ersten des nächsten Monats, läuft genau ein Jahr und verlängert sich automatisch um ein Jahr, falls es nicht 30 Tage vor Ablauf gekündigt wird. Die Laufzeit bei jetziger Bestellung geht von {0} bis {1}." destination="Modul" />
+      <lblAbo2 value="Die Jahresgebühr beträgt {0} € inclusive. {1} % Mehrwertsteuer und wird vor Beginn des Abonnements, bzw bei der Verlängerung von Ihrem Konto eingezogen." destination="Modul" />
+      <lblBank value="Kreditinstitut" destination="Modul" />
+      <lblBIC value="BIC" destination="Modul" />
+      <lblIBAN value="IBAN" destination="Modul" />
+      <btnOrder value="Drucken und Bestellen" destination="Modul" />
+      <pdfViewer value="pdfViewerControl1" destination="Neu" />
+      <frmOrderCloudBackup value="Abonnement CloudBackup" destination="Modul" />
+      <btnCancel value="Abbruch" destination="Modul" />
+      <Lastschrift value="Der Betrag wird per Lastschrift eingezogen" destination="Modul" />
+      <Download value="Die Lieferung des zugehörigen Programmteils erfolgt per Download." destination="Modul" />
+      <Adresse value="Adresse:" destination="Modul" />
+      <artikelBezeichnung value="Jahres-Abonnement CloudBackup vom {0} bis {1}" destination="Modul" />
+      <itemHeader value="Bestellung" destination="Modul" />
+    </frmOrderCloudBackup>
+    <Keys>
+      <lblRabattU value="{0}% Rabatt bei Modul-Updatebestellungen" destination="Modul" />
+      <lblRabatt value="{1}% Rabatt bei Modul-Bestellungen ab {0} €" destination="Modul" />
+      <downloaded value="Alle Module sind schon heruntergeladen" destination="Global" />
+      <noModules value="Auf diesem Datenträger bzw Ordner befinden sich keine Module" destination="Modul" />
+      <executeEra value="Bearbeite Ära" destination="Modul" />
+      <executeCatalogue value="Bearbeite Katalog" destination="Global" />
+      <executeModule value="Bearbeite Module" destination="Modul" />
+      <executeMint value="Bearbeite Prägeanstalten" destination="Global" />
+      <executeText value="Bearbeite Texte {0}" destination="Global" />
+      <lngDeutsch value="Deutsch" destination="Global" />
+      <msgFileSaved value="Die Datei {0} wurde gespeichert" destination="Global" />
+      <msgNoOrder value="Eine Bestellung über das Programm ist zur Zeit nicht möglich." destination="Global" />
+      <lngEnglisch value="Englisch" destination="Global" />
+      <unzipPictures value="Entpacke " destination="Modul" />
+      <lblMwst value="Im Preis sind {0}% Mehrwertsteuer {1} € enthalten" destination="Modul" />
+      <msgReady value="Import wurde ausführt" destination="Modul" />
+      <saveTextDE value="Speichere deutscheTexte" destination="Modul" />
+      <loadTextEN value="Lade englische Texte" destination="Modul" />
+      <noInternet value="Keine Verbindung zum Internet" destination="Global" />
+      <copying value="Kopiere" destination="Global" />
+      <msgLoad value="Lade {0} ..." destination="Global" />
+      <loadÄra value="lade Ära" destination="Modul" />
+      <loadRegion value="Lade Gebiete" destination="Modul" />
+      <loadCatalogue value="Entpacke Filename" destination="Modul" />
+      <loadCatalogue value="Lade Katalog" destination="Modul" />
+      <loadModule value="Lade Module" destination="Modul" />
+      <loadMint value="Lade Prägeanstalten" destination="Modul" />
+      <prepareUnzip value="Bereite Entpacken von Bildern vor" destination="Modul" />
+      <copyTextEN value="Kopiere englische Texte" destination="Modul" />
+      <loadErhaltung value="Lade Erhaltungsgrade" destination="Modul" />
+      <loadCulture value="Lade Kultur" destination="Modul" />
+      <saveCatalogue value="Speichere Katalog" destination="Modul" />
+      <saveTextEN value="Speichere englische Texte" destination="Modul" />
+      <editTextEN value="Bearbeite englische Texte" destination="Modul" />
+      <Summe value="Summe" destination="Global" />
+      <saveRegions value="Speichere Gebiete" destination="Modul" />
+      <msgEntpacke value="Entpacke {0}" destination="Modul" />
+      <saveText value="Speichere Texte" destination="Modul" />
+    </Keys>
+    <frmDownLoader>
+      <Cancel value="Downloads abbrechen ..." destination="Modul" />
+      <CancelDelete value="Downloads abbrechen - Dateien löschen ..." destination="Modul" />
+      <Canceled value="Download(s) abgebrochen" destination="Modul" />
+      <gbTotalProgress value="Gesamt" destination="Modul" />
+      <gbFileProgress value="Datei" destination="Modul" />
+      <Complete value="Download komplett, {0} Dateien heruntergeladen." destination="Modul" />
+      <btnStop value="Abbruch" destination="Modul" />
+      <Preparing value="Bereite {0} vor" destination="Modul" />
+      <Downloading value="{0} wird heruntergeladen {1} / {2} Dateien" destination="Modul" />
+      <Calculating value="Berechne Dateigrössen - Datei {0} / {1}" destination="Modul" />
+      <FileSize value="Dateigröße {0}" destination="Modul" />
+      <Total value="{0} MiB / {1} MiB heruntergeladen ({2} %)" destination="Modul" />
+      <FileProgress value="{0} MiB / {1} MiB Dateien heruntergeladen ({2} %)" destination="Modul" />
+      <Calculated value="{0} berechnet" destination="Modul" />
+    </frmDownLoader>
+  </lokalisierung>
+</root>

@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="frmText" xml:space="preserve">
+    <value>Coinbook - Instatitute for coining</value>
+  </data>
+  <data name="grpBBelgien" xml:space="preserve">
+    <value>Belgium</value>
+  </data>
+  <data name="grpBDaenemark" xml:space="preserve">
+    <value>Denmark</value>
+  </data>
+  <data name="grpBDt" xml:space="preserve">
+    <value>Germany</value>
+  </data>
+  <data name="grpBFrankreich" xml:space="preserve">
+    <value>France</value>
+  </data>
+  <data name="grpBLichtenstein" xml:space="preserve">
+    <value>Liechtenstein</value>
+  </data>
+  <data name="grpBLuxemburg" xml:space="preserve">
+    <value>Luxembourg</value>
+  </data>
+  <data name="grpBNiederlande" xml:space="preserve">
+    <value>Holland</value>
+  </data>
+  <data name="grpBOestereich" xml:space="preserve">
+    <value>Austria</value>
+  </data>
+  <data name="grpBSchweiz" xml:space="preserve">
+    <value>Swtizerland</value>
+  </data>
+  <data name="grpBSlowakei" xml:space="preserve">
+    <value>Slovakia</value>
+  </data>
+  <data name="grpBTschechien" xml:space="preserve">
+    <value>Czech Republic</value>
+  </data>
+  <data name="grpBTschechoslowakei" xml:space="preserve">
+    <value>Czechoslovakia</value>
+  </data>
+  <data name="lblAargau" xml:space="preserve">
+    <value>M = Aargau</value>
+  </data>
+  <data name="lblBasel" xml:space="preserve">
+    <value>BA = Basel</value>
+  </data>
+  <data name="lblBerlin" xml:space="preserve">
+    <value>A = Berlin 1872 - today</value>
+  </data>
+  <data name="lblBern" xml:space="preserve">
+    <value>B = Bern</value>
+  </data>
+  <data name="lblBern1" xml:space="preserve">
+    <value>without = Bern (currency of franc)</value>
+  </data>
+  <data name="lblBernLondon" xml:space="preserve">
+    <value>without = Bern and London</value>
+  </data>
+  <data name="lblBordeaux" xml:space="preserve">
+    <value>K = Bordeaux (to 1878)</value>
+  </data>
+  <data name="lblBruessel" xml:space="preserve">
+    <value>B = Brussels</value>
+  </data>
+  <data name="lblBruessel1" xml:space="preserve">
+    <value>B = Brussels (1821 - 1830)</value>
+  </data>
+  <data name="lblBruessel2" xml:space="preserve">
+    <value>without = Brussels</value>
+  </data>
+  <data name="lblCastelsarrasin" xml:space="preserve">
+    <value>C = Castelsarrasin (to 1946)</value>
+  </data>
+  <data name="lblCeska" xml:space="preserve">
+    <value>CM = Cezca Mincovna</value>
+  </data>
+  <data name="lblDarmstadt" xml:space="preserve">
+    <value>H = Darmstadt 1872 - 1882</value>
+  </data>
+  <data name="lblDenver" xml:space="preserve">
+    <value>D = Denver (1943 - 1944)</value>
+  </data>
+  <data name="lblDresden" xml:space="preserve">
+    <value>E = Dresden 1872 - 1887</value>
+  </data>
+  <data name="lblFrankfurt" xml:space="preserve">
+    <value>C = Frankfurt 1872 - 1879</value>
+  </data>
+  <data name="lblGenf" xml:space="preserve">
+    <value>A.B. = Geneva</value>
+  </data>
+  <data name="lblHamburg" xml:space="preserve">
+    <value>J = Hamburg 1875 - today</value>
+  </data>
+  <data name="lblHannover" xml:space="preserve">
+    <value>B = Hanover 1872 - 1878</value>
+  </data>
+  <data name="lblJablonec" xml:space="preserve">
+    <value>BJ = Jablonec (Gablonz)</value>
+  </data>
+  <data name="lblKarlsburg" xml:space="preserve">
+    <value>E = Karlsburg</value>
+  </data>
+  <data name="lblKarlsburg1" xml:space="preserve">
+    <value>GY.F. = Karlsburg (for Hungary)</value>
+  </data>
+  <data name="lblKarlsruhe" xml:space="preserve">
+    <value>G = Karlsruhe 1872 - today</value>
+  </data>
+  <data name="lblKopenhagen" xml:space="preserve">
+    <value>without = Copenhagen</value>
+  </data>
+  <data name="lblKremnitz" xml:space="preserve">
+    <value>B = Kremnitz</value>
+  </data>
+  <data name="lblKremniz" xml:space="preserve">
+    <value>K.B = Kremnitz (for Hungary)</value>
+  </data>
+  <data name="lblLille" xml:space="preserve">
+    <value>W = Lille (to 1857)</value>
+  </data>
+  <data name="lblLuxemburg" xml:space="preserve">
+    <value>with out = Luxembourg</value>
+  </data>
+  <data name="lblLyon" xml:space="preserve">
+    <value>D = Lyon (to 1858)</value>
+  </data>
+  <data name="lblMailand" xml:space="preserve">
+    <value>M = Milan</value>
+  </data>
+  <data name="lblMarseille" xml:space="preserve">
+    <value>MA = Marseille (to 1857)</value>
+  </data>
+  <data name="lblMinkovna" xml:space="preserve">
+    <value>MK = Minkovna Kremnika</value>
+  </data>
+  <data name="lblMuenchen" xml:space="preserve">
+    <value>D = Munic 1872 - today</value>
+  </data>
+  <data name="lblMuldenHuetten" xml:space="preserve">
+    <value>E = Muldenhütten 1887 - 1953</value>
+  </data>
+  <data name="lblNagybanya" xml:space="preserve">
+    <value>G = Nagybanya</value>
+  </data>
+  <data name="lblParis" xml:space="preserve">
+    <value>A = Paris</value>
+  </data>
+  <data name="lblPhiladelphia" xml:space="preserve">
+    <value>P = Philadelphia (1943 - 1945)</value>
+  </data>
+  <data name="lblPrag" xml:space="preserve">
+    <value>C = Prague</value>
+  </data>
+  <data name="lblSanFrancisco" xml:space="preserve">
+    <value>S = San Francisco (1944)</value>
+  </data>
+  <data name="lblSolothurn" xml:space="preserve">
+    <value>S = Solothurn</value>
+  </data>
+  <data name="lblStrassburg" xml:space="preserve">
+    <value>AB = Strasbourg</value>
+  </data>
+  <data name="lblStrassburg1" xml:space="preserve">
+    <value>BB = Strasbourg</value>
+  </data>
+  <data name="lblStrassburg2" xml:space="preserve">
+    <value>BB = Strasbourg (to 1870)</value>
+  </data>
+  <data name="lblStuttgart" xml:space="preserve">
+    <value>F = Stuttgart 1872 - today</value>
+  </data>
+  <data name="lblUtrecht" xml:space="preserve">
+    <value>without = Utrecht</value>
+  </data>
+  <data name="lblVenedig" xml:space="preserve">
+    <value>V = Venice</value>
+  </data>
+  <data name="lblWien" xml:space="preserve">
+    <value>B = Vienna 1938 - 1944</value>
+  </data>
+  <data name="lblWien1" xml:space="preserve">
+    <value>without = Vienna (currency of crown)</value>
+  </data>
+  <data name="lblWien2" xml:space="preserve">
+    <value>A = Vienna (from 1872 without mntm.)</value>
+  </data>
+</root>

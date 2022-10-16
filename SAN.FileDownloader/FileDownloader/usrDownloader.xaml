@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="SAN.FileDownloader.usrDownloader"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SAN.FileDownloader"
+             mc:Ignorable="d" 
+             d:DesignHeight="317" d:DesignWidth="550">
+    <Grid Margin="0,0,0,0">
+        <StackPanel x:Name="stackPanelMain" Height="316" VerticalAlignment="Top" Margin="0,0,0,0" >
+            <StackPanel.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="lightBlue" Offset="0.0" />
+                    <GradientStop Color="LightCyan" Offset="0.5" />
+                    <GradientStop Color="DarkGray" Offset="1.0" />
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <Label Height="25" x:Name="lblStatus" Margin="5,0" VerticalContentAlignment="Center" Content="-"/>
+            <Label Height="25" x:Name="lblFileSize" Margin="5,0" VerticalContentAlignment="Center" Content="-"/>
+            <Label Height="25" x:Name="lblTotalProgress" Margin="5,0" VerticalContentAlignment="Center" Content="-"/>
+            <GroupBox Header="Gesamt"  x:Name="gbTotalProgress" Margin="5,0">
+                <StackPanel x:Name="stackPanel1">
+                    <ProgressBar Height="23" x:Name="pBarTotalProgress" Margin="5,3,5,0" VerticalAlignment="Top"/>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Datei" x:Name="gbFileProgress" Margin="5,0">
+                <StackPanel x:Name="stackPanel2">
+                    <ProgressBar Height="23" x:Name="pBarFileProgress" Margin="5,3,5,0" VerticalAlignment="Top" />
+                    <Label x:Name="lblFileProgress" Margin="5,0" Content="-"/>
+                </StackPanel>
+            </GroupBox>
+            <Border x:Name="border1" Height="64.641" BorderBrush="DarkBlue">
+                <StackPanel x:Name="stackPanel4" Orientation="Vertical" Height="56">
+                    <StackPanel x:Name="stackPanel3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5">
+                        <Button Height="23" x:Name="btnStop" Width="75" Margin="5,0,0,0" IsEnabled="False" Click="btnStop_Click" Content="Abbruch"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

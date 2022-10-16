@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coinbook.Import", "Coinbook.Import.csproj", "{0B1E3184-4564-4E20-8940-E246174B56C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OleDB", "..\oledb\OleDB.csproj", "{C0BFF8B5-EA30-46E2-A97A-D9FE66E44FAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coinbook.Enumerations", "..\Coinbook.Enumerations\Coinbook.Enumerations.csproj", "{12D3BB9C-9560-4F60-9321-BAE7B39AB7C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coinbook.Lokalisierung", "..\Coinbook.Lokalisierung\Coinbook.Lokalisierung.csproj", "{70A440CD-9C08-4685-B5A9-3D828D9814E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coinbook.Model", "..\Coinbook.Model\Coinbook.Model\Coinbook.Model.csproj", "{4734730D-9AF3-4BD9-9707-1972D01F186D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coinbook.Database", "..\CoinbookDatabase\Coinbook.Database.csproj", "{54803F93-FD53-4F7D-99F8-595E5D214F96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiteDB.Database", "..\LiteDB.Database\LiteDB.Database.csproj", "{BF0A2FCB-270D-4A8E-B1E3-52469D059550}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B1E3184-4564-4E20-8940-E246174B56C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B1E3184-4564-4E20-8940-E246174B56C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B1E3184-4564-4E20-8940-E246174B56C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B1E3184-4564-4E20-8940-E246174B56C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0BFF8B5-EA30-46E2-A97A-D9FE66E44FAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0BFF8B5-EA30-46E2-A97A-D9FE66E44FAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0BFF8B5-EA30-46E2-A97A-D9FE66E44FAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0BFF8B5-EA30-46E2-A97A-D9FE66E44FAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12D3BB9C-9560-4F60-9321-BAE7B39AB7C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12D3BB9C-9560-4F60-9321-BAE7B39AB7C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12D3BB9C-9560-4F60-9321-BAE7B39AB7C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12D3BB9C-9560-4F60-9321-BAE7B39AB7C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70A440CD-9C08-4685-B5A9-3D828D9814E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70A440CD-9C08-4685-B5A9-3D828D9814E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70A440CD-9C08-4685-B5A9-3D828D9814E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70A440CD-9C08-4685-B5A9-3D828D9814E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4734730D-9AF3-4BD9-9707-1972D01F186D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4734730D-9AF3-4BD9-9707-1972D01F186D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4734730D-9AF3-4BD9-9707-1972D01F186D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4734730D-9AF3-4BD9-9707-1972D01F186D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54803F93-FD53-4F7D-99F8-595E5D214F96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54803F93-FD53-4F7D-99F8-595E5D214F96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54803F93-FD53-4F7D-99F8-595E5D214F96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54803F93-FD53-4F7D-99F8-595E5D214F96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF0A2FCB-270D-4A8E-B1E3-52469D059550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF0A2FCB-270D-4A8E-B1E3-52469D059550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF0A2FCB-270D-4A8E-B1E3-52469D059550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF0A2FCB-270D-4A8E-B1E3-52469D059550}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D95289C-B467-4DB7-AD52-36708A2DF492}
+	EndGlobalSection
+EndGlobal

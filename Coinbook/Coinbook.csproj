@@ -1,0 +1,1055 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\ModuleInit.Fody.2.1.1\build\ModuleInit.Fody.props" Condition="Exists('..\packages\ModuleInit.Fody.2.1.1\build\ModuleInit.Fody.props')" />
+  <Import Project="..\packages\LoadAssembliesOnStartup.Fody.4.5.0\build\LoadAssembliesOnStartup.Fody.props" Condition="Exists('..\packages\LoadAssembliesOnStartup.Fody.4.5.0\build\LoadAssembliesOnStartup.Fody.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D641A4AE-98FE-43E0-9B27-74C5C301F1D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Coinbook</RootNamespace>
+    <AssemblyName>Coinbook</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Coinbook.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Coinbook.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <DocumentationFile>bin\Release\Coinbook.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoClosingMessageBox, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoClosingMessageBox.1.0.0.2\lib\net40\AutoClosingMessageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoUpdater.NET, Version=1.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DEV-Tools\DLLs\AutoUpdater\AutoUpdater.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ExcelApi, Version=1.7.3.0, Culture=neutral, PublicKeyToken=26cf6d85ba68fa54, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetOffice.Excel.Net45.1.7.4.4\lib\net45\ExcelApi.dll</HintPath>
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ExifLib, Version=1.7.0.0, Culture=neutral, PublicKeyToken=30284005913968db, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExifLib.1.7.0.0\lib\net45\ExifLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.4.369, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\ICSharpCode.SharpZipLib.dll.0.85.4.369\lib\net20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="LiteDB, Version=5.0.11.0, Culture=neutral, PublicKeyToken=4ee40123013c9f27, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiteDB.5.0.11\lib\net45\LiteDB.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.14.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.14\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="ModuleInit, Version=2.1.1.0, Culture=neutral, PublicKeyToken=409b3227471b0f0d, processorArchitecture=MSIL">
+      <HintPath>..\packages\ModuleInit.Fody.2.1.1\lib\net452\ModuleInit.dll</HintPath>
+    </Reference>
+    <Reference Include="NetOffice, Version=1.7.3.0, Culture=neutral, PublicKeyToken=acf636d62c39f8f5, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetOffice.Core.Net45.1.7.4.4\lib\net45\NetOffice.dll</HintPath>
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OfficeApi, Version=1.7.3.0, Culture=neutral, PublicKeyToken=7c1c3e9d16cace88, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetOffice.Core.Net45.1.7.4.4\lib\net45\OfficeApi.dll</HintPath>
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Ookii.Dialogs.WinForms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=66aa232afad40158, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ookii.Dialogs.WinForms.1.2.0\lib\net45\Ookii.Dialogs.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="PayPal">
+      <HintPath>..\PayPal.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Rhino.Licensing, Version=1.3.0.0, Culture=neutral, PublicKeyToken=0b3305902db7183f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rhino.Licensing.1.3\lib\Net45\Rhino.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="SAN.Logging">
+      <HintPath>..\SAN.Logging\obj\Debug\SAN.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Compression.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Core.WinForms, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Data.WinForms, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.DataSource.WinForms, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.DocIO.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.DocIO.Windows, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.DocToPDFConverter.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Grid.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Grouping.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Grouping.Windows, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Windows, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.GridCommon.WinForms, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.GridConverter.Windows, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.GridHelperClasses.Windows, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Grouping.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.HighContrastTheme.WinForms, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Licensing, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Office2016Theme.WinForms, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Office2019Theme.WinForms, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.OfficeChart.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.OfficeChartToImageConverter.WPF, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Pdf.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.PdfViewer.Windows, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Schedule.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Schedule.Windows, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.SfDataGrid.WinForms, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.SfDataGridConverter.WinForms, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.SfInput.WinForms, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.SfListView.WinForms, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Windows, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.SpellChecker.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Tools.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Tools.Windows, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.XlsIO.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.XlsIO.Windows, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Composition.AttributedModel, Version=1.0.31.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Composition.AttributedModel.1.0.31\lib\portable-net45+win8+wp8+wpa81\System.Composition.AttributedModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Composition.Convention, Version=1.0.31.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Composition.Convention.1.0.31\lib\portable-net45+win8+wp8+wpa81\System.Composition.Convention.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Composition.Hosting, Version=1.0.31.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Composition.Hosting.1.0.31\lib\portable-net45+win8+wp8+wpa81\System.Composition.Hosting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Composition.Runtime, Version=1.0.31.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Composition.Runtime.1.0.31\lib\portable-net45+win8+wp8+wpa81\System.Composition.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Composition.TypedParts, Version=1.0.31.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Composition.TypedParts.1.0.31\lib\portable-net45+win8+wp8+wpa81\System.Composition.TypedParts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TestStack.White, Version=0.13.0.0, Culture=neutral, PublicKeyToken=2672efbf3e161801, processorArchitecture=MSIL">
+      <HintPath>..\packages\TestStack.White.0.13.3\lib\net40\TestStack.White.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="VBIDEApi, Version=1.7.3.0, Culture=neutral, PublicKeyToken=a3637beacf571e8a, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetOffice.Core.Net45.1.7.4.4\lib\net45\VBIDEApi.dll</HintPath>
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Feedback.cs" />
+    <Compile Include="Classes\SFLocalizer.cs" />
+    <Compile Include="Forms\frmDataTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDataTransfer.Designer.cs">
+      <DependentUpon>frmDataTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmQuickInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmQuickInput.Designer.cs">
+      <DependentUpon>frmQuickInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\SystemHelper.cs" />
+    <Compile Include="Helper\ImageHelper.cs" />
+    <Compile Include="Classes\Log4NetTraceListener.cs" />
+    <Compile Include="Helper\LanguageHelper.cs" />
+    <Compile Include="Helper\PluginHelper.cs" />
+    <Compile Include="Forms\frmRepairDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRepairDB.Designer.cs">
+      <DependentUpon>frmRepairDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSettings.Designer.cs">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\SyncfusionHelper.cs" />
+    <Compile Include="Models\Artikel.cs" />
+    <Compile Include="Models\Bestellung.cs" />
+    <Compile Include="Classes\CustomStackedHeaderCellRenderer.cs" />
+    <Compile Include="Classes\CustomTextBoxCellRenderer.cs" />
+    <Compile Include="Downloads\ModulDownloads.cs" />
+    <Compile Include="Downloads\ModulImport.cs" />
+    <Compile Include="Downloads\ModulImportEnum.cs" />
+    <Compile Include="Forms\frmCDUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCDUpdate.Designer.cs">
+      <DependentUpon>frmCDUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCompact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCompact.Designer.cs">
+      <DependentUpon>frmCompact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Input\frmEigeneKatNr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Input\frmEigeneKatNr.Designer.cs">
+      <DependentUpon>frmEigeneKatNr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInfo.Designer.cs">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLizenz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLizenz.Designer.cs">
+      <DependentUpon>frmLizenz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMessage.Designer.cs">
+      <DependentUpon>frmMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMünzbild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMünzbild.Designer.cs">
+      <DependentUpon>frmMünzbild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAktiviert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAktiviert.Designer.cs">
+      <DependentUpon>frmAktiviert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPasswort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPasswort.Designer.cs">
+      <DependentUpon>frmPasswort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPDF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPDF.Designer.cs">
+      <DependentUpon>frmPDF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProgress.Designer.cs">
+      <DependentUpon>frmProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\enmReporting.cs" />
+    <Compile Include="Reporting\frmReporting2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporting\frmReporting2.Designer.cs">
+      <DependentUpon>frmReporting2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\frmReportingWert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporting\frmReportingWert.Designer.cs">
+      <DependentUpon>frmReportingWert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\frmFehllisten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporting\frmFehllisten.Designer.cs">
+      <DependentUpon>frmFehllisten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\LizenzDownload.cs" />
+    <Compile Include="Forms\frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPicture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPicture.Designer.cs">
+      <DependentUpon>frmPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Input\frmAuktion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Input\frmAuktion.Designer.cs">
+      <DependentUpon>frmAuktion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBrowser.Designer.cs">
+      <DependentUpon>frmBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDBState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDBState.Designer.cs">
+      <DependentUpon>frmDBState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Input\frmMünzeDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Input\frmMünzeDelete.Designer.cs">
+      <DependentUpon>frmMünzeDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Input\frmEigenePreise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Input\frmEigenePreise.Designer.cs">
+      <DependentUpon>frmEigenePreise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHinweis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHinweis.Designer.cs">
+      <DependentUpon>frmHinweis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKurse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKurse.Designer.cs">
+      <DependentUpon>frmKurse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMuenzDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMuenzDetails.Designer.cs">
+      <DependentUpon>frmMuenzDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Input\frmMünze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Input\frmMünze.Designer.cs">
+      <DependentUpon>frmMünze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPrägeanstalten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPrägeanstalten.Designer.cs">
+      <DependentUpon>frmPrägeanstalten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\frmReporting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporting\frmReporting.Designer.cs">
+      <DependentUpon>frmReporting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\FTP.cs" />
+    <Compile Include="Classes\Lizenz.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Reporting.cs" />
+    <Compile Include="Reporting\ReportHelper.cs" />
+    <Compile Include="Controls\usrAllgemein.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\usrAllgemein.Designer.cs">
+      <DependentUpon>usrAllgemein.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\usrEigneEinst.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\usrEigneEinst.Designer.cs">
+      <DependentUpon>usrEigneEinst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\usrUpdates.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\usrUpdates.Designer.cs">
+      <DependentUpon>usrUpdates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\usrInternational.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\usrInternational.Designer.cs">
+      <DependentUpon>usrInternational.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\usrReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\usrReport.Designer.cs">
+      <DependentUpon>usrReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\usrWährung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\usrWährung.Designer.cs">
+      <DependentUpon>usrWährung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\usrMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\usrMain.Designer.cs">
+      <DependentUpon>usrMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Screensaver.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Bezug.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Coinbook-DE.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Coinbook-EN.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Coinbook.manifest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Copyrights Bilder-DE.rtf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Copyrights Bilder-EN.rtf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="database.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LastschriftMandat.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Lizenzbestimmungen-DE.rtf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Lizenzbestimmungen-EN.rtf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Resources\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TeamViewerQS.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="Forms\frmDataTransfer.resx">
+      <DependentUpon>frmDataTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\usrMain.resx">
+      <DependentUpon>usrMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Update-DE.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="Forms\frmCDUpdate.resx">
+      <DependentUpon>frmCDUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmQuickInput.resx">
+      <DependentUpon>frmQuickInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSettings.resx">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Input\frmEigeneKatNr.en-GB.resx">
+      <DependentUpon>frmEigeneKatNr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Input\frmEigeneKatNr.resx">
+      <DependentUpon>frmEigeneKatNr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInfo.resx">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLizenz.resx">
+      <DependentUpon>frmLizenz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMessage.resx">
+      <DependentUpon>frmMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMünzbild.resx">
+      <DependentUpon>frmMünzbild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.en-GB.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPicture.en-GB.resx">
+      <DependentUpon>frmPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPicture.resx">
+      <DependentUpon>frmPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAktiviert.resx">
+      <DependentUpon>frmAktiviert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Input\frmAuktion.en-GB.resx">
+      <DependentUpon>frmAuktion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Input\frmAuktion.resx">
+      <DependentUpon>frmAuktion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBrowser.resx">
+      <DependentUpon>frmBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDBState.resx">
+      <DependentUpon>frmDBState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Input\frmMünzeDelete.en-GB.resx">
+      <DependentUpon>frmMünzeDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Input\frmMünzeDelete.resx">
+      <DependentUpon>frmMünzeDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Input\frmEigenePreise.en-GB.resx">
+      <DependentUpon>frmEigenePreise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Input\frmEigenePreise.resx">
+      <DependentUpon>frmEigenePreise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHinweis.en-GB.resx">
+      <DependentUpon>frmHinweis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHinweis.resx">
+      <DependentUpon>frmHinweis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKurse.resx">
+      <DependentUpon>frmKurse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMuenzDetails.en-GB.resx">
+      <DependentUpon>frmMuenzDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMuenzDetails.resx">
+      <DependentUpon>frmMuenzDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Input\frmMünze.en-GB.resx">
+      <DependentUpon>frmMünze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Input\frmMünze.resx">
+      <DependentUpon>frmMünze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPasswort.resx">
+      <DependentUpon>frmPasswort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPDF.resx">
+      <DependentUpon>frmPDF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProgress.resx">
+      <DependentUpon>frmProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrägeanstalten.resx">
+      <DependentUpon>frmPrägeanstalten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRepairDB.resx">
+      <DependentUpon>frmRepairDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Lokalisation\Coinbook.Backup\Resources.de.resx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Lokalisation\Coinbook.Backup\Resources.en.resx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="Reporting\frmReporting.en-GB.resx">
+      <DependentUpon>frmReporting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\frmReporting.resx">
+      <DependentUpon>frmReporting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\frmReporting2.en-GB.resx">
+      <DependentUpon>frmReporting2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\frmReporting2.resx">
+      <DependentUpon>frmReporting2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Coin.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="AutoUpdater.NET.dll" />
+    <Content Include="Images\Add.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Coin.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\coin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\edit.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Erase.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Flag.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Hinweis.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Lupe.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Lokalisation\Coinbook.Backup\Resources.de.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Lokalisation\Coinbook.Backup\Resources.en.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Lokalisation\Coinbook\Resources.de.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lokalisation\Coinbook\Resources.en.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="Reporting\frmReportingWert.en-GB.resx">
+      <DependentUpon>frmReportingWert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\frmReportingWert.resx">
+      <DependentUpon>frmReportingWert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\frmFehllisten.en-GB.resx">
+      <DependentUpon>frmFehllisten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\frmFehllisten.resx">
+      <DependentUpon>frmFehllisten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\usrAllgemein.en-GB.resx">
+      <DependentUpon>usrAllgemein.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\usrAllgemein.resx">
+      <DependentUpon>usrAllgemein.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\usrEigneEinst.en-GB.resx">
+      <DependentUpon>usrEigneEinst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\usrEigneEinst.resx">
+      <DependentUpon>usrEigneEinst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\usrUpdates.en-GB.resx">
+      <DependentUpon>usrUpdates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\usrUpdates.resx">
+      <DependentUpon>usrUpdates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\usrInternational.en-GB.resx">
+      <DependentUpon>usrInternational.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\usrInternational.resx">
+      <DependentUpon>usrInternational.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\usrReport.en-GB.resx">
+      <DependentUpon>usrReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\usrReport.resx">
+      <DependentUpon>usrReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\usrWährung.resx">
+      <DependentUpon>usrWährung.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Coinbook.Activation\Coinbook.Activation.csproj">
+      <Project>{886df375-68e5-4f97-9484-9bf9ce542021}</Project>
+      <Name>Coinbook.Activation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Coinbook.Backup\Coinbook.Backup.csproj">
+      <Project>{cc2b325d-8617-4ffc-90f7-d3d063a36dbf}</Project>
+      <Name>Coinbook.Backup</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Coinbook.EventHandler\Coinbook.EventHandler.csproj">
+      <Project>{E2232464-CDE6-4F55-B0BF-0AC85CD67EFF}</Project>
+      <Name>Coinbook.EventHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.BackgroundWorker\SAN.Backgroundworker.csproj">
+      <Project>{072d0125-85e6-4155-be60-0f19061dd4f1}</Project>
+      <Name>SAN.Backgroundworker</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.Converter\SAN.Converter.csproj">
+      <Project>{75875061-e966-4515-91df-f7d8edba6c02}</Project>
+      <Name>SAN.Converter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.FTP\SAN.FTP.csproj">
+      <Project>{395fa41c-21fa-41d8-99b8-551e9bbec5f4}</Project>
+      <Name>SAN.FTP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.Magnification\SAN.Magnification.csproj">
+      <Project>{23e96e6a-2cc7-4514-a8db-e0605b4efde9}</Project>
+      <Name>SAN.Magnification</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.MessageBoxNonmodal\SAN.MessageBoxNonmodal\SAN.MessageBoxNonmodal.csproj">
+      <Project>{73CC092C-AFA6-4B58-A0EC-906B45A60F30}</Project>
+      <Name>SAN.MessageBoxNonmodal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.UIButton\SAN.UIButton.csproj">
+      <Project>{2e7651a7-ab9b-4bbc-bced-48f32bbd4021}</Project>
+      <Name>SAN.UIButton</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.UICheckBox\SAN.UICheckBox.csproj">
+      <Project>{f7efaa59-c9f9-484c-840a-e42c8068987f}</Project>
+      <Name>SAN.UICheckBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.UIComboBox\SAN.UIComboBox.csproj">
+      <Project>{b289e17e-58ea-402c-9839-82f11dd54e49}</Project>
+      <Name>SAN.UIComboBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.UIGroupBox\SAN.UIGroupBox.csproj">
+      <Project>{C1529869-17A8-4C81-9F61-24344B7E47F2}</Project>
+      <Name>SAN.UIGroupBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.UIPictureBox\SAN.UIPictureBox.csproj">
+      <Project>{8514cf43-55cf-4195-b797-4229aea85062}</Project>
+      <Name>SAN.UIPictureBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.UIProgressBar\SAN.UIProgressBar.csproj">
+      <Project>{015cecde-5f3f-42a4-87f6-e1232da0f59e}</Project>
+      <Name>SAN.UIProgressBar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.UITextBox\SAN.UITextbox.csproj">
+      <Project>{be200b1f-788b-472f-a1a7-4ba7d3983363}</Project>
+      <Name>SAN.UITextbox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Coinbook.Helper\Coinbook.HelperProject.csproj">
+      <Project>{93467110-d9e7-43c1-a68c-14f13f37f6ef}</Project>
+      <Name>Coinbook.HelperProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Coinbook.Import\Coinbook.Import.csproj">
+      <Project>{0b1e3184-4564-4e20-8940-e246174b56c4}</Project>
+      <Name>Coinbook.Import</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Coinbook.Lokalisierung\Coinbook.Lokalisierung.csproj">
+      <Project>{70a440cd-9c08-4685-b5a9-3d828d9814e5}</Project>
+      <Name>Coinbook.Lokalisierung</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Coinbook.Model\Coinbook.Model\Coinbook.Model.csproj">
+      <Project>{4734730d-9af3-4bd9-9707-1972d01f186d}</Project>
+      <Name>Coinbook.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Coinbook.ModulVerwaltung\Coinbook.ModulVerwaltung.csproj">
+      <Project>{e9380e3f-d401-48f6-b135-c162d5d71b6f}</Project>
+      <Name>Coinbook.ModulVerwaltung</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Coinbook.Sprache\Coinbook.Sprache.csproj">
+      <Project>{51f688b1-aa67-4f68-a987-b9066c0a7418}</Project>
+      <Name>Coinbook.Sprache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CoinbookDatabase\Coinbook.Database.csproj">
+      <Project>{54803f93-fd53-4f7d-99f8-595e5d214f96}</Project>
+      <Name>Coinbook.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CoinbookEnumerations\Coinbook.Enumerations.csproj">
+      <Project>{8ff4952c-d23d-42d6-8450-576e8e4a914a}</Project>
+      <Name>Coinbook.Enumerations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LiteDB.Database\LiteDB.Database.csproj">
+      <Project>{bf0a2fcb-270d-4a8e-b1e3-52469d059550}</Project>
+      <Name>LiteDB.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.Plugin\SAN.Plugin\SAN.Plugin.csproj">
+      <Project>{b4013911-5ee2-4249-903e-a4c17f48ea22}</Project>
+      <Name>SAN.Plugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SplashScreen\SplashScreen.csproj">
+      <Project>{743edb81-d2ac-4a52-a313-50bd4229401b}</Project>
+      <Name>SplashScreen</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FTPModule.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Icon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="in_cb_de001.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="publicKey.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Resources\3d bar chart.ico" />
+    <Content Include="Resources\Add.ico" />
+    <Content Include="Resources\arrow_down.gif" />
+    <Content Include="Resources\arrow_up.gif" />
+    <Content Include="Resources\Back.ico" />
+    <Content Include="Resources\Blue tag.ico" />
+    <Content Include="Resources\Bottom.ico" />
+    <Content Include="Resources\Calculator.ico" />
+    <Content Include="Resources\Cancel.ico" />
+    <Content Include="Resources\Coin-add.ico" />
+    <Content Include="Resources\Coin-delete.ico" />
+    <Content Include="Resources\Coin.ico" />
+    <Content Include="Resources\coin.png" />
+    <Content Include="Resources\Copy.ico" />
+    <Content Include="Resources\Create.ico" />
+    <Content Include="Resources\Cut.ico" />
+    <Content Include="Resources\Database.ico" />
+    <Content Include="Resources\Down.ico" />
+    <Content Include="Resources\Download.ico" />
+    <Content Include="Resources\Download1.ico" />
+    <Content Include="Resources\edit-4.ico" />
+    <Content Include="Resources\Edit.bmp" />
+    <Content Include="Resources\edit.ico" />
+    <Content Include="Resources\English.ico" />
+    <Content Include="Resources\Erase.ico" />
+    <Content Include="Resources\Exit.ico" />
+    <Content Include="Resources\Find.ico" />
+    <Content Include="Resources\Flag.ico" />
+    <Content Include="Resources\Folder.ico" />
+    <Content Include="Resources\Forward.ico" />
+    <Content Include="Resources\German.ico" />
+    <Content Include="Resources\Go back.ico" />
+    <Content Include="Resources\Go forward.ico" />
+    <Content Include="Resources\Green tag.ico" />
+    <Content Include="Resources\Help book 3d.ico" />
+    <Content Include="Resources\Hinweis.ico" />
+    <Content Include="Resources\Hinweis.leer.ico" />
+    <Content Include="Resources\Hinweis2.ico" />
+    <Content Include="Resources\Home.ico" />
+    <Content Include="Resources\List.ico" />
+    <Content Include="Resources\Load.ico" />
+    <Content Include="Resources\Loupe.ico" />
+    <Content Include="Resources\Mail.ico" />
+    <Content Include="Resources\Minus.bmp" />
+    <Content Include="Resources\new3-15.gif" />
+    <Content Include="Resources\new4-022.gif" />
+    <Content Include="Resources\Next track.ico" />
+    <Content Include="Resources\Play.ico" />
+    <Content Include="Resources\Playback.ico" />
+    <Content Include="Resources\pleasewait.gif" />
+    <Content Include="Resources\Previous record.ico" />
+    <Content Include="Resources\Print.ico" />
+    <Content Include="Resources\Record.ico" />
+    <Content Include="Resources\Save.ico" />
+    <Content Include="Resources\Save1.ico" />
+    <Content Include="Resources\Save2.ico" />
+    <Content Include="Resources\SaveAll.ico" />
+    <Content Include="Resources\Settings.ico" />
+    <Content Include="Resources\Sync.ico" />
+    <Content Include="Resources\Table.ico" />
+    <Content Include="Resources\Undo.ico" />
+    <Content Include="Resources\Unlock.ico" />
+    <Content Include="Resources\Up.ico" />
+    <Content Include="Resources\Upload.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Dieses Projekt verweist auf mindestens ein NuGet-Paket, das auf diesem Computer fehlt. Verwenden Sie die Wiederherstellung von NuGet-Paketen, um die fehlenden Dateien herunterzuladen. Weitere Informationen finden Sie unter "http://go.microsoft.com/fwlink/?LinkID=322105". Die fehlende Datei ist "{0}".</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\LoadAssembliesOnStartup.Fody.4.5.0\build\LoadAssembliesOnStartup.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\LoadAssembliesOnStartup.Fody.4.5.0\build\LoadAssembliesOnStartup.Fody.props'))" />
+    <Error Condition="!Exists('..\packages\Fody.6.2.4\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.6.2.4\build\Fody.targets'))" />
+    <Error Condition="!Exists('..\packages\ModuleInit.Fody.2.1.1\build\ModuleInit.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\ModuleInit.Fody.2.1.1\build\ModuleInit.Fody.props'))" />
+  </Target>
+  <Import Project="..\packages\Fody.6.2.4\build\Fody.targets" Condition="Exists('..\packages\Fody.6.2.4\build\Fody.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

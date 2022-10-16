@@ -1,0 +1,144 @@
+<root>
+  <land land="Großbritannien" kennung="en" sprache="englisch" flagge="iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAABGdBTUEAALGPC/xhBQAABCVJREFUSEvtVl1oHFUUHiiIpn8EU2ETQhUtRhobTZZsUqUhTW3FWmmhPgT8e9oHBe2TP2lB2fpSa4IhxSeDlkIhNmhTi5VKI7YkbZpoLdHsxk2z2+omu5tk/2Z/Z2fm8547e2c3u6smL/bFA99y595zvvPtuXfOXOmg1OpwSGu1HkkCwdHbz7G1vh+SdKwEYl34F8cV+lZUdJvzAqY/y0m5pcLkhUS+eRm1tZ8uIyQUExXHCb81az7C2SG3OS+wLIbllsRDuKUekRd2ITs+BmGhcBbP7J6GzTZlIhZT+Zq/rg5zFgsHjcloTfiNXZeh6zqf14IByG/aeQ4BkdcUsNS81YCtHone49AzGR4cjaqw2z0rFtDW5oLTmeTPZJnhiwjt2p7nb21AtPtYXoAoTfSTbiywxQXrYxzhzv3Iuqc5iarqGBhY+lcByaQGn88QrsdlxD54z+QjhN6wIzF9C6mUhkRCwenTU3kBfHLGi6W3XkfgyUc5gi3bkDj1OWPTuYhLl6KIxzWeoFBAwGrlc7mKQ7kxgcXnO0yehf3PQh7+gecgjI7K2LdvMHde2M+ePV9iZEQ2HeQfryBw4DnMN2zhWLK/AtU/j2xWN5MsE9DcbEyyxVjvx5hvrONx/qcaEen/DKlYmvN6PGn09QV4JcVh5QIINNnT44fbbTin4grCJ7/A3PZG/Pn4w5hjZMkL3xiJmJUToLLDRr6+bVuweORdJHxB808NDoawc6fLPEumALEFq7WyFViFibx3X4B4HQTZfwXzNfxfgBjQnq4Gc9XVecKamrI+/wRTwF0/hGJALZZA7VRjzY4ajs4GmixDjUagpVK5UMPKCdCzCvONcuiKYnAwKAprUDl+AVNAYSOiZiEaR/DsOdx8ZDN+ebAaoa+/4gnIco3wbyuQmnFj6mkbfn6gEt6uLiTlDOcbHo5h797fSxsR/VgsJ7gDOSZZ2/S88zYmqjZisqkBiV8nOTH9E+/tVPlvQdEWqKxqM6+9hIn7N+C33R2Izdzm3F5vBocO3SnfCcmBHCfb2zBWuQ6uFw8gGw4bhJqOb78LY8cOJy8f2TIBTU18LsI+3emMIZDuAr7u47hetQE/PVSL4PkLPAfhzJlQqYDA0HmMb67B1Y1rccfxPnTVSJRWNBz90GeWrpwAGpPRWmfnLX6RERb+/qLJO3v4CNsShYsYGHBi06a+/Gs4sv4+XLNUYfHcUC6UBUeynFAkX4kA8mlvd2H0agwa7RuzlGcWN1qsGFl3L252tCM2+0f+NRSDiSfYTcg5xQOofGPjMicqTE5YiQCBvhN+9gk3tkSNx+F69WVcqbgH11hFTAHFl1IK6Dp8Ob9HRRBbVhhDEPPF/lbrSVbJdNk4h7Re5dfyowUibC2nSkgKUY6IIObLxVRW9pbEUfKDUqvjL+ziHw0pB2z7AAAAAElFTkSuQmCC" />
+  <lokalisierung>
+    <frmAuswahl>
+      <frmAuswahl value="Module selection" />
+      <Check value="" />
+      <Bezeichnung value="description" />
+      <ID value="ID" />
+      <Key value="Key" />
+    </frmAuswahl>
+    <frmModulImport>
+      <label1 value="New modules are automatically marked so that they are not downloaded again. So only the modules that are not yet marked are downloaded. This prevents unnecessary loading of many modules that are already in the database." />
+      <parameter value="Extract FileName" />
+      <parameter1 value="module" />
+      <optDVD value="Load modules from CD / DVD" />
+      <optInternet value="Load modules from the Internet" />
+      <btnCheck value="Import new modules or module updates" />
+      <lblGesamt value="Overall progress" />
+      <btnClearDownloads value="Reset all downloads" />
+      <btnResetSingleDownload value="Reset individual downloads" />
+      <frmModulImport value="Module import" />
+    </frmModulImport>
+    <frmOrder>
+      <lblUpdate value="Here you can order all licensed modules and programs as updates" />
+      <btnAlle value="Order all module updates" />
+      <optPaypal value="Payment by Paypal" />
+      <optÜberweisung value="Payment by bank transfer" />
+      <labelEx1 value="Here you can order all modules and programs that you do not yet have" />
+      <lblUpdateSumme value="Total of update orders" />
+      <lblRabatt value="Unfortunately no discount on new modules yet" />
+      <lblMwst value="Included in the price {0} VAT {1}%" />
+      <lblGesamtSumme value="Total amount" />
+      <optVersand value="Delivery on CD / DVD" />
+      <optDownload value="Delivery via download (standard)" />
+      <lblNeuSumme value="Total new orders" />
+      <btnOrder value="Order" />
+      <lblVersion value="version" />
+      <lblRabattU value="Unfortunately no discount on module updates yet" />
+      <frmOrder value="Order modules" />
+      <colCheck value="Order" />
+      <colNummer value="Order no" />
+      <colModul value="module" />
+      <colVersion value="version" />
+      <colPreis value="price" />
+      <colWaehrung value="" />
+      <colName value="Surname" />
+      <colCheckNeu value="Order" />
+      <colNummerNeu value="Order no" />
+      <colModulNeu value="module" />
+      <colVersionNeu value="version" />
+      <colPreisNeu value="price" />
+      <colWaehrungNeu value="" />
+      <ColNameNeu value="Surname" />
+      <colPreisUpdate value="Price" />
+    </frmOrder>
+    <frmOrder2>
+      <btnBack value="Return" />
+      <btnOrder value="Print and place a binding order" />
+      <btnCancel value="cancellation" />
+      <lblText value="lblText" />
+      <frmOrder2 value="check Order" />
+      <msgOrderSent value="The order has been submitted" />
+      <msgOrderNotSent value="The order could not be submitted" />
+      <Mehrwertsteuer value="The price includes {0}% VAT {1} €" />
+      <Bestellnummer value="Order number" />
+    </frmOrder2>
+    <frmOrderCloudBackup>
+      <lblAbo3 value="Please fill in the following data for the direct debit mandate." />
+      <label1 value="Subscription CloudBackup" />
+      <lblAbo1 value="The subscription begins on the first of the next month, runs for exactly one year and is automatically extended by one year if it is not canceled 30 days before it expires. The term for the current order is from {0} to {1}." />
+      <lblAbo2 value="The annual fee is {0} € incl {1} % VAT and will be charged before the start of the subscription or. withdrawn from your account when you renewed." />
+      <lblBank value="Credit institution" />
+      <lblBIC value="BIC" />
+      <lblIBAN value="IBAN" />
+      <btnOrder value="Print and order" />
+      <frmOrderCloudBackup value="Subscription CloudBackup" />
+      <btnCancel value="cancellation" />
+      <Lastschrift value="The amount will be collected by direct debit" />
+      <Download value="The corresponding part of the program is delivered via download." />
+      <Adresse value="Address:" />
+      <artikelBezeichnung value="Annual subscription to CloudBackup from {0} to {1}" />
+      <itemHeader value="Order" />
+    </frmOrderCloudBackup>
+    <Keys>
+      <lblRabattU value="{0}% discount for module update orders" />
+      <lblRabatt value="{1}% discount for module orders from {0} €" />
+      <noModules value="There are no modules on this data carrier or folder" />
+      <executeEra value="Edit era" />
+      <executeModule value="Edit modules" />
+      <unzipPictures value="Unzip" />
+      <lblMwst value="The price includes {0}% VAT {1} €" />
+      <msgReady value="Import was carried out" />
+      <saveTextDE value="Save German texts" />
+      <loadTextEN value="Load english texts" />
+      <loadÄra value="loading era" />
+      <loadRegion value="Load areas" />
+      <loadCatalogue value="Extract filename" />
+      <loadCatalogue value="Extract filename" />
+      <loadModule value="Loading modules" />
+      <loadMint value="Load mints" />
+      <prepareUnzip value="Prepare to unzip images" />
+      <copyTextEN value="Copy English texts" />
+      <loadErhaltung value="Load conservation grades" />
+      <loadCulture value="Loading culture" />
+      <saveCatalogue value="Save catalog" />
+      <saveTextEN value="Save English texts" />
+      <editTextEN value="Edit English texts" />
+      <saveRegions value="Save areas" />
+      <msgEntpacke value="Unzip {0}" />
+      <saveText value="Save text" />
+    </Keys>
+    <frmDownLoader>
+      <Cancel value="Canceling downloads..." />
+      <CancelDelete value="Canceling downloads - deleting files..." />
+      <Canceled value="Download (s) canceled" />
+      <gbTotalProgress value="Total" />
+      <gbFileProgress value="File" />
+      <Complete value="Download complete, {0} files downloaded." />
+      <btnStop value="Cancel" />
+      <Preparing value="Preparing {0}" />
+      <Downloading value="{0} is downloading {1} / {2} files" />
+      <Calculating value="Calculate file sizes - file {0} / {1}" />
+      <FileSize value="Filesize {0}" />
+      <Total value="{0} MiB / {1} MiB downloaded ({2}%)" />
+      <FileProgress value="{0} MiB / {1} MiB files downloaded ({2}%)" />
+      <Calculated value="{0} calculated" />
+    </frmDownLoader>
+    <global>
+      <btnClose value="Close" />
+      <downloaded value="All modules are already downloaded" />
+      <executeCatalogue value="Edit catalog" />
+      <executeMint value="Process mints" />
+      <executeText value="Edit texts {0}" />
+      <lngDeutsch value="German" />
+      <msgFileSaved value="The file {0} was saved" />
+      <msgNoOrder value="It is currently not possible to order via the program." />
+      <lngEnglisch value="English" />
+      <noInternet value="No connection to the internet" />
+      <copying value="Copy" />
+      <msgLoad value="Load {0}." />
+      <Summe value="total" />
+    </global>
+  </lokalisierung>
+</root>

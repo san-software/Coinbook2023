@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3667E4BF-61AC-43ED-ACFF-61D80945EE5D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CoinbookKonvert</RootNamespace>
+    <AssemblyName>Coinbook.Konvert</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.4.369, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>packages\ICSharpCode.SharpZipLib.dll.0.85.4.369\lib\net20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Syncfusion.Shared.Base, Version=19.3460.0.43, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmKonvert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKonvert.designer.cs">
+      <DependentUpon>frmKonvert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModulImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModulImport.designer.cs">
+      <DependentUpon>frmModulImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTP.cs" />
+    <Compile Include="FTPModel.cs" />
+    <Compile Include="Helper\LanguageHelper.cs" />
+    <Compile Include="KonvertHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgressParameter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmKonvert.resx">
+      <DependentUpon>frmKonvert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModulImport.resx">
+      <DependentUpon>frmModulImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="database.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Coinbook.Helper\Coinbook.HelperProject.csproj">
+      <Project>{93467110-d9e7-43c1-a68c-14f13f37f6ef}</Project>
+      <Name>Coinbook.HelperProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Coinbook.Lokalisierung\Coinbook.Lokalisierung.csproj">
+      <Project>{70a440cd-9c08-4685-b5a9-3d828d9814e5}</Project>
+      <Name>Coinbook.Lokalisierung</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Coinbook.Model\Coinbook.Model\Coinbook.Model.csproj">
+      <Project>{4734730d-9af3-4bd9-9707-1972d01f186d}</Project>
+      <Name>Coinbook.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CoinbookEnumerations\Coinbook.Enumerations.csproj">
+      <Project>{8ff4952c-d23d-42d6-8450-576e8e4a914a}</Project>
+      <Name>Coinbook.Enumerations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LiteDB.Database\LiteDB.Database.csproj">
+      <Project>{bf0a2fcb-270d-4a8e-b1e3-52469d059550}</Project>
+      <Name>LiteDB.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.BackgroundWorker\SAN.Backgroundworker.csproj">
+      <Project>{072d0125-85e6-4155-be60-0f19061dd4f1}</Project>
+      <Name>SAN.Backgroundworker</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.Converter\SAN.Converter.csproj">
+      <Project>{75875061-e966-4515-91df-f7d8edba6c02}</Project>
+      <Name>SAN.Converter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.FileDownloader\FileDownloader\SAN.FileDownloader.csproj">
+      <Project>{37bf6ec4-32c4-4895-b198-3e50b8b2a1ff}</Project>
+      <Name>SAN.FileDownloader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.FTP\SAN.FTP.csproj">
+      <Project>{395fa41c-21fa-41d8-99b8-551e9bbec5f4}</Project>
+      <Name>SAN.FTP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.UIButton\SAN.UIButton.csproj">
+      <Project>{2e7651a7-ab9b-4bbc-bced-48f32bbd4021}</Project>
+      <Name>SAN.UIButton</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.UIGroupBox\SAN.UIGroupBox.csproj">
+      <Project>{c1529869-17a8-4c81-9f61-24344b7e47f2}</Project>
+      <Name>SAN.UIGroupBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAN.UIProgressBar\SAN.UIProgressBar.csproj">
+      <Project>{015cecde-5f3f-42a4-87f6-e1232da0f59e}</Project>
+      <Name>SAN.UIProgressBar</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

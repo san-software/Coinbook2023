@@ -1,0 +1,151 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "54803f93-fd53-4f7d-99f8-595e5d214f96": {
+      "ProjectGuid": "54803f93-fd53-4f7d-99f8-595e5d214f96",
+      "DisplayName": "Coinbook.Database",
+      "ColorIndex": 0
+    },
+    "e9380e3f-d401-48f6-b135-c162d5d71b6f": {
+      "ProjectGuid": "e9380e3f-d401-48f6-b135-c162d5d71b6f",
+      "DisplayName": "Coinbook.ModulVerwaltung",
+      "ColorIndex": 1
+    },
+    "072d0125-85e6-4155-be60-0f19061dd4f1": {
+      "ProjectGuid": "072d0125-85e6-4155-be60-0f19061dd4f1",
+      "DisplayName": "SAN.Backgroundworker",
+      "ColorIndex": 2
+    },
+    "93467110-d9e7-43c1-a68c-14f13f37f6ef": {
+      "ProjectGuid": "93467110-d9e7-43c1-a68c-14f13f37f6ef",
+      "DisplayName": "Coinbook.HelperProject",
+      "ColorIndex": 3
+    },
+    "d641a4ae-98fe-43e0-9b27-74c5c301f1d1": {
+      "ProjectGuid": "d641a4ae-98fe-43e0-9b27-74c5c301f1d1",
+      "DisplayName": "Coinbook",
+      "ColorIndex": 4
+    },
+    "8ff4952c-d23d-42d6-8450-576e8e4a914a": {
+      "ProjectGuid": "8ff4952c-d23d-42d6-8450-576e8e4a914a",
+      "DisplayName": "Coinbook.Enumerations",
+      "ColorIndex": 5
+    },
+    "70a440cd-9c08-4685-b5a9-3d828d9814e5": {
+      "ProjectGuid": "70a440cd-9c08-4685-b5a9-3d828d9814e5",
+      "DisplayName": "Coinbook.Lokalisierung",
+      "ColorIndex": 6
+    },
+    "4734730d-9af3-4bd9-9707-1972d01f186d": {
+      "ProjectGuid": "4734730d-9af3-4bd9-9707-1972d01f186d",
+      "DisplayName": "Coinbook.Model",
+      "ColorIndex": 7
+    },
+    "51f688b1-aa67-4f68-a987-b9066c0a7418": {
+      "ProjectGuid": "51f688b1-aa67-4f68-a987-b9066c0a7418",
+      "DisplayName": "Coinbook.Sprache",
+      "ColorIndex": 8
+    },
+    "37bf6ec4-32c4-4895-b198-3e50b8b2a1ff": {
+      "ProjectGuid": "37bf6ec4-32c4-4895-b198-3e50b8b2a1ff",
+      "DisplayName": "SAN.FileDownloader",
+      "ColorIndex": 9
+    },
+    "b4013911-5ee2-4249-903e-a4c17f48ea22": {
+      "ProjectGuid": "b4013911-5ee2-4249-903e-a4c17f48ea22",
+      "DisplayName": "SAN.Plugin",
+      "ColorIndex": 10
+    },
+    "2e7651a7-ab9b-4bbc-bced-48f32bbd4021": {
+      "ProjectGuid": "2e7651a7-ab9b-4bbc-bced-48f32bbd4021",
+      "DisplayName": "SAN.UIButton",
+      "ColorIndex": 11
+    },
+    "f7efaa59-c9f9-484c-840a-e42c8068987f": {
+      "ProjectGuid": "f7efaa59-c9f9-484c-840a-e42c8068987f",
+      "DisplayName": "SAN.UICheckBox",
+      "ColorIndex": 12
+    },
+    "c1529869-17a8-4c81-9f61-24344b7e47f2": {
+      "ProjectGuid": "c1529869-17a8-4c81-9f61-24344b7e47f2",
+      "DisplayName": "SAN.UIGroupBox",
+      "ColorIndex": 13
+    },
+    "8514cf43-55cf-4195-b797-4229aea85062": {
+      "ProjectGuid": "8514cf43-55cf-4195-b797-4229aea85062",
+      "DisplayName": "SAN.UIPictureBox",
+      "ColorIndex": 14
+    },
+    "015cecde-5f3f-42a4-87f6-e1232da0f59e": {
+      "ProjectGuid": "015cecde-5f3f-42a4-87f6-e1232da0f59e",
+      "DisplayName": "SAN.UIProgressBar",
+      "ColorIndex": 15
+    },
+    "be200b1f-788b-472f-a1a7-4ba7d3983363": {
+      "ProjectGuid": "be200b1f-788b-472f-a1a7-4ba7d3983363",
+      "DisplayName": "SAN.UITextbox",
+      "ColorIndex": 0
+    },
+    "743edb81-d2ac-4a52-a313-50bd4229401b": {
+      "ProjectGuid": "743edb81-d2ac-4a52-a313-50bd4229401b",
+      "DisplayName": "SplashScreen",
+      "ColorIndex": 1
+    },
+    "bf0a2fcb-270d-4a8e-b1e3-52469d059550": {
+      "ProjectGuid": "bf0a2fcb-270d-4a8e-b1e3-52469d059550",
+      "DisplayName": "LiteDB.Database",
+      "ColorIndex": 2
+    },
+    "0b1e3184-4564-4e20-8940-e246174b56c4": {
+      "ProjectGuid": "0b1e3184-4564-4e20-8940-e246174b56c4",
+      "DisplayName": "Coinbook.Import",
+      "ColorIndex": 3
+    },
+    "395fa41c-21fa-41d8-99b8-551e9bbec5f4": {
+      "ProjectGuid": "395fa41c-21fa-41d8-99b8-551e9bbec5f4",
+      "DisplayName": "SAN.FTP",
+      "ColorIndex": 4
+    },
+    "75875061-e966-4515-91df-f7d8edba6c02": {
+      "ProjectGuid": "75875061-e966-4515-91df-f7d8edba6c02",
+      "DisplayName": "SAN.Converter",
+      "ColorIndex": 5
+    },
+    "b289e17e-58ea-402c-9839-82f11dd54e49": {
+      "ProjectGuid": "b289e17e-58ea-402c-9839-82f11dd54e49",
+      "DisplayName": "SAN.UIComboBox",
+      "ColorIndex": 6
+    },
+    "e85dd212-a035-44d8-a4aa-f0d03cdd8b4b": {
+      "ProjectGuid": "e85dd212-a035-44d8-a4aa-f0d03cdd8b4b",
+      "DisplayName": "SAN.Logging",
+      "ColorIndex": 7
+    },
+    "c0bff8b5-ea30-46e2-a97a-d9fe66e44fab": {
+      "ProjectGuid": "c0bff8b5-ea30-46e2-a97a-d9fe66e44fab",
+      "DisplayName": "OleDB",
+      "ColorIndex": 8
+    },
+    "23e96e6a-2cc7-4514-a8db-e0605b4efde9": {
+      "ProjectGuid": "23e96e6a-2cc7-4514-a8db-e0605b4efde9",
+      "DisplayName": "SAN.Magnification",
+      "ColorIndex": 9
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Sonstige Dateien",
+      "ColorIndex": -1
+    },
+    "73cc092c-afa6-4b58-a0ec-906b45a60f30": {
+      "ProjectGuid": "73cc092c-afa6-4b58-a0ec-906b45a60f30",
+      "DisplayName": "SAN.MessageBoxNonmodal",
+      "ColorIndex": 10
+    },
+    "e2232464-cde6-4f55-b0bf-0ac85cd67eff": {
+      "ProjectGuid": "e2232464-cde6-4f55-b0bf-0ac85cd67eff",
+      "DisplayName": "Coinbook.EventHandler",
+      "ColorIndex": 11
+    }
+  },
+  "NextColorIndex": 12
+}
