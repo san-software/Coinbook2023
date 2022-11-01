@@ -535,8 +535,8 @@ namespace Coinbook
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 45F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 156F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 159F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 113F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
@@ -660,10 +660,10 @@ namespace Coinbook
             this.picMünzeKlein.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picMünzeKlein.ErrorImage = ((System.Drawing.Image)(resources.GetObject("picMünzeKlein.ErrorImage")));
             this.picMünzeKlein.Image = ((System.Drawing.Image)(resources.GetObject("picMünzeKlein.Image")));
-            this.picMünzeKlein.Location = new System.Drawing.Point(533, 3);
+            this.picMünzeKlein.Location = new System.Drawing.Point(530, 3);
             this.picMünzeKlein.Name = "picMünzeKlein";
             this.tableLayoutPanel1.SetRowSpan(this.picMünzeKlein, 9);
-            this.picMünzeKlein.Size = new System.Drawing.Size(427, 269);
+            this.picMünzeKlein.Size = new System.Drawing.Size(430, 269);
             this.picMünzeKlein.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picMünzeKlein.TabIndex = 27;
             this.picMünzeKlein.TabStop = false;
@@ -740,12 +740,10 @@ namespace Coinbook
             this.txtAuflagePP.BackColor = System.Drawing.Color.White;
             this.txtAuflagePP.Column = 7;
             this.tableLayoutPanel1.SetColumnSpan(this.txtAuflagePP, 2);
-            this.txtAuflagePP.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtAuflagePP.Enter2Tab = true;
             this.txtAuflagePP.ForeColor = System.Drawing.Color.Black;
             this.txtAuflagePP.IsPflichtfeld = false;
             this.txtAuflagePP.Location = new System.Drawing.Point(400, 218);
-            this.txtAuflagePP.Margin = new System.Windows.Forms.Padding(3, 3, 20, 3);
             this.txtAuflagePP.NachkommaStellen = ((short)(0));
             this.txtAuflagePP.Name = "txtAuflagePP";
             this.txtAuflagePP.NumberFormat = "";
@@ -754,7 +752,7 @@ namespace Coinbook
             this.txtAuflagePP.RegularExpression = "";
             this.txtAuflagePP.Row = 7;
             this.txtAuflagePP.ShowClipBoard = true;
-            this.txtAuflagePP.Size = new System.Drawing.Size(110, 20);
+            this.txtAuflagePP.Size = new System.Drawing.Size(124, 20);
             this.txtAuflagePP.TabIndex = 9;
             this.txtAuflagePP.TabStop = false;
             this.txtAuflagePP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -767,6 +765,7 @@ namespace Coinbook
             this.txtPicture.AcceptsTab = true;
             this.txtPicture.BackColor = System.Drawing.Color.White;
             this.txtPicture.Column = 5;
+            this.tableLayoutPanel1.SetColumnSpan(this.txtPicture, 2);
             this.txtPicture.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtPicture.Enter2Tab = true;
             this.txtPicture.ForeColor = System.Drawing.Color.Black;
@@ -780,7 +779,7 @@ namespace Coinbook
             this.txtPicture.RegularExpression = "";
             this.txtPicture.Row = 0;
             this.txtPicture.ShowClipBoard = true;
-            this.txtPicture.Size = new System.Drawing.Size(67, 20);
+            this.txtPicture.Size = new System.Drawing.Size(124, 20);
             this.txtPicture.TabIndex = 14;
             this.txtPicture.TabStop = false;
             this.txtPicture.Translation = "";
@@ -799,7 +798,6 @@ namespace Coinbook
             this.txtAuflageSTH.ForeColor = System.Drawing.Color.Black;
             this.txtAuflageSTH.IsPflichtfeld = false;
             this.txtAuflageSTH.Location = new System.Drawing.Point(400, 188);
-            this.txtAuflageSTH.Margin = new System.Windows.Forms.Padding(3, 3, 20, 3);
             this.txtAuflageSTH.NachkommaStellen = ((short)(0));
             this.txtAuflageSTH.Name = "txtAuflageSTH";
             this.txtAuflageSTH.NumberFormat = "";
@@ -808,7 +806,7 @@ namespace Coinbook
             this.txtAuflageSTH.RegularExpression = "";
             this.txtAuflageSTH.Row = 6;
             this.txtAuflageSTH.ShowClipBoard = true;
-            this.txtAuflageSTH.Size = new System.Drawing.Size(110, 20);
+            this.txtAuflageSTH.Size = new System.Drawing.Size(124, 20);
             this.txtAuflageSTH.TabIndex = 8;
             this.txtAuflageSTH.TabStop = false;
             this.txtAuflageSTH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -912,6 +910,7 @@ namespace Coinbook
             this.txtKatNr.AcceptsTab = true;
             this.txtKatNr.BackColor = System.Drawing.Color.White;
             this.txtKatNr.Column = 6;
+            this.tableLayoutPanel1.SetColumnSpan(this.txtKatNr, 2);
             this.txtKatNr.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtKatNr.Enter2Tab = true;
             this.txtKatNr.ForeColor = System.Drawing.Color.Black;
@@ -925,7 +924,7 @@ namespace Coinbook
             this.txtKatNr.RegularExpression = "";
             this.txtKatNr.Row = 0;
             this.txtKatNr.ShowClipBoard = true;
-            this.txtKatNr.Size = new System.Drawing.Size(67, 20);
+            this.txtKatNr.Size = new System.Drawing.Size(124, 20);
             this.txtKatNr.TabIndex = 6;
             this.txtKatNr.TabStop = false;
             this.txtKatNr.Translation = "";
@@ -956,7 +955,6 @@ namespace Coinbook
             this.txtMünzzeichen.ForeColor = System.Drawing.Color.Black;
             this.txtMünzzeichen.IsPflichtfeld = false;
             this.txtMünzzeichen.Location = new System.Drawing.Point(400, 38);
-            this.txtMünzzeichen.Margin = new System.Windows.Forms.Padding(3, 3, 20, 3);
             this.txtMünzzeichen.NachkommaStellen = ((short)(0));
             this.txtMünzzeichen.Name = "txtMünzzeichen";
             this.txtMünzzeichen.NumberFormat = null;
@@ -965,7 +963,7 @@ namespace Coinbook
             this.txtMünzzeichen.RegularExpression = "";
             this.txtMünzzeichen.Row = 0;
             this.txtMünzzeichen.ShowClipBoard = true;
-            this.txtMünzzeichen.Size = new System.Drawing.Size(110, 20);
+            this.txtMünzzeichen.Size = new System.Drawing.Size(124, 20);
             this.txtMünzzeichen.TabIndex = 5;
             this.txtMünzzeichen.TabStop = false;
             this.txtMünzzeichen.Translation = "";
@@ -1188,7 +1186,6 @@ namespace Coinbook
             this.txtAuflage.ForeColor = System.Drawing.Color.Black;
             this.txtAuflage.IsPflichtfeld = false;
             this.txtAuflage.Location = new System.Drawing.Point(400, 158);
-            this.txtAuflage.Margin = new System.Windows.Forms.Padding(3, 3, 20, 3);
             this.txtAuflage.NachkommaStellen = ((short)(0));
             this.txtAuflage.Name = "txtAuflage";
             this.txtAuflage.NumberFormat = "";
@@ -1197,7 +1194,7 @@ namespace Coinbook
             this.txtAuflage.RegularExpression = "";
             this.txtAuflage.Row = 5;
             this.txtAuflage.ShowClipBoard = true;
-            this.txtAuflage.Size = new System.Drawing.Size(110, 20);
+            this.txtAuflage.Size = new System.Drawing.Size(124, 20);
             this.txtAuflage.TabIndex = 7;
             this.txtAuflage.TabStop = false;
             this.txtAuflage.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1370,7 +1367,6 @@ namespace Coinbook
             this.txtPrägeort.ForeColor = System.Drawing.Color.Black;
             this.txtPrägeort.IsPflichtfeld = false;
             this.txtPrägeort.Location = new System.Drawing.Point(265, 248);
-            this.txtPrägeort.Margin = new System.Windows.Forms.Padding(3, 3, 20, 3);
             this.txtPrägeort.NachkommaStellen = ((short)(0));
             this.txtPrägeort.Name = "txtPrägeort";
             this.txtPrägeort.NumberFormat = null;
@@ -1379,7 +1375,7 @@ namespace Coinbook
             this.txtPrägeort.RegularExpression = "";
             this.txtPrägeort.Row = 8;
             this.txtPrägeort.ShowClipBoard = true;
-            this.txtPrägeort.Size = new System.Drawing.Size(245, 20);
+            this.txtPrägeort.Size = new System.Drawing.Size(259, 20);
             this.txtPrägeort.TabIndex = 47;
             this.txtPrägeort.Translation = "";
             this.txtPrägeort.Typ = SAN.Control.TextBoxTyp.Text;

@@ -1145,7 +1145,7 @@ namespace Coinbook
 
             if (temp != null)
             {
-                file = Path.Combine(CoinbookHelper.Picturepath, temp.Picture);
+                file = Path.Combine(CoinbookHelper.PicturePath, temp.Picture);
 
                 if (file != picMünze.PictureName)
                 {
@@ -1426,7 +1426,7 @@ namespace Coinbook
 
             if (grdMain1.CurrentItem != null)
             {
-                string file = Path.Combine(CoinbookHelper.Picturepath, ((Katalog3)grdMain1.CurrentItem).Picture);
+                string file = Path.Combine(CoinbookHelper.PicturePath, ((Katalog3)grdMain1.CurrentItem).Picture);
                 var copyright = ImageHelper.GetFullEXIF(file);
 
                 if (copyright.Count == 1)

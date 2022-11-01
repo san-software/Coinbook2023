@@ -5,6 +5,7 @@ obj
 *.log
 *.suo
 *.user
+.vs
 /Coinbook/TeamViewerQS.exe
 /Coinbook.CloudBackup.Plugin/packages/LiteDB.5.0.10
 /Coinbook.CloudBackup.Plugin/packages/Microsoft.Bcl.1.1.10

@@ -7,16 +7,14 @@ using Coinbook.Helper;
 using Coinbook.Model;
 using SAN.FTP;
 using SAN.Logging;
-using SAN.UIControls;
 using Splash;
 using Syncfusion.Windows.Forms;
-using Syncfusion.WinForms.Controls;
+//using Syncfusion.WinForms.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -34,11 +32,15 @@ namespace Coinbook
         [STAThread]
         static void Main()
         {
+            if (File.Exists(@"C:ProgramData\Coinbook\Test.txt")) MessageBox.Show("21");
+
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("NDI3NzIyQDMxMzkyZTMxMmUzMGlEMzJRR0laMzhSWUZnendjb3d5L3dGdk9iT2ZZMDkzT2c5VG5hK3JTUDQ9;NDI3NzIzQDMxMzkyZTMxMmUzMFl4YWMzZlJnTm10b0ZIV0sxaXVOQi90c3BZT3MwaEw4RDF5eTBJM2F1R0k9;NDI3NzI0QDMxMzkyZTMxMmUzMGJpYThWUmR1NnlRTWVIK3AxclZJeWw2OWtMYXRSYys0cm5SZll0Nkc3cDQ9;NDI3NzI1QDMxMzkyZTMxMmUzMEZrSjJ0d0c0UmZUUTN3c1kwSk56RUxnaytSSVRWeFB2c3B5SXh4M2d1bmM9;NDI3NzI2QDMxMzkyZTMxMmUzMEdQaTVHRnVjYnRFM2Q4Y1pxT3Q0ODFHNVR4SCtCeU9nZ2hURUw0OThUNGs9;NDI3NzI3QDMxMzkyZTMxMmUzMEppYlVLK3FqWlpoVTBNZHlxK3RmMUc4MnZHak5IS3AyS3V3OXZZWjFkaHM9;NDI3NzI4QDMxMzkyZTMxMmUzMFRNQ0U2T0M4OGZLUmQyNkg1S2tSc3ZhemlMNTYzOVkyTU9QTGUycTFWUUU9;NDI3NzI5QDMxMzkyZTMxMmUzMEs4ZXlENWdoNm5nQzFlTGlQLytoNGFZS2l6QVc1UWtLMXJndmVlbjdVbGs9;NDI3NzMwQDMxMzkyZTMxMmUzMFB1MEtJNHQzRnFBSWVCbm9tbWlCWkNQWlhKMkJTaGd1ZXVyb045bzNBT3c9;NDI3NzMxQDMxMzkyZTMxMmUzMEVHR04yZXdBWFB4RXJhMTNKMnNyNDl3dm5yQkhnekNVQVE0WS80Y25xZFE9");
 
-            SfSkinManager.LoadAssembly(typeof(Syncfusion.WinForms.Themes.Office2016Theme).Assembly);
-            SfSkinManager.LoadAssembly(typeof(Syncfusion.WinForms.Themes.Office2019Theme).Assembly);
-            SfSkinManager.LoadAssembly(typeof(Syncfusion.HighContrastTheme.WinForms.HighContrastTheme).Assembly);
+            //SfSkinManager.LoadAssembly(typeof(Syncfusion.WinForms.Themes.Office2016Theme).Assembly);
+            //SfSkinManager.LoadAssembly(typeof(Syncfusion.WinForms.Themes.Office2019Theme).Assembly);
+            //SfSkinManager.LoadAssembly(typeof(Syncfusion.HighContrastTheme.WinForms.HighContrastTheme).Assembly);
+
+            if (File.Exists(@"C:ProgramData\Coinbook\Test.txt")) MessageBox.Show("22");
 
             Application.ThreadException += new System.Threading.ThreadExceptionEventHandler(Application_ThreadException);
             Application.EnableVisualStyles();
@@ -52,13 +54,7 @@ namespace Coinbook
             MessageBoxAdv.CaptionAlign = HorizontalAlignment.Center;
             MessageBoxAdv.DropShadow = true;
 
-            //LoggingServices.DefaultBackend = new PostSharp.Patterns.Diagnostics.Backends.Console.ConsoleLoggingBackend();
-
-            //// Configure Log4Net
-            //XmlConfigurator.Configure(new FileInfo("log4net.config"));
-
-            //// Configure PostSharp Logging to use Log4Net
-            //LoggingServices.DefaultBackend = new Log4NetLoggingBackend();
+            if (File.Exists(@"C:ProgramData\Coinbook\Test.txt")) MessageBox.Show("11");
 
             SplashScreen.ShowSplashScreen();
 
@@ -66,6 +62,10 @@ namespace Coinbook
             CoinbookHelper.Hinweis = new Icon(Path.Combine(Path.Combine(Application.StartupPath, "Images"), "Hinweis.ico"));
             CoinbookHelper.Lupe = new Icon(Path.Combine(Path.Combine(Application.StartupPath, "Images"), "Lupe.ico"));
             CoinbookHelper.CoinbookIcon = new Icon(Path.Combine(Application.StartupPath, "Icon.ico"));
+
+            CoinbookHelper.DataPath = DatabaseHelper.LiteDatabase.DataPath;
+
+            CoinbookHelper.CheckForData();
 
             CoinbookHelper.Settings = DatabaseHelper.LiteDatabase.ReadSettings();
             string sprache = CoinbookHelper.Settings.Culture.Substring(0, 2);
@@ -75,7 +75,8 @@ namespace Coinbook
             LanguageHelper.CreateLocalization(resourcePath);
             LanguageHelper.Localization.UpdateLanguage(sprache);
 
-            CoinbookHelper.DataPath = DatabaseHelper.LiteDatabase.DataPath;
+            if (File.Exists(@"C:ProgramData\Coinbook\Test.txt"))
+                MessageBox.Show("12");
 
             if (File.Exists(Path.Combine(DatabaseHelper.LiteDatabase.DataPath, "Coinbook-log.db")))
                 File.Delete(Path.Combine(DatabaseHelper.LiteDatabase.DataPath, "Coinbook-log.db"));
@@ -90,6 +91,9 @@ namespace Coinbook
             AppDomain currentDomain = AppDomain.CurrentDomain;
             //currentDomain.UnhandledException += new UnhandledExceptionEventHandler(Application_ThreadException);
             var x1 = SAN.Logging.LogHelper.LogSettings;
+
+            if (File.Exists(@"C:ProgramData\Coinbook\Test.txt"))
+                MessageBox.Show("13");  
 
             if (!File.Exists(Path.Combine(CoinbookHelper.DataPath, "modul.lic")))
             {
@@ -108,6 +112,9 @@ namespace Coinbook
                     return;
             }
 
+            if (File.Exists(@"C:ProgramData\Coinbook\Test.txt"))
+                MessageBox.Show("14");
+
             downloadFiles();
 
             Lizenz lizenz = new Lizenz();
@@ -118,7 +125,9 @@ namespace Coinbook
 
             Application.DoEvents();
 
-            //MessageBox.Show("1");
+            if (File.Exists(@"C:ProgramData\Coinbook\Test.txt"))
+                MessageBox.Show("1");
+
             setSplashStatus("msgDatenbank");
 
             if (!Directory.Exists(CoinbookHelper.DataPath))
@@ -126,19 +135,10 @@ namespace Coinbook
 
             CoinbookHelper.EigeneBilderListe = new List<EigeneBilder>();
 
-            List<System.Diagnostics.Process> listProcesses = new List<System.Diagnostics.Process>();
-            listProcesses.AddRange(System.Diagnostics.Process.GetProcesses());
-            listProcesses.ForEach(
-                    o =>
-                    {
-                        if (o.ProcessName.CompareTo(System.Diagnostics.Process.GetCurrentProcess().ProcessName) == 0)
-                        {
-                            Application.ExitThread();
-                        }
-                    }
-            );
+            if (CoinbookHelper.CheckDoubleLoad) Application.ExitThread();
 
-            //MessageBox.Show("2");
+            if (File.Exists(@"C:ProgramData\Coinbook\Test.txt"))
+                MessageBox.Show("2");
 
             setSplashStatus("msgLizenzCheck");
             lizenz.ReadModulLizenzen();
@@ -150,7 +150,8 @@ namespace Coinbook
                 CoinbookHelper.Nationen = DatabaseHelper.LiteDatabase.ReadNationen();
                 CoinbookHelper.Erhaltungsgrade = DatabaseHelper.LiteDatabase.ReadErhaltungsgrade(CoinbookHelper.Settings.International);
 
-                //MessageBox.Show("3");
+                if (File.Exists(@"C:ProgramData\Coinbook\Test.txt"))
+                    MessageBox.Show("3");
 
                 AutoUpdate updater = new AutoUpdate();
                 updater.DataPath = CoinbookHelper.DataPath;
@@ -173,7 +174,8 @@ namespace Coinbook
                 PluginHelper.CheckPlugins(CoinbookHelper.Abo);
                 SplashScreen.CloseForm();
 
-                //MessageBox.Show("4");
+                if (File.Exists(@"C:ProgramData\Coinbook\Test.txt"))
+                    MessageBox.Show("4");
 
                 setSplashStatus("msgInitialize");
 
@@ -201,7 +203,8 @@ namespace Coinbook
                         break;
                 }
 
-                //MessageBox.Show("5");
+                if (File.Exists(@"C:ProgramData\Coinbook\Test.txt"))
+                    MessageBox.Show("5");
 
                 SplashScreen.CloseForm();
                 Application.Run(frmmain);
@@ -295,20 +298,6 @@ namespace Coinbook
                 if (File.Exists(target))
                     modifydate = File.GetCreationTime(target);
                 result = ftp.Download("Downloads/Coinbook/" + file, target, modifydate);
-
-                ////Nation.zip kopieren
-                //file = "Nation.zip";
-                //target = Path.Combine(CoinbookHelper.InfoPath, file);
-                //modifydate = Convert.ToDateTime("01.01.1900");
-                //if (File.Exists(target))
-                //    modifydate = File.GetCreationTime(target);
-                //result = ftp.Download("Downloads/Module2022/" + file, target, modifydate);
-
-                //if (result == enmFTPFile.FileDownloadOK)
-                //{
-                //    ArchivHelper.DecompressFile(target, CoinbookHelper.DownloadPath,"", "magixx-1-xxigam");
-                //    CoinbookHelper.ImportNation(Path.Combine(CoinbookHelper.DownloadPath, "tblNation.xml"));
-                //}
 
                 //Allgemein.zip kopieren
                 file = "Allgemein.zip";

@@ -235,7 +235,7 @@ namespace Coinbook
 			{
 				if (CoinbookHelper.MuenzkatalogFiltered[Index].Picture != String.Empty)
 				{
-					string file = Path.Combine(CoinbookHelper.Picturepath, CoinbookHelper.MuenzkatalogFiltered[Index].Picture);
+					string file = Path.Combine(CoinbookHelper.PicturePath, CoinbookHelper.MuenzkatalogFiltered[Index].Picture);
 					if (File.Exists(file))
 					{
 						Bitmap image = new Bitmap(file);
@@ -1178,7 +1178,7 @@ namespace Coinbook
 		{
 			string text = string.Empty;
 
-			string file = Path.Combine(CoinbookHelper.Picturepath, txtPicture.Text);
+			string file = Path.Combine(CoinbookHelper.PicturePath, txtPicture.Text);
 			var copyright = ImageHelper.GetFullEXIF(file);
 
 			if (copyright.Count == 1)

@@ -103,7 +103,7 @@
                   <desc >Sprachauswahl</>
                   <buttons >nc</>
                   <design >left</>
-                  <headlogo >C:\DEV\Coinbook.2022\Coinbook\bin\Release\Icon.ico</>
+                  <headlogo >C:\DEV\Coinbook.2023\Coinbook\bin\Release\Icon.ico</>
                   <varlist >
                      <rows ></>
                   </>
@@ -116,7 +116,7 @@
                   <desc ></>
                   <buttons >auto</>
                   <design >left</>
-                  <headlogo >C:\DEV\Coinbook.2022\Coinbook\bin\Release\Icon.ico</>
+                  <headlogo >C:\DEV\Coinbook.2023\Coinbook\bin\Release\Icon.ico</>
                   <varlist >
                      <rows ></>
                   </>
@@ -138,12 +138,12 @@
                </>
                <_ id = dlglic disabled = 0 >
                   <desc ></>
-                  <file >C:\DEV\Coinbook.2022\Coinbook\bin\Release\Lizenzbestimmungen-DE.rtf</>
+                  <file >C:\DEV\Coinbook.2023\Coinbook\bin\Release\Lizenzbestimmungen-DE.rtf</>
                   <print >1</>
                   <iagree >radio</>
                   <buttons >pnc</>
                   <design >left</>
-                  <headlogo >C:\DEV\Coinbook.2022\Coinbook\bin\Release\Icon.ico</>
+                  <headlogo >C:\DEV\Coinbook.2023\Coinbook\bin\Release\Icon.ico</>
                   <varlist >
                      <rows >
                         <_ >
@@ -154,7 +154,7 @@
                         </>
                         <_ >
                            <varname >_Lic_english</>
-                           <value >C:\DEV\Coinbook.2022\Coinbook\bin\Release\Lizenzbestimmungen-EN.rtf</>
+                           <value >C:\DEV\Coinbook.2023\Coinbook\bin\Release\Lizenzbestimmungen-EN.rtf</>
                            <if ></>
                            <comm ></>
                         </>
@@ -168,7 +168,7 @@
                   <desc ></>
                   <buttons >auto</>
                   <design >left</>
-                  <headlogo >C:\DEV\Coinbook.2022\Coinbook\bin\Release\Icon.ico</>
+                  <headlogo >C:\DEV\Coinbook.2023\Coinbook\bin\Release\Icon.ico</>
                   <chlist >
                      <rows ></>
                   </>
@@ -197,7 +197,7 @@
                         <srclist >
                            <rows rel = unpack >
                               <_ >
-                                 <filename >C:\DEV\Coinbook.2022\Coinbook\bin\Release\*.*</>
+                                 <filename >C:\DEV\Coinbook.2023\Coinbook\bin\Release\*.*</>
                                  <recurse >1</>
                                  <justfile >0</>
                                  <emptydir >1</>
@@ -408,7 +408,7 @@
                   <auto >0</>
                   <buttons >nc</>
                   <design >left</>
-                  <headlogo >C:\DEV\Coinbook.2022\Coinbook\bin\Release\Icon.ico</>
+                  <headlogo >C:\DEV\Coinbook.2023\Coinbook\bin\Release\Icon.ico</>
                   <varlist >
                      <rows ></>
                   </>

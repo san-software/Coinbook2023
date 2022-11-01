@@ -85,7 +85,15 @@ namespace Coinbook.Helper
             }
         }
 
-        public static string Picturepath
+        public static string KatalogPath
+        {
+            get
+            {
+                return System.IO.Path.Combine(DataPath, "Katalog");
+            }
+        }
+
+        public static string PicturePath
         {
             get
             {
@@ -1436,6 +1444,35 @@ namespace Coinbook.Helper
                     MuenzkatalogFiltered[index].SummePP = summe != 0 ? string.Format("{0:#,##0.00}", summe) : string.Empty;
                     break;
             }
+        }
+
+        public static bool CheckDoubleLoad
+        {
+            get
+            {
+                bool result = false;
+
+                foreach (Process p in Process.GetProcesses())
+                    if (p.ProcessName == AppDomain.CurrentDomain.FriendlyName)
+                    {
+                        result = true;
+                        break;
+                    }
+
+                return result;
+            }
+        }
+
+        public static void CheckForData()
+        {
+            if (!Directory.Exists(DataPath)) Directory.CreateDirectory(DataPath);
+            if (!Directory.Exists(UpdatePath)) Directory.CreateDirectory(UpdatePath);
+            if (!Directory.Exists(DownloadPath)) Directory.CreateDirectory(DownloadPath);
+            if (!Directory.Exists(PicturePath)) Directory.CreateDirectory(PicturePath);
+            if (!Directory.Exists(InfoPath)) Directory.CreateDirectory(InfoPath);
+            if (!Directory.Exists(KatalogPath)) Directory.CreateDirectory(KatalogPath);
+
+
         }
     }
 

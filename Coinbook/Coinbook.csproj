@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\ModuleInit.Fody.2.1.1\build\ModuleInit.Fody.props" Condition="Exists('..\packages\ModuleInit.Fody.2.1.1\build\ModuleInit.Fody.props')" />
   <Import Project="..\packages\LoadAssembliesOnStartup.Fody.4.5.0\build\LoadAssembliesOnStartup.Fody.props" Condition="Exists('..\packages\LoadAssembliesOnStartup.Fody.4.5.0\build\LoadAssembliesOnStartup.Fody.props')" />
@@ -96,9 +96,8 @@
       <HintPath>..\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="ExcelApi, Version=1.7.3.0, Culture=neutral, PublicKeyToken=26cf6d85ba68fa54, processorArchitecture=MSIL">
-      <HintPath>..\packages\NetOffice.Excel.Net45.1.7.4.4\lib\net45\ExcelApi.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="ExcelApi, Version=1.7.4.11, Culture=neutral, PublicKeyToken=7292cd2a8b1e0703, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetOffice.Excel.Net45.1.7.4.11\lib\net45\ExcelApi.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="ExifLib, Version=1.7.0.0, Culture=neutral, PublicKeyToken=30284005913968db, processorArchitecture=MSIL">
@@ -107,8 +106,8 @@
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.4.369, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
       <HintPath>..\packages\ICSharpCode.SharpZipLib.dll.0.85.4.369\lib\net20\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
-    <Reference Include="LiteDB, Version=5.0.11.0, Culture=neutral, PublicKeyToken=4ee40123013c9f27, processorArchitecture=MSIL">
-      <HintPath>..\packages\LiteDB.5.0.11\lib\net45\LiteDB.dll</HintPath>
+    <Reference Include="LiteDB, Version=5.0.12.0, Culture=neutral, PublicKeyToken=4ee40123013c9f27, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiteDB.5.0.12\lib\net45\LiteDB.dll</HintPath>
     </Reference>
     <Reference Include="log4net, Version=2.0.14.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.14\lib\net45\log4net.dll</HintPath>
@@ -121,17 +120,15 @@
     <Reference Include="ModuleInit, Version=2.1.1.0, Culture=neutral, PublicKeyToken=409b3227471b0f0d, processorArchitecture=MSIL">
       <HintPath>..\packages\ModuleInit.Fody.2.1.1\lib\net452\ModuleInit.dll</HintPath>
     </Reference>
-    <Reference Include="NetOffice, Version=1.7.3.0, Culture=neutral, PublicKeyToken=acf636d62c39f8f5, processorArchitecture=MSIL">
-      <HintPath>..\packages\NetOffice.Core.Net45.1.7.4.4\lib\net45\NetOffice.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="NetOffice, Version=1.7.4.11, Culture=neutral, PublicKeyToken=7292cd2a8b1e0703, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetOffice.Core.Net45.1.7.4.11\lib\net45\NetOffice.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="OfficeApi, Version=1.7.3.0, Culture=neutral, PublicKeyToken=7c1c3e9d16cace88, processorArchitecture=MSIL">
-      <HintPath>..\packages\NetOffice.Core.Net45.1.7.4.4\lib\net45\OfficeApi.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="OfficeApi, Version=1.7.4.11, Culture=neutral, PublicKeyToken=7292cd2a8b1e0703, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetOffice.Core.Net45.1.7.4.11\lib\net45\OfficeApi.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Ookii.Dialogs.WinForms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=66aa232afad40158, processorArchitecture=MSIL">
@@ -289,9 +286,8 @@
     </Reference>
     <Reference Include="UIAutomationProvider" />
     <Reference Include="UIAutomationTypes" />
-    <Reference Include="VBIDEApi, Version=1.7.3.0, Culture=neutral, PublicKeyToken=a3637beacf571e8a, processorArchitecture=MSIL">
-      <HintPath>..\packages\NetOffice.Core.Net45.1.7.4.4\lib\net45\VBIDEApi.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="VBIDEApi, Version=1.7.4.11, Culture=neutral, PublicKeyToken=7292cd2a8b1e0703, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetOffice.Core.Net45.1.7.4.11\lib\net45\VBIDEApi.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="WindowsBase">

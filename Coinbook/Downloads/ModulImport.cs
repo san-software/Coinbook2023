@@ -920,10 +920,10 @@ namespace Coinbook
 
                 try
                 {
-                    if (File.Exists(Path.Combine(CoinbookHelper.Picturepath, Path.GetFileName(files[i]))))
-                        File.Delete(Path.Combine(CoinbookHelper.Picturepath, Path.GetFileName(files[i])));
+                    if (File.Exists(Path.Combine(CoinbookHelper.PicturePath, Path.GetFileName(files[i]))))
+                        File.Delete(Path.Combine(CoinbookHelper.PicturePath, Path.GetFileName(files[i])));
 
-                File.Move(files[i], Path.Combine(CoinbookHelper.Picturepath, Path.GetFileName(files[i])));
+                File.Move(files[i], Path.Combine(CoinbookHelper.PicturePath, Path.GetFileName(files[i])));
                 }
                 catch { }
             }

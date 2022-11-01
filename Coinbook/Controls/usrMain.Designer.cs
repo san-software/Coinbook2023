@@ -262,6 +262,7 @@ namespace Coinbook
             this.cboJahr.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cboJahr.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboJahr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboJahr.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboJahr.ForeColor = System.Drawing.Color.Black;
             this.cboJahr.FormattingEnabled = true;
             this.cboJahr.GridLinesMultiColumn = false;
@@ -289,6 +290,7 @@ namespace Coinbook
             this.cboGebiete.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cboGebiete.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboGebiete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboGebiete.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboGebiete.ForeColor = System.Drawing.SystemColors.ControlText;
             this.cboGebiete.FormattingEnabled = true;
             this.cboGebiete.Location = new System.Drawing.Point(363, 22);
@@ -320,6 +322,7 @@ namespace Coinbook
             this.cboNominale.ColumnType = SAN.Control.ComboBoxEx.ColType.SingleColumn;
             this.cboNominale.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboNominale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboNominale.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboNominale.ForeColor = System.Drawing.Color.Black;
             this.cboNominale.FormattingEnabled = true;
             this.cboNominale.GridLinesMultiColumn = false;
@@ -348,6 +351,7 @@ namespace Coinbook
             this.cboWährung.ColumnType = SAN.Control.ComboBoxEx.ColType.SingleColumn;
             this.cboWährung.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboWährung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboWährung.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboWährung.ForeColor = System.Drawing.Color.Black;
             this.cboWährung.FormattingEnabled = true;
             this.cboWährung.GridLinesMultiColumn = false;
@@ -386,6 +390,7 @@ namespace Coinbook
             this.cboÄra.BackColor = System.Drawing.Color.White;
             this.cboÄra.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboÄra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboÄra.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboÄra.ForeColor = System.Drawing.SystemColors.ControlText;
             this.cboÄra.FormattingEnabled = true;
             this.cboÄra.Location = new System.Drawing.Point(163, 22);
@@ -449,6 +454,7 @@ namespace Coinbook
             this.cboNationen.BackColor = System.Drawing.Color.White;
             this.cboNationen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboNationen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboNationen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboNationen.ForeColor = System.Drawing.SystemColors.ControlText;
             this.cboNationen.FormattingEnabled = true;
             this.cboNationen.Location = new System.Drawing.Point(3, 22);
